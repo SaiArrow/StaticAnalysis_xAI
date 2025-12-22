@@ -1,0 +1,34 @@
+11 NORMAL main:3 = new <Application,Ljava/lang/StringBuilder>@0 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+11 NORMAL main:invokespecial < Application, Ljava/lang/StringBuilder, <init>(Ljava/lang/String;)V > 3,4 @6 exception:5 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+14 NORMAL main:6 = getstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+14 NORMAL main:conditional branch(ne, to iindex=18) 6,7 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+14 NORMAL main:9 = invokevirtual < Application, Ljava/lang/StringBuilder, toString()Ljava/lang/String; > 3 @17 exception:8 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+14 NORMAL main:11 = invokevirtual < Application, Ljava/lang/String, equals(Ljava/lang/Object;)Z > 9,4 @22 exception:10 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+14 NORMAL main:conditional branch(ne, to iindex=18) 11,7 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+15 NORMAL main:12 = getstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+15 NORMAL main:conditional branch(ne, to iindex=29) 12,7 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+15 NORMAL main:14 = invokevirtual < Application, Ljava/lang/StringBuilder, length()I > 3 @43 exception:13 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+15 NORMAL main:conditional branch(eq, to iindex=29) 14,15 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+16 NORMAL main:16 = getstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+16 NORMAL main:conditional branch(ne, to iindex=40) 16,7 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+16 NORMAL main:18 = invokevirtual < Application, Ljava/lang/StringBuilder, capacity()I > 3 @66 exception:17 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+16 NORMAL main:conditional branch(eq, to iindex=40) 18,19 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+18 NORMAL main:invokevirtual < Application, Ljava/lang/StringBuilder, ensureCapacity(I)V > 3,20 @85 exception:21 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+19 NORMAL main:22 = getstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+19 NORMAL main:conditional branch(ne, to iindex=54) 22,7 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+19 NORMAL main:24 = invokevirtual < Application, Ljava/lang/StringBuilder, capacity()I > 3 @95 exception:23 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+19 NORMAL main:conditional branch(eq, to iindex=54) 24,25 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+21 NORMAL main:invokevirtual < Application, Ljava/lang/StringBuilder, setLength(I)V > 3,26 @115 exception:27 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+22 NORMAL main:28 = getstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+22 NORMAL main:conditional branch(ne, to iindex=68) 28,7 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+22 NORMAL main:30 = invokevirtual < Application, Ljava/lang/StringBuilder, length()I > 3 @125 exception:29 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+22 NORMAL main:conditional branch(eq, to iindex=68) 30,26 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+23 NORMAL main:31 = getstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+23 NORMAL main:conditional branch(ne, to iindex=81) 31,7 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+23 NORMAL main:33 = invokevirtual < Application, Ljava/lang/StringBuilder, toString()Ljava/lang/String; > 3 @148 exception:32 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+23 NORMAL main:36 = invokevirtual < Application, Ljava/lang/String, equals(Ljava/lang/Object;)Z > 33,34 @153 exception:35 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+23 NORMAL main:conditional branch(ne, to iindex=81) 36,7 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+9 NORMAL <clinit>:2 = load_metadata: <Application,LMain>, <Primordial,Ljava/lang/Class> Node: < Application, LMain, <clinit>()V > Context: Everywhere
+9 NORMAL <clinit>:4 = invokevirtual < Application, Ljava/lang/Class, desiredAssertionStatus()Z > 2 @2 exception:3 Node: < Application, LMain, <clinit>()V > Context: Everywhere
+9 NORMAL <clinit>:conditional branch(ne, to iindex=6) 4,5 Node: < Application, LMain, <clinit>()V > Context: Everywhere
+9 NORMAL <clinit>:putstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > = 7 Node: < Application, LMain, <clinit>()V > Context: Everywhere

@@ -1,0 +1,38 @@
+58 NORMAL main:4 = invokestatic < Application, Lorg/sosy_lab/sv_benchmarks/Verifier, nondetInt()I > @0 exception:3 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+59 NORMAL main:conditional branch(le, to iindex=7) 4,5 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+59 NORMAL main:invokestatic < Application, Lorg/sosy_lab/sv_benchmarks/Verifier, assume(Z)V > 7 @13 exception:8 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+61 NORMAL main:9 = new <Primordial,[I>@174  Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+62 NORMAL main:conditional branch(ge, to iindex=28) 12,4 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+63 NORMAL main:10 = binaryop(sub) 4 , 12 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+63 NORMAL main:arraystore 9[12] = 10 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+62 NORMAL main:11 = binaryop(add) 12 , 6 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+66 NORMAL main:invokestatic < Application, LMain, sort([I)V > 9 @40 exception:13 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+68 NORMAL main:15 = invokestatic < Application, Lorg/sosy_lab/sv_benchmarks/Verifier, nondetInt()I > @43 exception:14 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+69 NORMAL main:17 = invokestatic < Application, Lorg/sosy_lab/sv_benchmarks/Verifier, nondetInt()I > @47 exception:16 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+70 NORMAL main:conditional branch(gt, to iindex=45) 5,15 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+70 NORMAL main:conditional branch(ge, to iindex=45) 15,17 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+70 NORMAL main:conditional branch(ge, to iindex=45) 17,4 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+70 NORMAL main:invokestatic < Application, Lorg/sosy_lab/sv_benchmarks/Verifier, assume(Z)V > 18 @74 exception:19 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+71 NORMAL main:20 = getstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+71 NORMAL main:conditional branch(ne, to iindex=61) 20,5 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+71 NORMAL main:21 = arrayload 9[15] Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+71 NORMAL main:22 = arrayload 9[17] Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+71 NORMAL main:conditional branch(le, to iindex=61) 21,22 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+40 NORMAL <clinit>:2 = load_metadata: <Application,LMain>, <Primordial,Ljava/lang/Class> Node: < Application, LMain, <clinit>()V > Context: Everywhere
+40 NORMAL <clinit>:4 = invokevirtual < Application, Ljava/lang/Class, desiredAssertionStatus()Z > 2 @2 exception:3 Node: < Application, LMain, <clinit>()V > Context: Everywhere
+40 NORMAL <clinit>:conditional branch(ne, to iindex=6) 4,5 Node: < Application, LMain, <clinit>()V > Context: Everywhere
+40 NORMAL <clinit>:putstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > = 7 Node: < Application, LMain, <clinit>()V > Context: Everywhere
+43 NORMAL sort:3 = arraylength 1 Node: < Application, LMain, sort([I)V > Context: Everywhere
+44 NORMAL sort:conditional branch(ge, to iindex=48) 16,3 Node: < Application, LMain, sort([I)V > Context: Everywhere
+45 NORMAL sort:5 = binaryop(sub) 16 , 4 Node: < Application, LMain, sort([I)V > Context: Everywhere
+46 NORMAL sort:6 = arrayload 1[16] Node: < Application, LMain, sort([I)V > Context: Everywhere
+49 NORMAL sort:conditional branch(lt, to iindex=37) 13,7 Node: < Application, LMain, sort([I)V > Context: Everywhere
+49 NORMAL sort:8 = arrayload 1[13] Node: < Application, LMain, sort([I)V > Context: Everywhere
+49 NORMAL sort:conditional branch(le, to iindex=37) 8,6 Node: < Application, LMain, sort([I)V > Context: Everywhere
+50 NORMAL sort:9 = binaryop(add) 13 , 4 Node: < Application, LMain, sort([I)V > Context: Everywhere
+50 NORMAL sort:10 = arrayload 1[13] Node: < Application, LMain, sort([I)V > Context: Everywhere
+50 NORMAL sort:arraystore 1[9] = 10 Node: < Application, LMain, sort([I)V > Context: Everywhere
+51 NORMAL sort:12 = binaryop(add) 13 , 11 Node: < Application, LMain, sort([I)V > Context: Everywhere
+53 NORMAL sort:14 = binaryop(add) 13 , 4 Node: < Application, LMain, sort([I)V > Context: Everywhere
+53 NORMAL sort:arraystore 1[14] = 6 Node: < Application, LMain, sort([I)V > Context: Everywhere
+44 NORMAL sort:15 = binaryop(add) 17 , 4 Node: < Application, LMain, sort([I)V > Context: Everywhere

@@ -1,0 +1,16 @@
+26 NORMAL main:4 = invokestatic < Application, LMain, short_value()S > @0 exception:3 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+27 NORMAL main:conditional branch(ne, to iindex=20) 4,5 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+27 NORMAL main:7 = invokestatic < Application, LMain, bool_value()Z > @9 exception:6 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+27 NORMAL main:conditional branch(eq, to iindex=20) 7,8 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+27 NORMAL main:10 = invokestatic < Application, LMain, long_value()J > @15 exception:9 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+27 NORMAL main:12 = compare 10,11 opcode=cmp Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+27 NORMAL main:conditional branch(ne, to iindex=20) 12,8 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+27 NORMAL main:13 = getstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+27 NORMAL main:conditional branch(ne, to iindex=20) 13,8 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+12 NORMAL short_value:return 2 Node: < Application, LMain, short_value()S > Context: Everywhere
+17 NORMAL bool_value:return 2 Node: < Application, LMain, bool_value()Z > Context: Everywhere
+22 NORMAL long_value:return 2 Node: < Application, LMain, long_value()J > Context: Everywhere
+9 NORMAL <clinit>:2 = load_metadata: <Application,LMain>, <Primordial,Ljava/lang/Class> Node: < Application, LMain, <clinit>()V > Context: Everywhere
+9 NORMAL <clinit>:4 = invokevirtual < Application, Ljava/lang/Class, desiredAssertionStatus()Z > 2 @2 exception:3 Node: < Application, LMain, <clinit>()V > Context: Everywhere
+9 NORMAL <clinit>:conditional branch(ne, to iindex=6) 4,5 Node: < Application, LMain, <clinit>()V > Context: Everywhere
+9 NORMAL <clinit>:putstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > = 7 Node: < Application, LMain, <clinit>()V > Context: Everywhere

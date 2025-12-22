@@ -1,0 +1,33 @@
+66 NORMAL main:4 = invokestatic < Application, Lorg/sosy_lab/sv_benchmarks/Verifier, nondetInt()I > @0 exception:3 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+67 NORMAL main:conditional branch(le, to iindex=7) 4,5 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+67 NORMAL main:invokestatic < Application, Lorg/sosy_lab/sv_benchmarks/Verifier, assume(Z)V > 7 @14 exception:8 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+69 NORMAL main:9 = new <Application,LMain$List>@17 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+69 NORMAL main:invokespecial < Application, LMain$List, <init>()V > 9 @21 exception:10 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+70 NORMAL main:conditional branch(ge, to iindex=26) 15,4 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+70 NORMAL main:12 = invokestatic < Application, Lorg/sosy_lab/sv_benchmarks/Verifier, nondetInt()I > @33 exception:11 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+70 NORMAL main:invokevirtual < Application, LMain$List, insert(I)V > 9,12 @36 exception:13 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+70 NORMAL main:14 = binaryop(add) 15 , 5 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+72 NORMAL main:16 = getstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+72 NORMAL main:conditional branch(ne, to iindex=39) 16,6 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+72 NORMAL main:17 = getfield < Application, LMain$List, x, <Primordial,I> > 9 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+72 NORMAL main:18 = getfield < Application, LMain$List, next, <Application,LMain$List> > 9 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+72 NORMAL main:19 = getfield < Application, LMain$List, x, <Primordial,I> > 18 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+72 NORMAL main:conditional branch(lt, to iindex=39) 17,19 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+56 NORMAL insert:4 = getfield < Application, LMain$List, x, <Primordial,I> > 1 Node: < Application, LMain$List, insert(I)V > Context: Everywhere
+56 NORMAL insert:conditional branch(le, to iindex=9) 2,4 Node: < Application, LMain$List, insert(I)V > Context: Everywhere
+57 NORMAL insert:9 = getfield < Application, LMain$List, next, <Application,LMain$List> > 1 Node: < Application, LMain$List, insert(I)V > Context: Everywhere
+57 NORMAL insert:invokevirtual < Application, LMain$List, insert(I)V > 9,2 @13 exception:10 Node: < Application, LMain$List, insert(I)V > Context: Everywhere
+59 NORMAL insert:5 = new <Application,LMain$List>@20 Node: < Application, LMain$List, insert(I)V > Context: Everywhere
+59 NORMAL insert:6 = getfield < Application, LMain$List, x, <Primordial,I> > 1 Node: < Application, LMain$List, insert(I)V > Context: Everywhere
+59 NORMAL insert:7 = getfield < Application, LMain$List, next, <Application,LMain$List> > 1 Node: < Application, LMain$List, insert(I)V > Context: Everywhere
+59 NORMAL insert:invokespecial < Application, LMain$List, <init>(ILMain$List;)V > 5,6,7 @32 exception:8 Node: < Application, LMain$List, insert(I)V > Context: Everywhere
+59 NORMAL insert:putfield 1.< Application, LMain$List, next, <Application,LMain$List> > = 5 Node: < Application, LMain$List, insert(I)V > Context: Everywhere
+60 NORMAL insert:putfield 1.< Application, LMain$List, x, <Primordial,I> > = 2 Node: < Application, LMain$List, insert(I)V > Context: Everywhere
+46 NORMAL <init>:invokespecial < Application, Ljava/lang/Object, <init>()V > 1 @1 exception:5 Node: < Application, LMain$List, <init>(ILMain$List;)V > Context: Everywhere
+47 NORMAL <init>:putfield 1.< Application, LMain$List, x, <Primordial,I> > = 2 Node: < Application, LMain$List, <init>(ILMain$List;)V > Context: Everywhere
+52 NORMAL <init>:invokespecial < Application, LMain$List, <init>(ILMain$List;)V > 1,3,4 @4 exception:5 Node: < Application, LMain$List, <init>()V > Context: Everywhere
+48 NORMAL <init>:putfield 1.< Application, LMain$List, next, <Application,LMain$List> > = 3 Node: < Application, LMain$List, <init>(ILMain$List;)V > Context: Everywhere
+38 NORMAL <clinit>:2 = load_metadata: <Application,LMain>, <Primordial,Ljava/lang/Class> Node: < Application, LMain, <clinit>()V > Context: Everywhere
+38 NORMAL <clinit>:4 = invokevirtual < Application, Ljava/lang/Class, desiredAssertionStatus()Z > 2 @2 exception:3 Node: < Application, LMain, <clinit>()V > Context: Everywhere
+38 NORMAL <clinit>:conditional branch(ne, to iindex=6) 4,5 Node: < Application, LMain, <clinit>()V > Context: Everywhere
+38 NORMAL <clinit>:putstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > = 7 Node: < Application, LMain, <clinit>()V > Context: Everywhere

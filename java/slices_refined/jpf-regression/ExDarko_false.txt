@@ -1,0 +1,20 @@
+44 NORMAL boxed:5 = new <Application,Ljava/lang/Integer>@0 Node: < Application, LMain, boxed(II)V > Context: Everywhere
+44 NORMAL boxed:invokespecial < Application, Ljava/lang/Integer, <init>(I)V > 5,2 @5 exception:6 Node: < Application, LMain, boxed(II)V > Context: Everywhere
+44 NORMAL boxed:7 = new <Application,Ljava/lang/Integer>@8 Node: < Application, LMain, boxed(II)V > Context: Everywhere
+44 NORMAL boxed:invokespecial < Application, Ljava/lang/Integer, <init>(I)V > 7,3 @13 exception:8 Node: < Application, LMain, boxed(II)V > Context: Everywhere
+44 NORMAL boxed:10 = invokevirtual < Application, Ljava/lang/Integer, equals(Ljava/lang/Object;)Z > 5,7 @16 exception:9 Node: < Application, LMain, boxed(II)V > Context: Everywhere
+44 NORMAL boxed:conditional branch(eq, to iindex=15) 10,11 Node: < Application, LMain, boxed(II)V > Context: Everywhere
+46 NORMAL boxed:12 = getstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > Node: < Application, LMain, boxed(II)V > Context: Everywhere
+46 NORMAL boxed:conditional branch(ne, to iindex=22) 12,11 Node: < Application, LMain, boxed(II)V > Context: Everywhere
+32 NORMAL main:3 = new <Application,LMain>@0 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+32 NORMAL main:invokespecial < Application, LMain, <init>()V > 3 @4 exception:4 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+32 NORMAL main:6 = invokestatic < Application, Lorg/sosy_lab/sv_benchmarks/Verifier, nondetInt()I > @7 exception:5 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+32 NORMAL main:invokespecial < Application, LMain, unboxed(II)V > 3,6,7 @11 exception:8 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+33 NORMAL main:9 = new <Application,LMain>@14 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+33 NORMAL main:invokespecial < Application, LMain, <init>()V > 9 @18 exception:10 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+33 NORMAL main:12 = invokestatic < Application, Lorg/sosy_lab/sv_benchmarks/Verifier, nondetInt()I > @21 exception:11 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+33 NORMAL main:invokespecial < Application, LMain, boxed(II)V > 9,12,7 @25 exception:13 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+29 NORMAL <clinit>:2 = load_metadata: <Application,LMain>, <Primordial,Ljava/lang/Class> Node: < Application, LMain, <clinit>()V > Context: Everywhere
+29 NORMAL <clinit>:4 = invokevirtual < Application, Ljava/lang/Class, desiredAssertionStatus()Z > 2 @2 exception:3 Node: < Application, LMain, <clinit>()V > Context: Everywhere
+29 NORMAL <clinit>:conditional branch(ne, to iindex=6) 4,5 Node: < Application, LMain, <clinit>()V > Context: Everywhere
+29 NORMAL <clinit>:putstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > = 7 Node: < Application, LMain, <clinit>()V > Context: Everywhere

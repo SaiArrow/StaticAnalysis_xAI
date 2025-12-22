@@ -1,0 +1,26 @@
+34 NORMAL main:4 = invokestatic < Application, Lorg/sosy_lab/sv_benchmarks/Verifier, nondetInt()I > @0 exception:3 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+35 NORMAL main:conditional branch(ge, to iindex=6) 4,5 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+38 NORMAL main:7 = invokestatic < Application, LMain, isEven(I)I > 4 @10 exception:6 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+39 NORMAL main:9 = binaryop(rem) 4 , 8 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+40 NORMAL main:conditional branch(lt, to iindex=19) 7,5 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+40 NORMAL main:conditional branch(ne, to iindex=20) 7,9 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+43 NORMAL main:10 = getstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+43 NORMAL main:conditional branch(ne, to iindex=27) 10,5 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+11 NORMAL <clinit>:2 = load_metadata: <Application,LMain>, <Primordial,Ljava/lang/Class> Node: < Application, LMain, <clinit>()V > Context: Everywhere
+11 NORMAL <clinit>:4 = invokevirtual < Application, Ljava/lang/Class, desiredAssertionStatus()Z > 2 @2 exception:3 Node: < Application, LMain, <clinit>()V > Context: Everywhere
+11 NORMAL <clinit>:conditional branch(ne, to iindex=6) 4,5 Node: < Application, LMain, <clinit>()V > Context: Everywhere
+11 NORMAL <clinit>:putstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > = 7 Node: < Application, LMain, <clinit>()V > Context: Everywhere
+24 NORMAL isEven:conditional branch(ne, to iindex=5) 1,3 Node: < Application, LMain, isEven(I)I > Context: Everywhere
+25 NORMAL isEven:return 4 Node: < Application, LMain, isEven(I)I > Context: Everywhere
+26 NORMAL isEven:conditional branch(ne, to iindex=10) 1,4 Node: < Application, LMain, isEven(I)I > Context: Everywhere
+27 NORMAL isEven:return 3 Node: < Application, LMain, isEven(I)I > Context: Everywhere
+29 NORMAL isEven:5 = binaryop(sub) 1 , 4 Node: < Application, LMain, isEven(I)I > Context: Everywhere
+29 NORMAL isEven:7 = invokestatic < Application, LMain, isOdd(I)I > 5 @16 exception:6 Node: < Application, LMain, isEven(I)I > Context: Everywhere
+29 NORMAL isEven:return 7 Node: < Application, LMain, isEven(I)I > Context: Everywhere
+14 NORMAL isOdd:conditional branch(ne, to iindex=5) 1,3 Node: < Application, LMain, isOdd(I)I > Context: Everywhere
+15 NORMAL isOdd:return 3 Node: < Application, LMain, isOdd(I)I > Context: Everywhere
+16 NORMAL isOdd:conditional branch(ne, to iindex=10) 1,4 Node: < Application, LMain, isOdd(I)I > Context: Everywhere
+17 NORMAL isOdd:return 4 Node: < Application, LMain, isOdd(I)I > Context: Everywhere
+19 NORMAL isOdd:5 = binaryop(sub) 1 , 4 Node: < Application, LMain, isOdd(I)I > Context: Everywhere
+19 NORMAL isOdd:7 = invokestatic < Application, LMain, isEven(I)I > 5 @16 exception:6 Node: < Application, LMain, isOdd(I)I > Context: Everywhere
+19 NORMAL isOdd:return 7 Node: < Application, LMain, isOdd(I)I > Context: Everywhere

@@ -1,0 +1,16 @@
+18 NORMAL checkInvariant:3 = getstatic < Application, LProblem, $assertionsDisabled, <Primordial,Z> > Node: < Application, LProblem, checkInvariant()V > Context: Everywhere
+18 NORMAL checkInvariant:conditional branch(ne, to iindex=11) 3,4 Node: < Application, LProblem, checkInvariant()V > Context: Everywhere
+18 NORMAL checkInvariant:5 = getfield < Application, LProblem, data, <Application,Ljava/lang/Object> > 1 Node: < Application, LProblem, checkInvariant()V > Context: Everywhere
+18 NORMAL checkInvariant:conditional branch(ne, to iindex=11) 5,6 Node: < Application, LProblem, checkInvariant()V > Context: Everywhere
+24 NORMAL main:3 = new <Application,LProblem>@0 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+24 NORMAL main:invokespecial < Application, LProblem, <init>()V > 3 @4 exception:4 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+24 NORMAL main:invokevirtual < Application, LProblem, checkInvariant()V > 3 @7 exception:5 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+13 NORMAL <init>:invokespecial < Application, Ljava/lang/Object, <init>()V > 1 @1 exception:3 Node: < Application, LProblem, <init>()V > Context: Everywhere
+14 NORMAL <init>:4 = getstatic < Application, LProblem, DEFAULT, <Application,[Ljava/lang/Object> > Node: < Application, LProblem, <init>()V > Context: Everywhere
+14 NORMAL <init>:putfield 1.< Application, LProblem, data, <Application,Ljava/lang/Object> > = 4 Node: < Application, LProblem, <init>()V > Context: Everywhere
+9 NORMAL <clinit>:2 = load_metadata: <Application,LProblem>, <Primordial,Ljava/lang/Class> Node: < Application, LProblem, <clinit>()V > Context: Everywhere
+9 NORMAL <clinit>:4 = invokevirtual < Application, Ljava/lang/Class, desiredAssertionStatus()Z > 2 @2 exception:3 Node: < Application, LProblem, <clinit>()V > Context: Everywhere
+9 NORMAL <clinit>:conditional branch(ne, to iindex=6) 4,5 Node: < Application, LProblem, <clinit>()V > Context: Everywhere
+9 NORMAL <clinit>:putstatic < Application, LProblem, $assertionsDisabled, <Primordial,Z> > = 7 Node: < Application, LProblem, <clinit>()V > Context: Everywhere
+10 NORMAL <clinit>:8 = new <Application,[Ljava/lang/Object>@175  Node: < Application, LProblem, <clinit>()V > Context: Everywhere
+10 NORMAL <clinit>:putstatic < Application, LProblem, DEFAULT, <Application,[Ljava/lang/Object> > = 8 Node: < Application, LProblem, <clinit>()V > Context: Everywhere

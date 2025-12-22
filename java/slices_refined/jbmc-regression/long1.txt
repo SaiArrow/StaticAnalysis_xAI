@@ -1,0 +1,30 @@
+15 NORMAL main:4 = conversion(I) 3 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+16 NORMAL main:5 = conversion(I) 3 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+16 NORMAL main:6 = conversion(C) 5 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+19 NORMAL main:9 = conversion(I) 3 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+19 NORMAL main:10 = conversion(S) 9 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+21 NORMAL main:conditional branch(lt, to iindex=37) 4,11 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+21 NORMAL main:12 = getstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+21 NORMAL main:conditional branch(ne, to iindex=37) 12,11 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+21 NORMAL main:13 = conversion(J) 4 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+21 NORMAL main:15 = binaryop(and) 3 , 14 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+21 NORMAL main:16 = compare 13,15 opcode=cmp Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+21 NORMAL main:conditional branch(eq, to iindex=37) 16,11 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+23 NORMAL main:conditional branch(lt, to iindex=55) 6,11 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+23 NORMAL main:17 = getstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+23 NORMAL main:conditional branch(ne, to iindex=55) 17,11 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+23 NORMAL main:18 = conversion(J) 6 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+23 NORMAL main:20 = binaryop(and) 3 , 19 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+23 NORMAL main:21 = compare 18,20 opcode=cmp Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+23 NORMAL main:conditional branch(eq, to iindex=55) 21,11 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+25 NORMAL main:conditional branch(lt, to iindex=73) 10,11 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+25 NORMAL main:22 = getstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+25 NORMAL main:conditional branch(ne, to iindex=73) 22,11 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+25 NORMAL main:23 = conversion(J) 10 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+25 NORMAL main:24 = binaryop(and) 3 , 19 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+25 NORMAL main:25 = compare 23,24 opcode=cmp Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+25 NORMAL main:conditional branch(eq, to iindex=73) 25,11 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+10 NORMAL <clinit>:2 = load_metadata: <Application,LMain>, <Primordial,Ljava/lang/Class> Node: < Application, LMain, <clinit>()V > Context: Everywhere
+10 NORMAL <clinit>:4 = invokevirtual < Application, Ljava/lang/Class, desiredAssertionStatus()Z > 2 @2 exception:3 Node: < Application, LMain, <clinit>()V > Context: Everywhere
+10 NORMAL <clinit>:conditional branch(ne, to iindex=6) 4,5 Node: < Application, LMain, <clinit>()V > Context: Everywhere
+10 NORMAL <clinit>:putstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > = 7 Node: < Application, LMain, <clinit>()V > Context: Everywhere

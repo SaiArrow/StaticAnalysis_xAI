@@ -1,0 +1,12 @@
+21 NORMAL main:invokestatic < Application, LMain, foo()V > @0 exception:3 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+22 NORMAL main:4 = getstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+22 NORMAL main:conditional branch(ne, to iindex=8) 4,5 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+22 NORMAL main:6 = new <Application,Ljava/lang/AssertionError>@9 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+22 NORMAL main:invokespecial < Application, Ljava/lang/AssertionError, <init>()V > 6 @13 exception:7 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+22 NORMAL main:throw 6 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+24 NORMAL main:10 = getstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+24 NORMAL main:conditional branch(ne, to iindex=17) 10,5 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+13 NORMAL <clinit>:2 = load_metadata: <Application,LMain>, <Primordial,Ljava/lang/Class> Node: < Application, LMain, <clinit>()V > Context: Everywhere
+13 NORMAL <clinit>:4 = invokevirtual < Application, Ljava/lang/Class, desiredAssertionStatus()Z > 2 @2 exception:3 Node: < Application, LMain, <clinit>()V > Context: Everywhere
+13 NORMAL <clinit>:conditional branch(ne, to iindex=6) 4,5 Node: < Application, LMain, <clinit>()V > Context: Everywhere
+13 NORMAL <clinit>:putstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > = 7 Node: < Application, LMain, <clinit>()V > Context: Everywhere

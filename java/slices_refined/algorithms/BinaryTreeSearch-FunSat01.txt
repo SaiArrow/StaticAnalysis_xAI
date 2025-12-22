@@ -1,0 +1,58 @@
+106 NORMAL main:4 = invokestatic < Application, Lorg/sosy_lab/sv_benchmarks/Verifier, nondetInt()I > @0 exception:3 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+108 NORMAL main:5 = new <Application,LMain$BinaryTree>@4 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+108 NORMAL main:invokespecial < Application, LMain$BinaryTree, <init>(LMain$1;)V > 5,6 @9 exception:7 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+109 NORMAL main:conditional branch(ge, to iindex=25) 14,4 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+110 NORMAL main:10 = invokestatic < Application, Lorg/sosy_lab/sv_benchmarks/Verifier, nondetInt()I > @20 exception:9 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+111 NORMAL main:conditional branch(lt, to iindex=20) 10,11 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+112 NORMAL main:invokevirtual < Application, LMain$BinaryTree, insert(I)V > 5,10 @33 exception:12 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+109 NORMAL main:13 = binaryop(add) 14 , 8 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+116 NORMAL main:16 = invokestatic < Application, Lorg/sosy_lab/sv_benchmarks/Verifier, nondetInt()I > @42 exception:15 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+117 NORMAL main:conditional branch(ge, to iindex=32) 16,11 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+117 NORMAL main:invokestatic < Application, Lorg/sosy_lab/sv_benchmarks/Verifier, assume(Z)V > 17 @55 exception:18 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+118 NORMAL main:19 = getstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+118 NORMAL main:conditional branch(ne, to iindex=46) 19,11 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+118 NORMAL main:21 = invokevirtual < Application, LMain$BinaryTree, search(I)Z > 5,16 @66 exception:20 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+118 NORMAL main:conditional branch(eq, to iindex=46) 21,11 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+91 NORMAL search:4 = getfield < Application, LMain$BinaryTree, root, <Application,LMain$BinaryTree$Node> > 1 Node: < Application, LMain$BinaryTree, search(I)Z > Context: Everywhere
+92 NORMAL search:conditional branch(eq, to iindex=24) 9,5 Node: < Application, LMain$BinaryTree, search(I)Z > Context: Everywhere
+93 NORMAL search:6 = getfield < Application, LMain$BinaryTree$Node, value, <Primordial,I> > 9 Node: < Application, LMain$BinaryTree, search(I)Z > Context: Everywhere
+93 NORMAL search:conditional branch(ne, to iindex=12) 6,2 Node: < Application, LMain$BinaryTree, search(I)Z > Context: Everywhere
+94 NORMAL search:return 12 Node: < Application, LMain$BinaryTree, search(I)Z > Context: Everywhere
+95 NORMAL search:7 = getfield < Application, LMain$BinaryTree$Node, value, <Primordial,I> > 9 Node: < Application, LMain$BinaryTree, search(I)Z > Context: Everywhere
+95 NORMAL search:conditional branch(ge, to iindex=20) 7,2 Node: < Application, LMain$BinaryTree, search(I)Z > Context: Everywhere
+96 NORMAL search:8 = getfield < Application, LMain$BinaryTree$Node, right, <Application,LMain$BinaryTree$Node> > 9 Node: < Application, LMain$BinaryTree, search(I)Z > Context: Everywhere
+98 NORMAL search:10 = getfield < Application, LMain$BinaryTree$Node, left, <Application,LMain$BinaryTree$Node> > 9 Node: < Application, LMain$BinaryTree, search(I)Z > Context: Everywhere
+101 NORMAL search:return 11 Node: < Application, LMain$BinaryTree, search(I)Z > Context: Everywhere
+62 NORMAL insert:4 = getfield < Application, LMain$BinaryTree, root, <Application,LMain$BinaryTree$Node> > 1 Node: < Application, LMain$BinaryTree, insert(I)V > Context: Everywhere
+62 NORMAL insert:conditional branch(ne, to iindex=13) 4,5 Node: < Application, LMain$BinaryTree, insert(I)V > Context: Everywhere
+63 NORMAL insert:18 = new <Application,LMain$BinaryTree$Node>@8 Node: < Application, LMain$BinaryTree, insert(I)V > Context: Everywhere
+63 NORMAL insert:invokespecial < Application, LMain$BinaryTree$Node, <init>(ILMain$BinaryTree$Node;LMain$BinaryTree$Node;)V > 18,2,5,5 @15 exception:19 Node: < Application, LMain$BinaryTree, insert(I)V > Context: Everywhere
+67 NORMAL insert:6 = getfield < Application, LMain$BinaryTree, root, <Application,LMain$BinaryTree$Node> > 1 Node: < Application, LMain$BinaryTree, insert(I)V > Context: Everywhere
+69 NORMAL insert:7 = getfield < Application, LMain$BinaryTree$Node, value, <Primordial,I> > 10 Node: < Application, LMain$BinaryTree, insert(I)V > Context: Everywhere
+69 NORMAL insert:conditional branch(ge, to iindex=37) 7,2 Node: < Application, LMain$BinaryTree, insert(I)V > Context: Everywhere
+70 NORMAL insert:8 = getfield < Application, LMain$BinaryTree$Node, right, <Application,LMain$BinaryTree$Node> > 10 Node: < Application, LMain$BinaryTree, insert(I)V > Context: Everywhere
+70 NORMAL insert:conditional branch(eq, to iindex=28) 8,5 Node: < Application, LMain$BinaryTree, insert(I)V > Context: Everywhere
+71 NORMAL insert:9 = getfield < Application, LMain$BinaryTree$Node, right, <Application,LMain$BinaryTree$Node> > 10 Node: < Application, LMain$BinaryTree, insert(I)V > Context: Everywhere
+73 NORMAL insert:16 = new <Application,LMain$BinaryTree$Node>@51 Node: < Application, LMain$BinaryTree, insert(I)V > Context: Everywhere
+73 NORMAL insert:invokespecial < Application, LMain$BinaryTree$Node, <init>(ILMain$BinaryTree$Node;LMain$BinaryTree$Node;)V > 16,2,5,5 @58 exception:17 Node: < Application, LMain$BinaryTree, insert(I)V > Context: Everywhere
+76 NORMAL insert:11 = getfield < Application, LMain$BinaryTree$Node, value, <Primordial,I> > 10 Node: < Application, LMain$BinaryTree, insert(I)V > Context: Everywhere
+76 NORMAL insert:conditional branch(le, to iindex=58) 11,2 Node: < Application, LMain$BinaryTree, insert(I)V > Context: Everywhere
+77 NORMAL insert:12 = getfield < Application, LMain$BinaryTree$Node, left, <Application,LMain$BinaryTree$Node> > 10 Node: < Application, LMain$BinaryTree, insert(I)V > Context: Everywhere
+77 NORMAL insert:conditional branch(eq, to iindex=49) 12,5 Node: < Application, LMain$BinaryTree, insert(I)V > Context: Everywhere
+78 NORMAL insert:13 = getfield < Application, LMain$BinaryTree$Node, left, <Application,LMain$BinaryTree$Node> > 10 Node: < Application, LMain$BinaryTree, insert(I)V > Context: Everywhere
+80 NORMAL insert:14 = new <Application,LMain$BinaryTree$Node>@91 Node: < Application, LMain$BinaryTree, insert(I)V > Context: Everywhere
+80 NORMAL insert:invokespecial < Application, LMain$BinaryTree$Node, <init>(ILMain$BinaryTree$Node;LMain$BinaryTree$Node;)V > 14,2,5,5 @98 exception:15 Node: < Application, LMain$BinaryTree, insert(I)V > Context: Everywhere
+80 NORMAL insert:putfield 10.< Application, LMain$BinaryTree$Node, left, <Application,LMain$BinaryTree$Node> > = 14 Node: < Application, LMain$BinaryTree, insert(I)V > Context: Everywhere
+73 NORMAL insert:putfield 10.< Application, LMain$BinaryTree$Node, right, <Application,LMain$BinaryTree$Node> > = 16 Node: < Application, LMain$BinaryTree, insert(I)V > Context: Everywhere
+63 NORMAL insert:putfield 1.< Application, LMain$BinaryTree, root, <Application,LMain$BinaryTree$Node> > = 18 Node: < Application, LMain$BinaryTree, insert(I)V > Context: Everywhere
+43 NORMAL <init>:invokespecial < Application, LMain$BinaryTree, <init>()V > 1 @1 exception:4 Node: < Application, LMain$BinaryTree, <init>(LMain$1;)V > Context: Everywhere
+43 NORMAL <init>:invokespecial < Application, Ljava/lang/Object, <init>()V > 1 @1 exception:3 Node: < Application, LMain$BinaryTree, <init>()V > Context: Everywhere
+57 NORMAL <init>:putfield 1.< Application, LMain$BinaryTree, root, <Application,LMain$BinaryTree$Node> > = 4 Node: < Application, LMain$BinaryTree, <init>()V > Context: Everywhere
+50 NORMAL <init>:invokespecial < Application, Ljava/lang/Object, <init>()V > 1 @1 exception:6 Node: < Application, LMain$BinaryTree$Node, <init>(ILMain$BinaryTree$Node;LMain$BinaryTree$Node;)V > Context: Everywhere
+51 NORMAL <init>:putfield 1.< Application, LMain$BinaryTree$Node, value, <Primordial,I> > = 2 Node: < Application, LMain$BinaryTree$Node, <init>(ILMain$BinaryTree$Node;LMain$BinaryTree$Node;)V > Context: Everywhere
+52 NORMAL <init>:putfield 1.< Application, LMain$BinaryTree$Node, left, <Application,LMain$BinaryTree$Node> > = 3 Node: < Application, LMain$BinaryTree$Node, <init>(ILMain$BinaryTree$Node;LMain$BinaryTree$Node;)V > Context: Everywhere
+53 NORMAL <init>:putfield 1.< Application, LMain$BinaryTree$Node, right, <Application,LMain$BinaryTree$Node> > = 4 Node: < Application, LMain$BinaryTree$Node, <init>(ILMain$BinaryTree$Node;LMain$BinaryTree$Node;)V > Context: Everywhere
+41 NORMAL <clinit>:2 = load_metadata: <Application,LMain>, <Primordial,Ljava/lang/Class> Node: < Application, LMain, <clinit>()V > Context: Everywhere
+41 NORMAL <clinit>:4 = invokevirtual < Application, Ljava/lang/Class, desiredAssertionStatus()Z > 2 @2 exception:3 Node: < Application, LMain, <clinit>()V > Context: Everywhere
+41 NORMAL <clinit>:conditional branch(ne, to iindex=6) 4,5 Node: < Application, LMain, <clinit>()V > Context: Everywhere
+41 NORMAL <clinit>:putstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > = 7 Node: < Application, LMain, <clinit>()V > Context: Everywhere

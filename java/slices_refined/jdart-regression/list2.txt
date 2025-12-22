@@ -1,0 +1,60 @@
+91 NORMAL main:3 = new <Application,LLinkedList>@0 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+91 NORMAL main:invokespecial < Application, LLinkedList, <init>()V > 3 @4 exception:4 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+92 NORMAL main:5 = new <Application,LLinkedList>@8 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+92 NORMAL main:invokespecial < Application, LLinkedList, <init>()V > 5 @12 exception:6 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+94 NORMAL main:conditional branch(ge, to iindex=30) 15,7 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+95 NORMAL main:10 = invokestatic < Application, LUtils_nondet, nondet_int()I > @28 exception:9 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+96 NORMAL main:invokevirtual < Application, LLinkedList, add(II)V > 3,15,10 @38 exception:11 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+97 NORMAL main:invokevirtual < Application, LLinkedList, add(II)V > 5,15,10 @46 exception:12 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+94 NORMAL main:14 = binaryop(add) 15 , 13 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+101 NORMAL main:16 = getfield < Application, LLinkedList, Head, <Application,LLinkedListEntry> > 3 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+101 NORMAL main:conditional branch(eq, to iindex=49) 23,17 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+102 NORMAL main:18 = getfield < Application, LLinkedListEntry, Value, <Primordial,I> > 23 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+102 NORMAL main:conditional branch(ge, to iindex=45) 22,18 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+102 NORMAL main:19 = getfield < Application, LLinkedListEntry, Value, <Primordial,I> > 23 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+101 NORMAL main:21 = getfield < Application, LLinkedListEntry, Next, <Application,LLinkedListEntry> > 23 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+105 NORMAL main:25 = invokestatic < Application, LMain, stream(LLinkedList;)I > 5 @97 exception:24 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+107 NORMAL main:26 = getstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+107 NORMAL main:conditional branch(ne, to iindex=62) 26,8 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+107 NORMAL main:conditional branch(eq, to iindex=62) 22,25 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+29 NORMAL add:5 = new <Application,LLinkedListEntry>@0 Node: < Application, LLinkedList, add(II)V > Context: Everywhere
+29 NORMAL add:invokespecial < Application, LLinkedListEntry, <init>()V > 5 @4 exception:6 Node: < Application, LLinkedList, add(II)V > Context: Everywhere
+30 NORMAL add:putfield 5.< Application, LLinkedListEntry, Value, <Primordial,I> > = 3 Node: < Application, LLinkedList, add(II)V > Context: Everywhere
+78 NORMAL stream:4 = getfield < Application, LLinkedList, Head, <Application,LLinkedListEntry> > 1 Node: < Application, LMain, stream(LLinkedList;)I > Context: Everywhere
+78 NORMAL stream:conditional branch(eq, to iindex=25) 15,5 Node: < Application, LMain, stream(LLinkedList;)I > Context: Everywhere
+79 NORMAL stream:6 = getfield < Application, LLinkedListEntry, Value, <Primordial,I> > 15 Node: < Application, LMain, stream(LLinkedList;)I > Context: Everywhere
+79 NORMAL stream:8 = invokestatic < Application, LUtils_synthesis, predicate(I)Z > 6 @15 exception:7 Node: < Application, LMain, stream(LLinkedList;)I > Context: Everywhere
+79 NORMAL stream:conditional branch(eq, to iindex=18) 8,3 Node: < Application, LMain, stream(LLinkedList;)I > Context: Everywhere
+79 NORMAL stream:10 = binaryop(add) 14 , 9 Node: < Application, LMain, stream(LLinkedList;)I > Context: Everywhere
+80 NORMAL stream:invokevirtual < Application, LLinkedList, remove(I)V > 1,14 @29 exception:11 Node: < Application, LMain, stream(LLinkedList;)I > Context: Everywhere
+78 NORMAL stream:13 = getfield < Application, LLinkedListEntry, Next, <Application,LLinkedListEntry> > 15 Node: < Application, LMain, stream(LLinkedList;)I > Context: Everywhere
+84 NORMAL stream:16 = getfield < Application, LLinkedList, Head, <Application,LLinkedListEntry> > 1 Node: < Application, LMain, stream(LLinkedList;)I > Context: Everywhere
+84 NORMAL stream:conditional branch(eq, to iindex=42) 22,5 Node: < Application, LMain, stream(LLinkedList;)I > Context: Everywhere
+85 NORMAL stream:17 = getfield < Application, LLinkedListEntry, Value, <Primordial,I> > 22 Node: < Application, LMain, stream(LLinkedList;)I > Context: Everywhere
+85 NORMAL stream:19 = invokestatic < Application, LUtils_synthesis, accumulator(II)I > 21,17 @56 exception:18 Node: < Application, LMain, stream(LLinkedList;)I > Context: Everywhere
+84 NORMAL stream:20 = getfield < Application, LLinkedListEntry, Next, <Application,LLinkedListEntry> > 22 Node: < Application, LMain, stream(LLinkedList;)I > Context: Everywhere
+87 NORMAL stream:return 21 Node: < Application, LMain, stream(LLinkedList;)I > Context: Everywhere
+31 NORMAL add:conditional branch(ne, to iindex=14) 2,7 Node: < Application, LLinkedList, add(II)V > Context: Everywhere
+35 NORMAL add:8 = getfield < Application, LLinkedList, Head, <Application,LLinkedListEntry> > 1 Node: < Application, LLinkedList, add(II)V > Context: Everywhere
+36 NORMAL add:conditional branch(ge, to iindex=30) 13,2 Node: < Application, LLinkedList, add(II)V > Context: Everywhere
+36 NORMAL add:10 = getfield < Application, LLinkedListEntry, Next, <Application,LLinkedListEntry> > 12 Node: < Application, LLinkedList, add(II)V > Context: Everywhere
+36 NORMAL add:11 = binaryop(add) 13 , 9 Node: < Application, LLinkedList, add(II)V > Context: Everywhere
+37 NORMAL add:putfield 12.< Application, LLinkedListEntry, Next, <Application,LLinkedListEntry> > = 5 Node: < Application, LLinkedList, add(II)V > Context: Everywhere
+59 NORMAL nondet_int:3 = invokestatic < Application, Lorg/sosy_lab/sv_benchmarks/Verifier, nondetInt()I > @0 exception:2 Node: < Application, LUtils_nondet, nondet_int()I > Context: Everywhere
+59 NORMAL nondet_int:return 3 Node: < Application, LUtils_nondet, nondet_int()I > Context: Everywhere
+65 NORMAL accumulator:conditional branch(ge, to iindex=5) 1,2 Node: < Application, LUtils_synthesis, accumulator(II)I > Context: Everywhere
+65 NORMAL accumulator:return 2 Node: < Application, LUtils_synthesis, accumulator(II)I > Context: Everywhere
+66 NORMAL accumulator:return 1 Node: < Application, LUtils_synthesis, accumulator(II)I > Context: Everywhere
+74 NORMAL <clinit>:2 = load_metadata: <Application,LMain>, <Primordial,Ljava/lang/Class> Node: < Application, LMain, <clinit>()V > Context: Everywhere
+74 NORMAL <clinit>:4 = invokevirtual < Application, Ljava/lang/Class, desiredAssertionStatus()Z > 2 @2 exception:3 Node: < Application, LMain, <clinit>()V > Context: Everywhere
+74 NORMAL <clinit>:conditional branch(ne, to iindex=6) 4,5 Node: < Application, LMain, <clinit>()V > Context: Everywhere
+74 NORMAL <clinit>:putstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > = 7 Node: < Application, LMain, <clinit>()V > Context: Everywhere
+32 NORMAL add:putfield 1.< Application, LLinkedList, Head, <Application,LLinkedListEntry> > = 5 Node: < Application, LLinkedList, add(II)V > Context: Everywhere
+70 NORMAL predicate:return 3 Node: < Application, LUtils_synthesis, predicate(I)Z > Context: Everywhere
+45 NORMAL remove:4 = getfield < Application, LLinkedList, Head, <Application,LLinkedListEntry> > 1 Node: < Application, LLinkedList, remove(I)V > Context: Everywhere
+46 NORMAL remove:conditional branch(ge, to iindex=16) 9,2 Node: < Application, LLinkedList, remove(I)V > Context: Everywhere
+46 NORMAL remove:6 = getfield < Application, LLinkedListEntry, Next, <Application,LLinkedListEntry> > 8 Node: < Application, LLinkedList, remove(I)V > Context: Everywhere
+46 NORMAL remove:7 = binaryop(add) 9 , 5 Node: < Application, LLinkedList, remove(I)V > Context: Everywhere
+47 NORMAL remove:10 = getfield < Application, LLinkedListEntry, Next, <Application,LLinkedListEntry> > 8 Node: < Application, LLinkedList, remove(I)V > Context: Everywhere
+47 NORMAL remove:11 = getfield < Application, LLinkedListEntry, Next, <Application,LLinkedListEntry> > 10 Node: < Application, LLinkedList, remove(I)V > Context: Everywhere
+47 NORMAL remove:putfield 8.< Application, LLinkedListEntry, Next, <Application,LLinkedListEntry> > = 11 Node: < Application, LLinkedList, remove(I)V > Context: Everywhere

@@ -1,0 +1,77 @@
+94 NORMAL main:4 = invokestatic < Application, Lorg/sosy_lab/sv_benchmarks/Verifier, nondetInt()I > @0 exception:3 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+95 NORMAL main:conditional branch(le, to iindex=7) 4,5 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+95 NORMAL main:invokestatic < Application, Lorg/sosy_lab/sv_benchmarks/Verifier, assume(Z)V > 7 @13 exception:8 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+97 NORMAL main:9 = new <Primordial,[[I>@184 4  Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+99 NORMAL main:conditional branch(ge, to iindex=48) 18,4 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+100 NORMAL main:conditional branch(ge, to iindex=43) 16,4 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+101 NORMAL main:11 = invokestatic < Application, Lorg/sosy_lab/sv_benchmarks/Verifier, nondetInt()I > @39 exception:10 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+102 NORMAL main:conditional branch(lt, to iindex=30) 11,5 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+102 NORMAL main:invokestatic < Application, Lorg/sosy_lab/sv_benchmarks/Verifier, assume(Z)V > 12 @54 exception:13 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+103 NORMAL main:14 = arrayload 9[19] Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+103 NORMAL main:arraystore 14[16] = 11 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+100 NORMAL main:15 = binaryop(add) 16 , 6 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+99 NORMAL main:17 = binaryop(add) 19 , 6 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+107 NORMAL main:20 = new <Application,LMain$TspSolver>@77 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+107 NORMAL main:invokespecial < Application, LMain$TspSolver, <init>(I[[I)V > 20,4,9 @83 exception:21 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+108 NORMAL main:23 = invokevirtual < Application, LMain$TspSolver, solve()I > 20 @88 exception:22 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+109 NORMAL main:24 = getstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+109 NORMAL main:conditional branch(ne, to iindex=67) 24,5 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+109 NORMAL main:conditional branch(ge, to iindex=67) 23,5 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+59 NORMAL solve:putfield 1.< Application, LMain$TspSolver, best, <Primordial,I> > = 3 Node: < Application, LMain$TspSolver, solve()I > Context: Everywhere
+61 NORMAL solve:5 = getfield < Application, LMain$TspSolver, N, <Primordial,I> > 1 Node: < Application, LMain$TspSolver, solve()I > Context: Everywhere
+61 NORMAL solve:conditional branch(ge, to iindex=19) 9,5 Node: < Application, LMain$TspSolver, solve()I > Context: Everywhere
+61 NORMAL solve:6 = getfield < Application, LMain$TspSolver, visited, <Primordial,[Z> > 1 Node: < Application, LMain$TspSolver, solve()I > Context: Everywhere
+61 NORMAL solve:arraystore 6[9] = 4 Node: < Application, LMain$TspSolver, solve()I > Context: Everywhere
+61 NORMAL solve:8 = binaryop(add) 9 , 7 Node: < Application, LMain$TspSolver, solve()I > Context: Everywhere
+63 NORMAL solve:10 = getfield < Application, LMain$TspSolver, visited, <Primordial,[Z> > 1 Node: < Application, LMain$TspSolver, solve()I > Context: Everywhere
+63 NORMAL solve:arraystore 10[4] = 7 Node: < Application, LMain$TspSolver, solve()I > Context: Everywhere
+64 NORMAL solve:11 = getfield < Application, LMain$TspSolver, N, <Primordial,I> > 1 Node: < Application, LMain$TspSolver, solve()I > Context: Everywhere
+64 NORMAL solve:12 = binaryop(sub) 11 , 7 Node: < Application, LMain$TspSolver, solve()I > Context: Everywhere
+64 NORMAL solve:invokespecial < Application, LMain$TspSolver, search(III)V > 1,4,4,12 @45 exception:13 Node: < Application, LMain$TspSolver, solve()I > Context: Everywhere
+66 NORMAL solve:14 = getfield < Application, LMain$TspSolver, best, <Primordial,I> > 1 Node: < Application, LMain$TspSolver, solve()I > Context: Everywhere
+66 NORMAL solve:return 14 Node: < Application, LMain$TspSolver, solve()I > Context: Everywhere
+74 NORMAL search:6 = getfield < Application, LMain$TspSolver, nCalls, <Primordial,I> > 1 Node: < Application, LMain$TspSolver, search(III)V > Context: Everywhere
+74 NORMAL search:8 = binaryop(add) 6 , 7 Node: < Application, LMain$TspSolver, search(III)V > Context: Everywhere
+74 NORMAL search:putfield 1.< Application, LMain$TspSolver, nCalls, <Primordial,I> > = 8 Node: < Application, LMain$TspSolver, search(III)V > Context: Everywhere
+76 NORMAL search:conditional branch(ne, to iindex=31) 4,9 Node: < Application, LMain$TspSolver, search(III)V > Context: Everywhere
+77 NORMAL search:26 = getfield < Application, LMain$TspSolver, D, <Primordial,[[I> > 1 Node: < Application, LMain$TspSolver, search(III)V > Context: Everywhere
+77 NORMAL search:27 = arrayload 26[2] Node: < Application, LMain$TspSolver, search(III)V > Context: Everywhere
+77 NORMAL search:28 = arrayload 27[9] Node: < Application, LMain$TspSolver, search(III)V > Context: Everywhere
+77 NORMAL search:29 = binaryop(add) 3 , 28 Node: < Application, LMain$TspSolver, search(III)V > Context: Everywhere
+77 NORMAL search:30 = getfield < Application, LMain$TspSolver, best, <Primordial,I> > 1 Node: < Application, LMain$TspSolver, search(III)V > Context: Everywhere
+77 NORMAL search:conditional branch(ge, to iindex=30) 29,30 Node: < Application, LMain$TspSolver, search(III)V > Context: Everywhere
+77 NORMAL search:31 = getfield < Application, LMain$TspSolver, D, <Primordial,[[I> > 1 Node: < Application, LMain$TspSolver, search(III)V > Context: Everywhere
+77 NORMAL search:32 = arrayload 31[2] Node: < Application, LMain$TspSolver, search(III)V > Context: Everywhere
+77 NORMAL search:33 = arrayload 32[9] Node: < Application, LMain$TspSolver, search(III)V > Context: Everywhere
+77 NORMAL search:34 = binaryop(add) 3 , 33 Node: < Application, LMain$TspSolver, search(III)V > Context: Everywhere
+77 NORMAL search:putfield 1.< Application, LMain$TspSolver, best, <Primordial,I> > = 34 Node: < Application, LMain$TspSolver, search(III)V > Context: Everywhere
+81 NORMAL search:11 = invokespecial < Application, LMain$TspSolver, bound(III)I > 1,2,3,4 @50 exception:10 Node: < Application, LMain$TspSolver, search(III)V > Context: Everywhere
+81 NORMAL search:12 = getfield < Application, LMain$TspSolver, best, <Primordial,I> > 1 Node: < Application, LMain$TspSolver, search(III)V > Context: Everywhere
+81 NORMAL search:conditional branch(lt, to iindex=40) 11,12 Node: < Application, LMain$TspSolver, search(III)V > Context: Everywhere
+83 NORMAL search:13 = getfield < Application, LMain$TspSolver, N, <Primordial,I> > 1 Node: < Application, LMain$TspSolver, search(III)V > Context: Everywhere
+83 NORMAL search:conditional branch(ge, to iindex=82) 25,13 Node: < Application, LMain$TspSolver, search(III)V > Context: Everywhere
+84 NORMAL search:14 = getfield < Application, LMain$TspSolver, visited, <Primordial,[Z> > 1 Node: < Application, LMain$TspSolver, search(III)V > Context: Everywhere
+84 NORMAL search:15 = arrayload 14[25] Node: < Application, LMain$TspSolver, search(III)V > Context: Everywhere
+84 NORMAL search:conditional branch(eq, to iindex=53) 15,9 Node: < Application, LMain$TspSolver, search(III)V > Context: Everywhere
+86 NORMAL search:16 = getfield < Application, LMain$TspSolver, visited, <Primordial,[Z> > 1 Node: < Application, LMain$TspSolver, search(III)V > Context: Everywhere
+86 NORMAL search:arraystore 16[25] = 7 Node: < Application, LMain$TspSolver, search(III)V > Context: Everywhere
+87 NORMAL search:17 = getfield < Application, LMain$TspSolver, D, <Primordial,[[I> > 1 Node: < Application, LMain$TspSolver, search(III)V > Context: Everywhere
+87 NORMAL search:18 = arrayload 17[2] Node: < Application, LMain$TspSolver, search(III)V > Context: Everywhere
+87 NORMAL search:19 = arrayload 18[25] Node: < Application, LMain$TspSolver, search(III)V > Context: Everywhere
+87 NORMAL search:20 = binaryop(add) 3 , 19 Node: < Application, LMain$TspSolver, search(III)V > Context: Everywhere
+87 NORMAL search:21 = binaryop(sub) 4 , 7 Node: < Application, LMain$TspSolver, search(III)V > Context: Everywhere
+87 NORMAL search:invokespecial < Application, LMain$TspSolver, search(III)V > 1,25,20,21 @111 exception:22 Node: < Application, LMain$TspSolver, search(III)V > Context: Everywhere
+88 NORMAL search:23 = getfield < Application, LMain$TspSolver, visited, <Primordial,[Z> > 1 Node: < Application, LMain$TspSolver, search(III)V > Context: Everywhere
+88 NORMAL search:arraystore 23[25] = 9 Node: < Application, LMain$TspSolver, search(III)V > Context: Everywhere
+83 NORMAL search:24 = binaryop(add) 25 , 7 Node: < Application, LMain$TspSolver, search(III)V > Context: Everywhere
+41 NORMAL <clinit>:2 = load_metadata: <Application,LMain>, <Primordial,Ljava/lang/Class> Node: < Application, LMain, <clinit>()V > Context: Everywhere
+41 NORMAL <clinit>:4 = invokevirtual < Application, Ljava/lang/Class, desiredAssertionStatus()Z > 2 @2 exception:3 Node: < Application, LMain, <clinit>()V > Context: Everywhere
+41 NORMAL <clinit>:conditional branch(ne, to iindex=6) 4,5 Node: < Application, LMain, <clinit>()V > Context: Everywhere
+41 NORMAL <clinit>:putstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > = 7 Node: < Application, LMain, <clinit>()V > Context: Everywhere
+51 NORMAL <init>:invokespecial < Application, Ljava/lang/Object, <init>()V > 1 @1 exception:5 Node: < Application, LMain$TspSolver, <init>(I[[I)V > Context: Everywhere
+52 NORMAL <init>:putfield 1.< Application, LMain$TspSolver, N, <Primordial,I> > = 2 Node: < Application, LMain$TspSolver, <init>(I[[I)V > Context: Everywhere
+53 NORMAL <init>:putfield 1.< Application, LMain$TspSolver, D, <Primordial,[[I> > = 3 Node: < Application, LMain$TspSolver, <init>(I[[I)V > Context: Everywhere
+54 NORMAL <init>:6 = new <Primordial,[Z>@162  Node: < Application, LMain$TspSolver, <init>(I[[I)V > Context: Everywhere
+54 NORMAL <init>:putfield 1.< Application, LMain$TspSolver, visited, <Primordial,[Z> > = 6 Node: < Application, LMain$TspSolver, <init>(I[[I)V > Context: Everywhere
+70 NORMAL bound:return 3 Node: < Application, LMain$TspSolver, bound(III)I > Context: Everywhere
+55 NORMAL <init>:putfield 1.< Application, LMain$TspSolver, nCalls, <Primordial,I> > = 7 Node: < Application, LMain$TspSolver, <init>(I[[I)V > Context: Everywhere

@@ -1,0 +1,29 @@
+41 NORMAL main:4 = invokestatic < Application, Lorg/sosy_lab/sv_benchmarks/Verifier, nondetInt()I > @0 exception:3 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+43 NORMAL main:conditional branch(lt, to iindex=8) 4,5 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+43 NORMAL main:conditional branch(le, to iindex=9) 4,6 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+46 NORMAL main:putstatic < Application, LMain, counter, <Primordial,I> > = 7 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+47 NORMAL main:invokestatic < Application, LMain, applyHanoi(IIII)V > 4,5,8,9 @24 exception:10 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+48 NORMAL main:12 = invokestatic < Application, LMain, hanoi(I)I > 4 @28 exception:11 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+50 NORMAL main:13 = getstatic < Application, LMain, counter, <Primordial,I> > Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+50 NORMAL main:conditional branch(ne, to iindex=23) 12,13 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+53 NORMAL main:14 = getstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+53 NORMAL main:conditional branch(ne, to iindex=30) 14,7 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+11 NORMAL <clinit>:2 = load_metadata: <Application,LMain>, <Primordial,Ljava/lang/Class> Node: < Application, LMain, <clinit>()V > Context: Everywhere
+11 NORMAL <clinit>:4 = invokevirtual < Application, Ljava/lang/Class, desiredAssertionStatus()Z > 2 @2 exception:3 Node: < Application, LMain, <clinit>()V > Context: Everywhere
+11 NORMAL <clinit>:conditional branch(ne, to iindex=6) 4,5 Node: < Application, LMain, <clinit>()V > Context: Everywhere
+11 NORMAL <clinit>:putstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > = 7 Node: < Application, LMain, <clinit>()V > Context: Everywhere
+20 NORMAL hanoi:conditional branch(ne, to iindex=5) 1,3 Node: < Application, LMain, hanoi(I)I > Context: Everywhere
+21 NORMAL hanoi:return 3 Node: < Application, LMain, hanoi(I)I > Context: Everywhere
+23 NORMAL hanoi:5 = binaryop(sub) 1 , 3 Node: < Application, LMain, hanoi(I)I > Context: Everywhere
+23 NORMAL hanoi:7 = invokestatic < Application, LMain, hanoi(I)I > 5 @11 exception:6 Node: < Application, LMain, hanoi(I)I > Context: Everywhere
+23 NORMAL hanoi:8 = binaryop(mul) 4 , 7 Node: < Application, LMain, hanoi(I)I > Context: Everywhere
+23 NORMAL hanoi:9 = binaryop(add) 8 , 3 Node: < Application, LMain, hanoi(I)I > Context: Everywhere
+23 NORMAL hanoi:return 9 Node: < Application, LMain, hanoi(I)I > Context: Everywhere
+31 NORMAL applyHanoi:conditional branch(ne, to iindex=4) 1,6 Node: < Application, LMain, applyHanoi(IIII)V > Context: Everywhere
+35 NORMAL applyHanoi:7 = getstatic < Application, LMain, counter, <Primordial,I> > Node: < Application, LMain, applyHanoi(IIII)V > Context: Everywhere
+35 NORMAL applyHanoi:9 = binaryop(add) 7 , 8 Node: < Application, LMain, applyHanoi(IIII)V > Context: Everywhere
+35 NORMAL applyHanoi:putstatic < Application, LMain, counter, <Primordial,I> > = 9 Node: < Application, LMain, applyHanoi(IIII)V > Context: Everywhere
+36 NORMAL applyHanoi:10 = binaryop(sub) 1 , 8 Node: < Application, LMain, applyHanoi(IIII)V > Context: Everywhere
+36 NORMAL applyHanoi:invokestatic < Application, LMain, applyHanoi(IIII)V > 10,2,4,3 @19 exception:11 Node: < Application, LMain, applyHanoi(IIII)V > Context: Everywhere
+37 NORMAL applyHanoi:12 = binaryop(sub) 1 , 8 Node: < Application, LMain, applyHanoi(IIII)V > Context: Everywhere
+37 NORMAL applyHanoi:invokestatic < Application, LMain, applyHanoi(IIII)V > 12,4,3,2 @28 exception:13 Node: < Application, LMain, applyHanoi(IIII)V > Context: Everywhere

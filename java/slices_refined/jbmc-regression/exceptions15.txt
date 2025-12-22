@@ -1,0 +1,11 @@
+24 NORMAL main:3 = new <Application,LInetAddress>@0 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+24 NORMAL main:invokespecial < Application, LInetAddress, <init>()V > 3 @4 exception:4 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+25 NORMAL main:6 = invokestatic < Application, LMain, reverse(LInetAddress;)LInetAddress; > 3 @9 exception:5 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+25 NORMAL main:8 = invokestatic < Application, LMain, lookupPtrRecord(LInetAddress;)Ljava/lang/String; > 6 @12 exception:7 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+27 NORMAL main:10 = getstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+27 NORMAL main:conditional branch(ne, to iindex=17) 10,11 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+19 NORMAL reverse:return 1 Node: < Application, LMain, reverse(LInetAddress;)LInetAddress; > Context: Everywhere
+13 NORMAL <clinit>:2 = load_metadata: <Application,LMain>, <Primordial,Ljava/lang/Class> Node: < Application, LMain, <clinit>()V > Context: Everywhere
+13 NORMAL <clinit>:4 = invokevirtual < Application, Ljava/lang/Class, desiredAssertionStatus()Z > 2 @2 exception:3 Node: < Application, LMain, <clinit>()V > Context: Everywhere
+13 NORMAL <clinit>:conditional branch(ne, to iindex=6) 4,5 Node: < Application, LMain, <clinit>()V > Context: Everywhere
+13 NORMAL <clinit>:putstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > = 7 Node: < Application, LMain, <clinit>()V > Context: Everywhere

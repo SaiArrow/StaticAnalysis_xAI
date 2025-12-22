@@ -1,0 +1,20 @@
+25 NORMAL main:3 = getstatic < Application, Lenum1, VAL5, <Application,Lenum1> > Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+26 NORMAL main:4 = getstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+26 NORMAL main:conditional branch(ne, to iindex=12) 4,5 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+26 NORMAL main:6 = getstatic < Application, Lenum1, VAL5, <Application,Lenum1> > Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+26 NORMAL main:conditional branch(eq, to iindex=12) 3,6 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+23 NORMAL <clinit>:2 = load_metadata: <Application,LMain>, <Primordial,Ljava/lang/Class> Node: < Application, LMain, <clinit>()V > Context: Everywhere
+23 NORMAL <clinit>:4 = invokevirtual < Application, Ljava/lang/Class, desiredAssertionStatus()Z > 2 @2 exception:3 Node: < Application, LMain, <clinit>()V > Context: Everywhere
+23 NORMAL <clinit>:conditional branch(ne, to iindex=6) 4,5 Node: < Application, LMain, <clinit>()V > Context: Everywhere
+23 NORMAL <clinit>:putstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > = 7 Node: < Application, LMain, <clinit>()V > Context: Everywhere
+10 NORMAL <clinit>:2 = new <Application,Lenum1>@0 Node: < Application, Lenum1, <clinit>()V > Context: Everywhere
+10 NORMAL <clinit>:invokespecial < Application, Lenum1, <init>(Ljava/lang/String;I)V > 2,3,4 @7 exception:5 Node: < Application, Lenum1, <clinit>()V > Context: Everywhere
+11 NORMAL <clinit>:6 = new <Application,Lenum1>@13 Node: < Application, Lenum1, <clinit>()V > Context: Everywhere
+11 NORMAL <clinit>:invokespecial < Application, Lenum1, <init>(Ljava/lang/String;I)V > 6,7,8 @20 exception:9 Node: < Application, Lenum1, <clinit>()V > Context: Everywhere
+12 NORMAL <clinit>:10 = new <Application,Lenum1>@26 Node: < Application, Lenum1, <clinit>()V > Context: Everywhere
+12 NORMAL <clinit>:invokespecial < Application, Lenum1, <init>(Ljava/lang/String;I)V > 10,11,12 @33 exception:13 Node: < Application, Lenum1, <clinit>()V > Context: Everywhere
+13 NORMAL <clinit>:14 = new <Application,Lenum1>@39 Node: < Application, Lenum1, <clinit>()V > Context: Everywhere
+13 NORMAL <clinit>:invokespecial < Application, Lenum1, <init>(Ljava/lang/String;I)V > 14,15,16 @46 exception:17 Node: < Application, Lenum1, <clinit>()V > Context: Everywhere
+14 NORMAL <clinit>:18 = new <Application,Lenum1>@52 Node: < Application, Lenum1, <clinit>()V > Context: Everywhere
+14 NORMAL <clinit>:invokespecial < Application, Lenum1, <init>(Ljava/lang/String;I)V > 18,19,20 @59 exception:21 Node: < Application, Lenum1, <clinit>()V > Context: Everywhere
+14 NORMAL <clinit>:putstatic < Application, Lenum1, VAL5, <Application,Lenum1> > = 18 Node: < Application, Lenum1, <clinit>()V > Context: Everywhere

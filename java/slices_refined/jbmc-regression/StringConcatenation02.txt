@@ -1,0 +1,26 @@
+13 NORMAL main:4 = new <Application,[Ljava/lang/String>@13  Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+14 NORMAL main:7 = invokestatic < Application, Lorg/sosy_lab/sv_benchmarks/Verifier, nondetString()Ljava/lang/String; > @7 exception:6 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+14 NORMAL main:arraystore 4[5] = 7 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+15 NORMAL main:10 = invokestatic < Application, Lorg/sosy_lab/sv_benchmarks/Verifier, nondetString()Ljava/lang/String; > @13 exception:9 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+15 NORMAL main:arraystore 4[8] = 10 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+17 NORMAL main:11 = arrayload 4[5] Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+18 NORMAL main:12 = arrayload 4[8] Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+19 NORMAL main:13 = getstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+19 NORMAL main:conditional branch(ne, to iindex=40) 13,5 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+19 NORMAL main:14 = new <Application,Ljava/lang/StringBuilder>@32 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+19 NORMAL main:invokespecial < Application, Ljava/lang/StringBuilder, <init>()V > 14 @36 exception:15 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+19 NORMAL main:16 = arrayload 4[5] Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+19 NORMAL main:18 = invokevirtual < Application, Ljava/lang/StringBuilder, append(Ljava/lang/String;)Ljava/lang/StringBuilder; > 14,16 @42 exception:17 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+19 NORMAL main:21 = invokevirtual < Application, Ljava/lang/StringBuilder, append(Ljava/lang/String;)Ljava/lang/StringBuilder; > 18,19 @47 exception:20 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+19 NORMAL main:23 = invokevirtual < Application, Ljava/lang/StringBuilder, toString()Ljava/lang/String; > 21 @50 exception:22 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+19 NORMAL main:25 = invokevirtual < Application, Ljava/lang/String, equals(Ljava/lang/Object;)Z > 11,23 @53 exception:24 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+19 NORMAL main:conditional branch(ne, to iindex=40) 25,5 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+20 NORMAL main:26 = getstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+20 NORMAL main:conditional branch(ne, to iindex=54) 26,5 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+20 NORMAL main:27 = arrayload 4[8] Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+20 NORMAL main:29 = invokevirtual < Application, Ljava/lang/String, equals(Ljava/lang/Object;)Z > 12,27 @77 exception:28 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+20 NORMAL main:conditional branch(ne, to iindex=54) 29,5 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+11 NORMAL <clinit>:2 = load_metadata: <Application,LMain>, <Primordial,Ljava/lang/Class> Node: < Application, LMain, <clinit>()V > Context: Everywhere
+11 NORMAL <clinit>:4 = invokevirtual < Application, Ljava/lang/Class, desiredAssertionStatus()Z > 2 @2 exception:3 Node: < Application, LMain, <clinit>()V > Context: Everywhere
+11 NORMAL <clinit>:conditional branch(ne, to iindex=6) 4,5 Node: < Application, LMain, <clinit>()V > Context: Everywhere
+11 NORMAL <clinit>:putstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > = 7 Node: < Application, LMain, <clinit>()V > Context: Everywhere

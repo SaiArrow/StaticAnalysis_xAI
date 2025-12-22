@@ -1,0 +1,122 @@
+276 NORMAL main:3 = new <Application,LMain>@0 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+276 NORMAL main:invokespecial < Application, LMain, <init>()V > 3 @4 exception:4 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+277 NORMAL main:5 = new <Application,LMain$CharArray>@8 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+277 NORMAL main:invokespecial < Application, LMain$CharArray, <init>(I)V > 5,6 @14 exception:7 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+279 NORMAL main:invokevirtual < Application, LMain$CharArray, set(IC)V > 5,8,9 @22 exception:10 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+280 NORMAL main:invokevirtual < Application, LMain$CharArray, set(IC)V > 5,11,12 @29 exception:13 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+281 NORMAL main:invokevirtual < Application, LMain$CharArray, set(IC)V > 5,14,15 @36 exception:16 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+282 NORMAL main:invokevirtual < Application, LMain$CharArray, set(IC)V > 5,17,18 @43 exception:19 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+283 NORMAL main:invokevirtual < Application, LMain$CharArray, set(IC)V > 5,20,21 @50 exception:22 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+284 NORMAL main:invokevirtual < Application, LMain$CharArray, set(IC)V > 5,23,24 @57 exception:25 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+285 NORMAL main:invokevirtual < Application, LMain$CharArray, set(IC)V > 5,26,27 @65 exception:28 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+286 NORMAL main:invokevirtual < Application, LMain$CharArray, set(IC)V > 5,29,30 @73 exception:31 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+288 NORMAL main:33 = invokestatic < Application, Lorg/sosy_lab/sv_benchmarks/Verifier, nondetInt()I > @76 exception:32 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+289 NORMAL main:invokevirtual < Application, LMain, put(LMain$CharArray;I)V > 3,5,33 @83 exception:34 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+290 NORMAL main:35 = getstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+290 NORMAL main:conditional branch(ne, to iindex=59) 35,8 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+290 NORMAL main:37 = invokevirtual < Application, LMain, get(LMain$CharArray;)I > 3,5 @94 exception:36 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+290 NORMAL main:conditional branch(ne, to iindex=59) 37,33 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+74 NORMAL <clinit>:2 = load_metadata: <Application,LMain>, <Primordial,Ljava/lang/Class> Node: < Application, LMain, <clinit>()V > Context: Everywhere
+74 NORMAL <clinit>:4 = invokevirtual < Application, Ljava/lang/Class, desiredAssertionStatus()Z > 2 @2 exception:3 Node: < Application, LMain, <clinit>()V > Context: Everywhere
+74 NORMAL <clinit>:conditional branch(ne, to iindex=6) 4,5 Node: < Application, LMain, <clinit>()V > Context: Everywhere
+74 NORMAL <clinit>:putstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > = 7 Node: < Application, LMain, <clinit>()V > Context: Everywhere
+134 NORMAL get:4 = getfield < Application, LMain, root, <Application,LMain$Node> > 1 Node: < Application, LMain, get(LMain$CharArray;)I > Context: Everywhere
+134 NORMAL get:7 = invokespecial < Application, LMain, get2(LMain$Node;LMain$CharArray;I)LMain$Node; > 1,4,2,5 @7 exception:6 Node: < Application, LMain, get(LMain$CharArray;)I > Context: Everywhere
+135 NORMAL get:conditional branch(ne, to iindex=12) 7,8 Node: < Application, LMain, get(LMain$CharArray;)I > Context: Everywhere
+135 NORMAL get:return 11 Node: < Application, LMain, get(LMain$CharArray;)I > Context: Everywhere
+136 NORMAL get:10 = invokestatic < Application, LMain$Node, access$000(LMain$Node;)I > 7 @18 exception:9 Node: < Application, LMain, get(LMain$CharArray;)I > Context: Everywhere
+136 NORMAL get:return 10 Node: < Application, LMain, get(LMain$CharArray;)I > Context: Everywhere
+167 NORMAL put:conditional branch(ne, to iindex=7) 3,5 Node: < Application, LMain, put(LMain$CharArray;I)V > Context: Everywhere
+167 NORMAL put:invokevirtual < Application, LMain, delete(LMain$CharArray;)V > 1,2 @7 exception:10 Node: < Application, LMain, put(LMain$CharArray;I)V > Context: Everywhere
+168 NORMAL put:6 = getfield < Application, LMain, root, <Application,LMain$Node> > 1 Node: < Application, LMain, put(LMain$CharArray;I)V > Context: Everywhere
+168 NORMAL put:9 = invokespecial < Application, LMain, put2(LMain$Node;LMain$CharArray;II)LMain$Node; > 1,6,2,3,7 @22 exception:8 Node: < Application, LMain, put(LMain$CharArray;I)V > Context: Everywhere
+168 NORMAL put:putfield 1.< Application, LMain, root, <Application,LMain$Node> > = 9 Node: < Application, LMain, put(LMain$CharArray;I)V > Context: Everywhere
+256 NORMAL delete:4 = getfield < Application, LMain, root, <Application,LMain$Node> > 1 Node: < Application, LMain, delete(LMain$CharArray;)V > Context: Everywhere
+256 NORMAL delete:7 = invokespecial < Application, LMain, delete(LMain$Node;LMain$CharArray;I)LMain$Node; > 1,4,2,5 @8 exception:6 Node: < Application, LMain, delete(LMain$CharArray;)V > Context: Everywhere
+256 NORMAL delete:putfield 1.< Application, LMain, root, <Application,LMain$Node> > = 7 Node: < Application, LMain, delete(LMain$CharArray;)V > Context: Everywhere
+151 NORMAL get2:conditional branch(ne, to iindex=5) 2,6 Node: < Application, LMain, get2(LMain$Node;LMain$CharArray;I)LMain$Node; > Context: Everywhere
+151 NORMAL get2:return 6 Node: < Application, LMain, get2(LMain$Node;LMain$CharArray;I)LMain$Node; > Context: Everywhere
+152 NORMAL get2:8 = invokevirtual < Application, LMain$CharArray, length()I > 3 @8 exception:7 Node: < Application, LMain, get2(LMain$Node;LMain$CharArray;I)LMain$Node; > Context: Everywhere
+152 NORMAL get2:conditional branch(ne, to iindex=11) 4,8 Node: < Application, LMain, get2(LMain$Node;LMain$CharArray;I)LMain$Node; > Context: Everywhere
+152 NORMAL get2:return 2 Node: < Application, LMain, get2(LMain$Node;LMain$CharArray;I)LMain$Node; > Context: Everywhere
+153 NORMAL get2:10 = invokevirtual < Application, LMain$CharArray, get(I)C > 3,4 @18 exception:9 Node: < Application, LMain, get2(LMain$Node;LMain$CharArray;I)LMain$Node; > Context: Everywhere
+154 NORMAL get2:12 = invokestatic < Application, LMain$Node, access$100(LMain$Node;)[LMain$Node; > 2 @25 exception:11 Node: < Application, LMain, get2(LMain$Node;LMain$CharArray;I)LMain$Node; > Context: Everywhere
+154 NORMAL get2:13 = arrayload 12[10] Node: < Application, LMain, get2(LMain$Node;LMain$CharArray;I)LMain$Node; > Context: Everywhere
+154 NORMAL get2:15 = binaryop(add) 4 , 14 Node: < Application, LMain, get2(LMain$Node;LMain$CharArray;I)LMain$Node; > Context: Everywhere
+154 NORMAL get2:17 = invokespecial < Application, LMain, get2(LMain$Node;LMain$CharArray;I)LMain$Node; > 1,13,3,15 @35 exception:16 Node: < Application, LMain, get2(LMain$Node;LMain$CharArray;I)LMain$Node; > Context: Everywhere
+154 NORMAL get2:return 17 Node: < Application, LMain, get2(LMain$Node;LMain$CharArray;I)LMain$Node; > Context: Everywhere
+101 NORMAL length:3 = getfield < Application, LMain$CharArray, length, <Primordial,I> > 1 Node: < Application, LMain$CharArray, length()I > Context: Everywhere
+101 NORMAL length:return 3 Node: < Application, LMain$CharArray, length()I > Context: Everywhere
+81 NORMAL access$100:3 = getfield < Application, LMain$Node, next, <Application,[LMain$Node> > 1 Node: < Application, LMain$Node, access$100(LMain$Node;)[LMain$Node; > Context: Everywhere
+81 NORMAL access$100:return 3 Node: < Application, LMain$Node, access$100(LMain$Node;)[LMain$Node; > Context: Everywhere
+95 NORMAL <init>:invokespecial < Application, Ljava/lang/Object, <init>()V > 1 @1 exception:4 Node: < Application, LMain$CharArray, <init>(I)V > Context: Everywhere
+87 NORMAL <init>:putfield 1.< Application, LMain$CharArray, length, <Primordial,I> > = 5 Node: < Application, LMain$CharArray, <init>(I)V > Context: Everywhere
+96 NORMAL <init>:putfield 1.< Application, LMain$CharArray, length, <Primordial,I> > = 2 Node: < Application, LMain$CharArray, <init>(I)V > Context: Everywhere
+172 NORMAL put2:conditional branch(ne, to iindex=8) 2,7 Node: < Application, LMain, put2(LMain$Node;LMain$CharArray;II)LMain$Node; > Context: Everywhere
+172 NORMAL put2:8 = new <Application,LMain$Node>@4 Node: < Application, LMain, put2(LMain$Node;LMain$CharArray;II)LMain$Node; > Context: Everywhere
+172 NORMAL put2:invokespecial < Application, LMain$Node, <init>(LMain$1;)V > 8,7 @9 exception:9 Node: < Application, LMain, put2(LMain$Node;LMain$CharArray;II)LMain$Node; > Context: Everywhere
+173 NORMAL put2:12 = invokevirtual < Application, LMain$CharArray, length()I > 3 @16 exception:11 Node: < Application, LMain, put2(LMain$Node;LMain$CharArray;II)LMain$Node; > Context: Everywhere
+173 NORMAL put2:conditional branch(ne, to iindex=28) 5,12 Node: < Application, LMain, put2(LMain$Node;LMain$CharArray;II)LMain$Node; > Context: Everywhere
+179 NORMAL put2:14 = invokevirtual < Application, LMain$CharArray, get(I)C > 3,5 @51 exception:13 Node: < Application, LMain, put2(LMain$Node;LMain$CharArray;II)LMain$Node; > Context: Everywhere
+180 NORMAL put2:16 = invokestatic < Application, LMain$Node, access$100(LMain$Node;)[LMain$Node; > 10 @57 exception:15 Node: < Application, LMain, put2(LMain$Node;LMain$CharArray;II)LMain$Node; > Context: Everywhere
+180 NORMAL put2:18 = invokestatic < Application, LMain$Node, access$100(LMain$Node;)[LMain$Node; > 10 @64 exception:17 Node: < Application, LMain, put2(LMain$Node;LMain$CharArray;II)LMain$Node; > Context: Everywhere
+180 NORMAL put2:19 = arrayload 18[14] Node: < Application, LMain, put2(LMain$Node;LMain$CharArray;II)LMain$Node; > Context: Everywhere
+180 NORMAL put2:21 = binaryop(add) 5 , 20 Node: < Application, LMain, put2(LMain$Node;LMain$CharArray;II)LMain$Node; > Context: Everywhere
+180 NORMAL put2:23 = invokespecial < Application, LMain, put2(LMain$Node;LMain$CharArray;II)LMain$Node; > 1,19,3,4,21 @76 exception:22 Node: < Application, LMain, put2(LMain$Node;LMain$CharArray;II)LMain$Node; > Context: Everywhere
+81 NORMAL <init>:invokespecial < Application, LMain$Node, <init>()V > 1 @1 exception:4 Node: < Application, LMain$Node, <init>(LMain$1;)V > Context: Everywhere
+81 NORMAL <init>:invokespecial < Application, Ljava/lang/Object, <init>()V > 1 @1 exception:3 Node: < Application, LMain$Node, <init>()V > Context: Everywhere
+82 NORMAL <init>:putfield 1.< Application, LMain$Node, val, <Primordial,I> > = 4 Node: < Application, LMain$Node, <init>()V > Context: Everywhere
+83 NORMAL <init>:6 = new <Application,[LMain$Node>@135  Node: < Application, LMain$Node, <init>()V > Context: Everywhere
+83 NORMAL <init>:putfield 1.< Application, LMain$Node, next, <Application,[LMain$Node> > = 6 Node: < Application, LMain$Node, <init>()V > Context: Everywhere
+110 NORMAL get:4 = getfield < Application, LMain$CharArray, length, <Primordial,I> > 1 Node: < Application, LMain$CharArray, get(I)C > Context: Everywhere
+110 NORMAL get:conditional branch(ge, to iindex=9) 2,4 Node: < Application, LMain$CharArray, get(I)C > Context: Everywhere
+110 NORMAL get:8 = getfield < Application, LMain$CharArray, array, <Primordial,[C> > 1 Node: < Application, LMain$CharArray, get(I)C > Context: Everywhere
+110 NORMAL get:9 = arrayload 8[2] Node: < Application, LMain$CharArray, get(I)C > Context: Everywhere
+110 NORMAL get:return 9 Node: < Application, LMain$CharArray, get(I)C > Context: Everywhere
+180 NORMAL put2:arraystore 16[14] = 23 Node: < Application, LMain, put2(LMain$Node;LMain$CharArray;II)LMain$Node; > Context: Everywhere
+174 NORMAL put2:25 = invokestatic < Application, LMain$Node, access$000(LMain$Node;)I > 10 @23 exception:24 Node: < Application, LMain, put2(LMain$Node;LMain$CharArray;II)LMain$Node; > Context: Everywhere
+174 NORMAL put2:conditional branch(ne, to iindex=22) 25,26 Node: < Application, LMain, put2(LMain$Node;LMain$CharArray;II)LMain$Node; > Context: Everywhere
+174 NORMAL put2:27 = getfield < Application, LMain, N, <Primordial,I> > 1 Node: < Application, LMain, put2(LMain$Node;LMain$CharArray;II)LMain$Node; > Context: Everywhere
+174 NORMAL put2:28 = binaryop(add) 27 , 20 Node: < Application, LMain, put2(LMain$Node;LMain$CharArray;II)LMain$Node; > Context: Everywhere
+174 NORMAL put2:putfield 1.< Application, LMain, N, <Primordial,I> > = 28 Node: < Application, LMain, put2(LMain$Node;LMain$CharArray;II)LMain$Node; > Context: Everywhere
+175 NORMAL put2:30 = invokestatic < Application, LMain$Node, access$002(LMain$Node;I)I > 10,4 @42 exception:29 Node: < Application, LMain, put2(LMain$Node;LMain$CharArray;II)LMain$Node; > Context: Everywhere
+176 NORMAL put2:return 10 Node: < Application, LMain, put2(LMain$Node;LMain$CharArray;II)LMain$Node; > Context: Everywhere
+181 NORMAL put2:return 10 Node: < Application, LMain, put2(LMain$Node;LMain$CharArray;II)LMain$Node; > Context: Everywhere
+105 NORMAL set:5 = getfield < Application, LMain$CharArray, length, <Primordial,I> > 1 Node: < Application, LMain$CharArray, set(IC)V > Context: Everywhere
+105 NORMAL set:conditional branch(ge, to iindex=10) 2,5 Node: < Application, LMain$CharArray, set(IC)V > Context: Everywhere
+105 NORMAL set:9 = getfield < Application, LMain$CharArray, array, <Primordial,[C> > 1 Node: < Application, LMain$CharArray, set(IC)V > Context: Everywhere
+105 NORMAL set:arraystore 9[2] = 3 Node: < Application, LMain$CharArray, set(IC)V > Context: Everywhere
+260 NORMAL delete:conditional branch(ne, to iindex=5) 2,6 Node: < Application, LMain, delete(LMain$Node;LMain$CharArray;I)LMain$Node; > Context: Everywhere
+261 NORMAL delete:8 = invokevirtual < Application, LMain$CharArray, length()I > 3 @8 exception:7 Node: < Application, LMain, delete(LMain$Node;LMain$CharArray;I)LMain$Node; > Context: Everywhere
+261 NORMAL delete:conditional branch(ne, to iindex=24) 4,8 Node: < Application, LMain, delete(LMain$Node;LMain$CharArray;I)LMain$Node; > Context: Everywhere
+265 NORMAL delete:10 = invokevirtual < Application, LMain$CharArray, get(I)C > 3,4 @43 exception:9 Node: < Application, LMain, delete(LMain$Node;LMain$CharArray;I)LMain$Node; > Context: Everywhere
+266 NORMAL delete:12 = invokestatic < Application, LMain$Node, access$100(LMain$Node;)[LMain$Node; > 2 @49 exception:11 Node: < Application, LMain, delete(LMain$Node;LMain$CharArray;I)LMain$Node; > Context: Everywhere
+266 NORMAL delete:14 = invokestatic < Application, LMain$Node, access$100(LMain$Node;)[LMain$Node; > 2 @56 exception:13 Node: < Application, LMain, delete(LMain$Node;LMain$CharArray;I)LMain$Node; > Context: Everywhere
+266 NORMAL delete:15 = arrayload 14[10] Node: < Application, LMain, delete(LMain$Node;LMain$CharArray;I)LMain$Node; > Context: Everywhere
+266 NORMAL delete:17 = binaryop(add) 4 , 16 Node: < Application, LMain, delete(LMain$Node;LMain$CharArray;I)LMain$Node; > Context: Everywhere
+266 NORMAL delete:19 = invokespecial < Application, LMain, delete(LMain$Node;LMain$CharArray;I)LMain$Node; > 1,15,3,17 @66 exception:18 Node: < Application, LMain, delete(LMain$Node;LMain$CharArray;I)LMain$Node; > Context: Everywhere
+266 NORMAL delete:arraystore 12[10] = 19 Node: < Application, LMain, delete(LMain$Node;LMain$CharArray;I)LMain$Node; > Context: Everywhere
+260 NORMAL delete:return 6 Node: < Application, LMain, delete(LMain$Node;LMain$CharArray;I)LMain$Node; > Context: Everywhere
+262 NORMAL delete:21 = invokestatic < Application, LMain$Node, access$000(LMain$Node;)I > 2 @15 exception:20 Node: < Application, LMain, delete(LMain$Node;LMain$CharArray;I)LMain$Node; > Context: Everywhere
+262 NORMAL delete:conditional branch(eq, to iindex=19) 21,22 Node: < Application, LMain, delete(LMain$Node;LMain$CharArray;I)LMain$Node; > Context: Everywhere
+262 NORMAL delete:23 = getfield < Application, LMain, N, <Primordial,I> > 1 Node: < Application, LMain, delete(LMain$Node;LMain$CharArray;I)LMain$Node; > Context: Everywhere
+262 NORMAL delete:24 = binaryop(sub) 23 , 16 Node: < Application, LMain, delete(LMain$Node;LMain$CharArray;I)LMain$Node; > Context: Everywhere
+262 NORMAL delete:putfield 1.< Application, LMain, N, <Primordial,I> > = 24 Node: < Application, LMain, delete(LMain$Node;LMain$CharArray;I)LMain$Node; > Context: Everywhere
+263 NORMAL delete:26 = invokestatic < Application, LMain$Node, access$002(LMain$Node;I)I > 2,22 @34 exception:25 Node: < Application, LMain, delete(LMain$Node;LMain$CharArray;I)LMain$Node; > Context: Everywhere
+270 NORMAL delete:28 = invokestatic < Application, LMain$Node, access$000(LMain$Node;)I > 2 @71 exception:27 Node: < Application, LMain, delete(LMain$Node;LMain$CharArray;I)LMain$Node; > Context: Everywhere
+270 NORMAL delete:conditional branch(eq, to iindex=48) 28,22 Node: < Application, LMain, delete(LMain$Node;LMain$CharArray;I)LMain$Node; > Context: Everywhere
+270 NORMAL delete:return 2 Node: < Application, LMain, delete(LMain$Node;LMain$CharArray;I)LMain$Node; > Context: Everywhere
+271 NORMAL delete:conditional branch(ge, to iindex=66) 35,30 Node: < Application, LMain, delete(LMain$Node;LMain$CharArray;I)LMain$Node; > Context: Everywhere
+271 NORMAL delete:32 = invokestatic < Application, LMain$Node, access$100(LMain$Node;)[LMain$Node; > 2 @92 exception:31 Node: < Application, LMain, delete(LMain$Node;LMain$CharArray;I)LMain$Node; > Context: Everywhere
+271 NORMAL delete:33 = arrayload 32[35] Node: < Application, LMain, delete(LMain$Node;LMain$CharArray;I)LMain$Node; > Context: Everywhere
+271 NORMAL delete:conditional branch(eq, to iindex=61) 33,6 Node: < Application, LMain, delete(LMain$Node;LMain$CharArray;I)LMain$Node; > Context: Everywhere
+271 NORMAL delete:return 2 Node: < Application, LMain, delete(LMain$Node;LMain$CharArray;I)LMain$Node; > Context: Everywhere
+271 NORMAL delete:34 = binaryop(add) 35 , 16 Node: < Application, LMain, delete(LMain$Node;LMain$CharArray;I)LMain$Node; > Context: Everywhere
+272 NORMAL delete:return 6 Node: < Application, LMain, delete(LMain$Node;LMain$CharArray;I)LMain$Node; > Context: Everywhere
+123 NORMAL <init>:invokespecial < Application, Ljava/lang/Object, <init>()V > 1 @1 exception:3 Node: < Application, LMain, <init>()V > Context: Everywhere
+78 NORMAL <init>:putfield 1.< Application, LMain, N, <Primordial,I> > = 4 Node: < Application, LMain, <init>()V > Context: Everywhere
+81 NORMAL access$000:3 = getfield < Application, LMain$Node, val, <Primordial,I> > 1 Node: < Application, LMain$Node, access$000(LMain$Node;)I > Context: Everywhere
+81 NORMAL access$000:return 3 Node: < Application, LMain$Node, access$000(LMain$Node;)I > Context: Everywhere
+81 NORMAL access$002:putfield 1.< Application, LMain$Node, val, <Primordial,I> > = 2 Node: < Application, LMain$Node, access$002(LMain$Node;I)I > Context: Everywhere
+97 NORMAL <init>:6 = new <Primordial,[C>@162  Node: < Application, LMain$CharArray, <init>(I)V > Context: Everywhere
+97 NORMAL <init>:putfield 1.< Application, LMain$CharArray, array, <Primordial,[C> > = 6 Node: < Application, LMain$CharArray, <init>(I)V > Context: Everywhere

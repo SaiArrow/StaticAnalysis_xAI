@@ -1,0 +1,16 @@
+41 NORMAL test:5 = binaryop(add) 2 , 4 Node: < Application, LMain, test(F)V > Context: Everywhere
+41 NORMAL test:6 = conversion(J) 5 Node: < Application, LMain, test(F)V > Context: Everywhere
+42 NORMAL test:8 = compare 6,7 opcode=cmp Node: < Application, LMain, test(F)V > Context: Everywhere
+42 NORMAL test:conditional branch(le, to iindex=23) 8,9 Node: < Application, LMain, test(F)V > Context: Everywhere
+43 NORMAL test:13 = getstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > Node: < Application, LMain, test(F)V > Context: Everywhere
+43 NORMAL test:conditional branch(ne, to iindex=19) 13,9 Node: < Application, LMain, test(F)V > Context: Everywhere
+32 NORMAL main:4 = invokestatic < Application, Lorg/sosy_lab/sv_benchmarks/Verifier, nondetFloat()F > @0 exception:3 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+33 NORMAL main:6 = compare 4,5 opcode=cmpl Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+33 NORMAL main:conditional branch(lt, to iindex=14) 6,7 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+34 NORMAL main:8 = new <Application,LMain>@10 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+34 NORMAL main:invokespecial < Application, LMain, <init>()V > 8 @14 exception:9 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+35 NORMAL main:invokevirtual < Application, LMain, test(F)V > 8,4 @20 exception:10 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+29 NORMAL <clinit>:2 = load_metadata: <Application,LMain>, <Primordial,Ljava/lang/Class> Node: < Application, LMain, <clinit>()V > Context: Everywhere
+29 NORMAL <clinit>:4 = invokevirtual < Application, Ljava/lang/Class, desiredAssertionStatus()Z > 2 @2 exception:3 Node: < Application, LMain, <clinit>()V > Context: Everywhere
+29 NORMAL <clinit>:conditional branch(ne, to iindex=6) 4,5 Node: < Application, LMain, <clinit>()V > Context: Everywhere
+29 NORMAL <clinit>:putstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > = 7 Node: < Application, LMain, <clinit>()V > Context: Everywhere

@@ -1,0 +1,18 @@
+32 NORMAL test:6 = invokevirtual < Application, LMain, method_a(II)I > 1,2,3 @3 exception:5 Node: < Application, LMain, test(II)V > Context: Everywhere
+34 NORMAL test:conditional branch(le, to iindex=22) 6,7 Node: < Application, LMain, test(II)V > Context: Everywhere
+43 NORMAL test:8 = getstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > Node: < Application, LMain, test(II)V > Context: Everywhere
+43 NORMAL test:conditional branch(ne, to iindex=29) 8,7 Node: < Application, LMain, test(II)V > Context: Everywhere
+63 NORMAL main:3 = new <Application,LMain>@0 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+63 NORMAL main:invokespecial < Application, LMain, <init>()V > 3 @4 exception:4 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+65 NORMAL main:6 = invokestatic < Application, Lorg/sosy_lab/sv_benchmarks/Verifier, nondetInt()I > @9 exception:5 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+65 NORMAL main:8 = invokestatic < Application, Lorg/sosy_lab/sv_benchmarks/Verifier, nondetInt()I > @12 exception:7 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+65 NORMAL main:invokevirtual < Application, LMain, test(II)V > 3,6,8 @15 exception:9 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+48 NORMAL method_a:conditional branch(le, to iindex=5) 2,5 Node: < Application, LMain, method_a(II)I > Context: Everywhere
+48 NORMAL method_a:return 2 Node: < Application, LMain, method_a(II)I > Context: Everywhere
+50 NORMAL method_a:conditional branch(le, to iindex=10) 3,5 Node: < Application, LMain, method_a(II)I > Context: Everywhere
+50 NORMAL method_a:return 3 Node: < Application, LMain, method_a(II)I > Context: Everywhere
+52 NORMAL method_a:return 6 Node: < Application, LMain, method_a(II)I > Context: Everywhere
+29 NORMAL <clinit>:2 = load_metadata: <Application,LMain>, <Primordial,Ljava/lang/Class> Node: < Application, LMain, <clinit>()V > Context: Everywhere
+29 NORMAL <clinit>:4 = invokevirtual < Application, Ljava/lang/Class, desiredAssertionStatus()Z > 2 @2 exception:3 Node: < Application, LMain, <clinit>()V > Context: Everywhere
+29 NORMAL <clinit>:conditional branch(ne, to iindex=6) 4,5 Node: < Application, LMain, <clinit>()V > Context: Everywhere
+29 NORMAL <clinit>:putstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > = 7 Node: < Application, LMain, <clinit>()V > Context: Everywhere

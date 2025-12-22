@@ -1,0 +1,2 @@
+14 NORMAL main:5 = invokestatic < Application, Lorg/sosy_lab/sv_benchmarks/Verifier, nondetBoolean()Z > @2 exception:4 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+18 NORMAL main:conditional branch(ne, to iindex=4) 5,3 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere

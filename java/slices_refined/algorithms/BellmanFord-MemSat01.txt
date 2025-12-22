@@ -1,0 +1,25 @@
+88 NORMAL main:4 = invokestatic < Application, Lorg/sosy_lab/sv_benchmarks/Verifier, nondetInt()I > @0 exception:3 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+89 NORMAL main:conditional branch(le, to iindex=10) 4,5 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+89 NORMAL main:conditional branch(ge, to iindex=10) 4,6 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+89 NORMAL main:invokestatic < Application, Lorg/sosy_lab/sv_benchmarks/Verifier, assume(Z)V > 8 @19 exception:9 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+91 NORMAL main:10 = binaryop(mul) 4 , 4 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+91 NORMAL main:11 = new <Primordial,[I>@2510  Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+93 NORMAL main:conditional branch(ge, to iindex=61) 21,4 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+94 NORMAL main:conditional branch(ge, to iindex=56) 19,4 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+95 NORMAL main:conditional branch(ne, to iindex=31) 22,19 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+96 NORMAL main:13 = invokestatic < Application, Lorg/sosy_lab/sv_benchmarks/Verifier, nondetInt()I > @53 exception:12 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+97 NORMAL main:conditional branch(lt, to iindex=41) 13,5 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+97 NORMAL main:conditional branch(ge, to iindex=41) 13,6 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+97 NORMAL main:invokestatic < Application, Lorg/sosy_lab/sv_benchmarks/Verifier, assume(Z)V > 14 @75 exception:15 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+98 NORMAL main:16 = binaryop(mul) 22 , 4 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+98 NORMAL main:17 = binaryop(add) 16 , 19 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+98 NORMAL main:arraystore 11[17] = 13 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+94 NORMAL main:18 = binaryop(add) 19 , 7 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+93 NORMAL main:20 = binaryop(add) 22 , 7 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+103 NORMAL main:24 = invokestatic < Application, LMain, runBellmanFord(I[II)[I > 4,11,5 @103 exception:23 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+105 NORMAL main:26 = getstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+105 NORMAL main:conditional branch(ne, to iindex=75) 26,5 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+40 NORMAL <clinit>:2 = load_metadata: <Application,LMain>, <Primordial,Ljava/lang/Class> Node: < Application, LMain, <clinit>()V > Context: Everywhere
+40 NORMAL <clinit>:4 = invokevirtual < Application, Ljava/lang/Class, desiredAssertionStatus()Z > 2 @2 exception:3 Node: < Application, LMain, <clinit>()V > Context: Everywhere
+40 NORMAL <clinit>:conditional branch(ne, to iindex=6) 4,5 Node: < Application, LMain, <clinit>()V > Context: Everywhere
+40 NORMAL <clinit>:putstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > = 7 Node: < Application, LMain, <clinit>()V > Context: Everywhere

@@ -1,0 +1,16 @@
+41 NORMAL test:4 = getstatic < Application, LMain, a, <Primordial,[I> > Node: < Application, LMain, test(I)V > Context: Everywhere
+41 NORMAL test:arraystore 4[5] = 2 Node: < Application, LMain, test(I)V > Context: Everywhere
+42 NORMAL test:6 = getstatic < Application, LMain, a, <Primordial,[I> > Node: < Application, LMain, test(I)V > Context: Everywhere
+42 NORMAL test:7 = arrayload 6[5] Node: < Application, LMain, test(I)V > Context: Everywhere
+42 NORMAL test:conditional branch(lt, to iindex=13) 7,5 Node: < Application, LMain, test(I)V > Context: Everywhere
+44 NORMAL test:8 = getstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > Node: < Application, LMain, test(I)V > Context: Everywhere
+44 NORMAL test:conditional branch(ne, to iindex=20) 8,5 Node: < Application, LMain, test(I)V > Context: Everywhere
+32 NORMAL main:4 = new <Primordial,[I>@13  Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+32 NORMAL main:putstatic < Application, LMain, a, <Primordial,[I> > = 4 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+35 NORMAL main:6 = new <Application,LMain>@9 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+35 NORMAL main:invokespecial < Application, LMain, <init>()V > 6 @13 exception:7 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+37 NORMAL main:invokevirtual < Application, LMain, test(I)V > 6,5 @19 exception:8 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+28 NORMAL <clinit>:2 = load_metadata: <Application,LMain>, <Primordial,Ljava/lang/Class> Node: < Application, LMain, <clinit>()V > Context: Everywhere
+28 NORMAL <clinit>:4 = invokevirtual < Application, Ljava/lang/Class, desiredAssertionStatus()Z > 2 @2 exception:3 Node: < Application, LMain, <clinit>()V > Context: Everywhere
+28 NORMAL <clinit>:conditional branch(ne, to iindex=6) 4,5 Node: < Application, LMain, <clinit>()V > Context: Everywhere
+28 NORMAL <clinit>:putstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > = 7 Node: < Application, LMain, <clinit>()V > Context: Everywhere

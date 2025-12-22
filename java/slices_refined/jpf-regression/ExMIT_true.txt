@@ -1,0 +1,12 @@
+35 NORMAL foo:5 = binaryop(add) 1 , 4 Node: < Application, LMain, foo(I)I > Context: Everywhere
+35 NORMAL foo:6 = binaryop(mul) 3 , 5 Node: < Application, LMain, foo(I)I > Context: Everywhere
+35 NORMAL foo:conditional branch(ne, to iindex=16) 6,7 Node: < Application, LMain, foo(I)I > Context: Everywhere
+36 NORMAL foo:9 = getstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > Node: < Application, LMain, foo(I)I > Context: Everywhere
+36 NORMAL foo:conditional branch(ne, to iindex=14) 9,8 Node: < Application, LMain, foo(I)I > Context: Everywhere
+31 NORMAL main:4 = invokestatic < Application, Lorg/sosy_lab/sv_benchmarks/Verifier, nondetInt()I > @0 exception:3 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+31 NORMAL main:conditional branch(ne, to iindex=6) 4,5 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+31 NORMAL main:8 = invokestatic < Application, LMain, foo(I)I > 6 @8 exception:7 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+29 NORMAL <clinit>:2 = load_metadata: <Application,LMain>, <Primordial,Ljava/lang/Class> Node: < Application, LMain, <clinit>()V > Context: Everywhere
+29 NORMAL <clinit>:4 = invokevirtual < Application, Ljava/lang/Class, desiredAssertionStatus()Z > 2 @2 exception:3 Node: < Application, LMain, <clinit>()V > Context: Everywhere
+29 NORMAL <clinit>:conditional branch(ne, to iindex=6) 4,5 Node: < Application, LMain, <clinit>()V > Context: Everywhere
+29 NORMAL <clinit>:putstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > = 7 Node: < Application, LMain, <clinit>()V > Context: Everywhere

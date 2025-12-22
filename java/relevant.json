@@ -1,0 +1,5006 @@
+[
+    {
+        "name": "jpf-regression/ExDarko_false",
+        "relevant_lines": [
+            {
+                "44": "if (new Integer(i).equals(new Integer(j)))"
+            },
+            {
+                "33": "boxed(Verifier.nondetInt(), 2);"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExDarko_true",
+        "relevant_lines": [
+            {
+                "41": "if (i == j)"
+            },
+            {
+                "34": "if (x == y) return;"
+            },
+            {
+                "35": "unboxed(x, y)"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExException_false",
+        "relevant_lines": [
+            {
+                "36": "if (secret > 0)"
+            },
+            {
+                "46": "test(Verifier.nondetInt());"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExException_true",
+        "relevant_lines": [
+            {
+                "36": "if (secret > 0)"
+            },
+            {
+                "45": "Verifier.nondetBoolean() ? 1 : 2"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExGenSymExe_false",
+        "relevant_lines": [
+            {
+                "64": "if (elem == 0)"
+            },
+            {
+                "36": "Node na = n.swapNode();"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExGenSymExe_true",
+        "relevant_lines": [
+            {
+                "58": "next != null"
+            },
+            {
+                "56": "if (next != null)"
+            },
+            {
+                "36": "Node na = n.swapNode();"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExLazy_false",
+        "relevant_lines": [
+            {
+                "32": "&& y == 0"
+            },
+            {
+                "41": " test(null, Verifier.nondetInt())"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExLazy_true",
+        "relevant_lines": [
+            {
+                "34": " else if (x != null)"
+            },
+            {
+                "41": " test(null, 0)"
+            },
+            {
+                "42": " test(null, Verifier.nondetInt())"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExMIT_false",
+        "relevant_lines": [
+            {
+                "35": "if (2 * (i + 1) == 10)"
+            },
+            {
+                "31": "foo(Verifier.nondetInt());"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExMIT_true",
+        "relevant_lines": [
+            {
+                "35": "if (2 * (i + 1) == 10)"
+            },
+            {
+                "31": "foo(0);"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExe_false",
+        "relevant_lines": [
+            {
+                "100": "(x > z)"
+            },
+            {
+                "99": "x = x + z"
+            },
+            {
+                "36": "inst.test(2, 1);"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExe_true",
+        "relevant_lines": [
+            {
+                "100": "(x > z)"
+            },
+            {
+                "99": "x = x + z"
+            },
+            {
+                "36": "inst.test(0, 1);"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExe1_false",
+        "relevant_lines": [
+            {
+                "43": "x = z++;"
+            },
+            {
+                "49": "if (x > 0)"
+            },
+            {
+                "32": "int x = Verifier.nondetInt() % 1000;"
+            },
+            {
+                "33": "int y = Verifier.nondetInt() % 50;"
+            },
+            {
+                "35": "inst.test(x, y);"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExe1_true",
+        "relevant_lines": [
+            {
+                "43": "x = z++;"
+            },
+            {
+                "49": "if (x > 0)"
+            },
+            {
+                "44": "if (z > 0)"
+            },
+            {
+                "31": "int x = 3"
+            },
+            {
+                "32": "int y = 5"
+            },
+            {
+                "35": "inst.test(x, y);"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExe2_false",
+        "relevant_lines": [
+            {
+                "49": "if (z > 0)"
+            },
+            {
+                "48": "x = ++z;"
+            },
+            {
+                "39": "inst.test(x, y);"
+            },
+            {
+                "47": "z++;"
+            },
+            {
+                "37": "y = y % 5 - 5;"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExe2_true",
+        "relevant_lines": [
+            {
+                "44": "if (z > 0)"
+            },
+            {
+                "49": "if (x > 0)"
+            },
+            {
+                "34": "inst.test(x, y);"
+            },
+            {
+                "43": "x = ++z;"
+            },
+            {
+                "42": "z++;"
+            },
+            {
+                "31": "int x = 3;"
+            },
+            {
+                "32": "int y = 5;"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExe3_false",
+        "relevant_lines": [
+            {
+                "46": "if (x > 0)"
+            },
+            {
+                "35": "inst.test(x, y);"
+            },
+            {
+                "45": "x = ++z;"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExe3_true",
+        "relevant_lines": [
+            {
+                "45": "if (x > 0)"
+            },
+            {
+                "34": "inst.test(x, y);"
+            },
+            {
+                "44": "x = ++z;"
+            },
+            {
+                "32": "int y = 5;"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExe4_false",
+        "relevant_lines": [
+            {
+                "49": "if (z >= 0)"
+            },
+            {
+                "39": "inst.test(x, y);"
+            },
+            {
+                "37": "y = y % 15 - 15;"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExe4_true",
+        "relevant_lines": [
+            {
+                "32": "int y = 5;"
+            },
+            {
+                "34": "inst.test(x, y);"
+            },
+            {
+                "44": "if (z >= 0)"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExe5_false",
+        "relevant_lines": [
+            {
+                "43": " int y = 3;"
+            },
+            {
+                "35": "inst.test(x, y);"
+            },
+            {
+                "47": "if (y >= 0)"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExe5_true",
+        "relevant_lines": [
+            {
+                "42": " int y = 3;"
+            },
+            {
+                "34": "inst.test(x, y);"
+            },
+            {
+                "46": "if (y >= 0)"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExe6_false",
+        "relevant_lines": [
+            {
+                "33": "int y = Verifier.nondetInt() % 1;"
+            },
+            {
+                "35": "inst.test(x, y);"
+            },
+            {
+                "45": "if (z != 0)"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExe6_true",
+        "relevant_lines": [
+            {
+                "32": "int y = 5;"
+            },
+            {
+                "34": "inst.test(x, y);"
+            },
+            {
+                "44": "if (z != 0)"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExe7_false",
+        "relevant_lines": [
+            {
+                "46": "z = x - y - 4;"
+            },
+            {
+                "47": "if (z != 0)"
+            },
+            {
+                "37": "inst.test(x, y);"
+            },
+            {
+                "45": "int y = 3;"
+            },
+            {
+                "34": "int x = 10 - arg % 9;"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExe7_true",
+        "relevant_lines": [
+            {
+                "46": "z = x - y - 4;"
+            },
+            {
+                "47": "if (z != 0)"
+            },
+            {
+                "37": "inst.test(x, y);"
+            },
+            {
+                "45": "int y = 3;"
+            },
+            {
+                "34": "int x = arg % 5;"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExe8_false",
+        "relevant_lines": [
+            {
+                "47": "if (z < 0)"
+            },
+            {
+                "46": "z = z - p;"
+            },
+            {
+                "35": "inst.test(x, y);"
+            },
+            {
+                "44": "int p = 2;"
+            },
+            {
+                "33": "int y = Verifier.nondetInt() % 5;"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExe8_true",
+        "relevant_lines": [
+            {
+                "46": "if (z < 0)"
+            },
+            {
+                "45": "z = z - p;"
+            },
+            {
+                "34": "inst.test(x, y);"
+            },
+            {
+                "43": "int p = 2;"
+            },
+            {
+                "32": "int y = 5;"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExe9_false",
+        "relevant_lines": [
+            {
+                "32": "int x = 10;"
+            },
+            {
+                "47": "int y = 3;"
+            },
+            {
+                "48": "z = x - y - 4;"
+            },
+            {
+                "37": "inst.test(x, field);"
+            },
+            {
+                "49": "if (z < 0) "
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExe9_true",
+        "relevant_lines": [
+            {
+                "32": "int x = 3;"
+            },
+            {
+                "47": "int y = 3;"
+            },
+            {
+                "37": "inst.test(x, field);"
+            },
+            {
+                "48": "z = x - y - 4;"
+            },
+            {
+                "49": "if (z < 0) "
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExe10_false",
+        "relevant_lines": [
+            {
+                "52": "if (z <= 0)"
+            },
+            {
+                "39": "inst.test(x, field);"
+            },
+            {
+                "51": "z = -x + y;"
+            },
+            {
+                "49": "int y = 3;"
+            },
+            {
+                "33": "int x = -10;"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExe10_true",
+        "relevant_lines": [
+            {
+                "51": "if (z <= 0)"
+            },
+            {
+                "38": "if (Verifier.nondetInt() == 2) inst.test(x, field);"
+            },
+            {
+                "50": "z = -x + y;"
+            },
+            {
+                "48": "int y = 3;"
+            },
+            {
+                "33": "int x = 3;"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExe11_false",
+        "relevant_lines": [
+            {
+                "48": "int y = 3;"
+            },
+            {
+                "38": "inst.test(x, field);"
+            },
+            {
+                "53": "if (y <= 0)"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExe11_true",
+        "relevant_lines": [
+            {
+                "50": "int y = 3;"
+            },
+            {
+                "40": "inst.test(x, field);"
+            },
+            {
+                "55": "if (y <= 0)"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExe12_false",
+        "relevant_lines": [
+            {
+                "55": "if (x < r)"
+            },
+            {
+                "51": "x = z - y;"
+            },
+            {
+                "50": "r = x + z;"
+            },
+            {
+                "49": "int y = 3;"
+            },
+            {
+                "34": " int x = -13;"
+            },
+            {
+                "39": "inst.test(x, field, field2);"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExe12_true",
+        "relevant_lines": [
+            {
+                "57": "if (x < r)"
+            },
+            {
+                "53": "x = z - y;"
+            },
+            {
+                "52": "r = x + z;"
+            },
+            {
+                "51": "int y = 3;"
+            },
+            {
+                "34": " int x = 3;"
+            },
+            {
+                "41": "inst.test(x, arg, field2);"
+            },
+            {
+                "40": "if (arg < 0) return;"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExe13_false",
+        "relevant_lines": [
+            {
+                "55": "if (x < z)"
+            },
+            {
+                "52": "z = x - y - 4;"
+            },
+            {
+                "50": "int y = 3;"
+            },
+            {
+                "40": "inst.test(x, field, field2);"
+            },
+            {
+                "35": "if (x > 0) return;"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExe13_true",
+        "relevant_lines": [
+            {
+                "55": "if (x < z)"
+            },
+            {
+                "52": "z = x - y - 4;"
+            },
+            {
+                "40": "inst.test(x, arg, field2);"
+            },
+            {
+                "50": "int y = 3;"
+            },
+            {
+                "36": "int x = arg;"
+            },
+            {
+                "35": "if (arg < 0) return;"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExe14_false",
+        "relevant_lines": [
+            {
+                "54": "if (z <= x)"
+            },
+            {
+                "53": "z = r;"
+            },
+            {
+                "52": "x = z - y;"
+            },
+            {
+                "51": "r = x + z;"
+            },
+            {
+                "50": "int y = 3;"
+            },
+            {
+                "40": "inst.test(x, field, field2);"
+            },
+            {
+                "39": "if (field < 0) return;"
+            },
+            {
+                "34": "int x = -13;"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExe14_true",
+        "relevant_lines": [
+            {
+                "54": "if (z <= x)"
+            },
+            {
+                "53": "z = r;"
+            },
+            {
+                "52": "x = z - y;"
+            },
+            {
+                "51": "r = x + z;"
+            },
+            {
+                "40": "inst.test(x, arg, field2);"
+            },
+            {
+                "50": "int y = 3;"
+            },
+            {
+                "35": "if (arg < 0) return;"
+            },
+            {
+                "36": "int x = arg;"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExe15_false",
+        "relevant_lines": [
+            {
+                "52": "if (r <= 99)"
+            },
+            {
+                "50": "r = x + z;"
+            },
+            {
+                "39": "inst.test(x, field, field2);"
+            },
+            {
+                "34": "int x = 3;"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExe15_true",
+        "relevant_lines": [
+            {
+                "53": "if (r <= 99)"
+            },
+            {
+                "51": "r = x + z;"
+            },
+            {
+                "40": "inst.test(x, field, field2);"
+            },
+            {
+                "39": "if (field < 0) return;"
+            },
+            {
+                "34": "int x = 13000;"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExe16_false",
+        "relevant_lines": [
+            {
+                "49": "if (z == 0)"
+            },
+            {
+                "37": "inst.test(x, field);"
+            },
+            {
+                "36": "field = 0;"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExe16_true",
+        "relevant_lines": [
+            {
+                "49": "if (z == 0)"
+            },
+            {
+                "37": "inst.test(x, field);"
+            },
+            {
+                "36": "field = 9;"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExe17_false",
+        "relevant_lines": [
+            {
+                "49": "if (z == 0)"
+            },
+            {
+                "48": "z = x - y - 4;"
+            },
+            {
+                "37": "inst.test(x, field);"
+            },
+            {
+                "47": "int y = 0;"
+            },
+            {
+                "32": "int x = 4;"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExe17_true",
+        "relevant_lines": [
+            {
+                "49": "if (z == 0)"
+            },
+            {
+                "48": "z = x - y - 4;"
+            },
+            {
+                "37": "inst.test(x, field);"
+            },
+            {
+                "47": "int y = 0;"
+            },
+            {
+                "32": "int x = 3;"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExe18_false",
+        "relevant_lines": [
+            {
+                "52": " if (z > x)"
+            },
+            {
+                "50": "z = z * x;"
+            },
+            {
+                "38": "inst.test(x, field, field2);"
+            },
+            {
+                "49": "x = x * r;"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExe18_true",
+        "relevant_lines": [
+            {
+                "52": " if (z > x)"
+            },
+            {
+                "50": "z = z * x;"
+            },
+            {
+                "38": "inst.test(x, field, field2);"
+            },
+            {
+                "49": "x = x * r;"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExe19_false",
+        "relevant_lines": [
+            {
+                "52": "if (x > 99)"
+            },
+            {
+                "38": "inst.test(x, field, field2);"
+            },
+            {
+                "49": "x = z + r;"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExe19_true",
+        "relevant_lines": [
+            {
+                "55": "if (x > 99)"
+            },
+            {
+                "52": "x = z + r;"
+            },
+            {
+                "41": "inst.test(x, field, field2);"
+            },
+            {
+                "40": "field = field % 10;"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExe20_false",
+        "relevant_lines": [
+            {
+                "59": "if (x >= r)"
+            },
+            {
+                "55": "x = z - y;"
+            },
+            {
+                "54": "r = x + z"
+            },
+            {
+                "53": "int y = 3;"
+            },
+            {
+                "41": "if (field < 0) return;"
+            },
+            {
+                "42": "field = field % 9;"
+            },
+            {
+                "43": "inst.test(x, field, field2);"
+            },
+            {
+                "35": "if (x < 0) return;"
+            },
+            {
+                "36": "x = x % 3;"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExe20_true",
+        "relevant_lines": [
+            {
+                "54": "if (x >= r)"
+            },
+            {
+                "50": "x = z - y;"
+            },
+            {
+                "49": "r = x + z"
+            },
+            {
+                "38": "inst.test(x, field, field2);"
+            },
+            {
+                "48": "int y = 3;"
+            },
+            {
+                "37": "field = 9;"
+            },
+            {
+                "33": "x = 3;"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExe21_false",
+        "relevant_lines": [
+            {
+                "53": "if (x >= z)"
+            },
+            {
+                "50": "z = x - y - 4;"
+            },
+            {
+                "38": "inst.test(x, field, field2);"
+            },
+            {
+                "48": "int y = 3;"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExe21_true",
+        "relevant_lines": [
+            {
+                "53": "if (x >= z)"
+            },
+            {
+                "50": "z = x - y - 4;"
+            },
+            {
+                "38": "inst.test(x, field, field2);"
+            },
+            {
+                "48": "int y = 3;"
+            },
+            {
+                "33": "int x = 3;"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExe25_false",
+        "relevant_lines": [
+            {
+                "35": "inst.test(a, b, a);"
+            },
+            {
+                "49": "if (x > 0)"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExe25_true",
+        "relevant_lines": [
+            {
+                "48": "if (x > 0)"
+            },
+            {
+                "34": "inst.test(a, b, a);"
+            },
+            {
+                "31": "int a = 3;"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExe26_false",
+        "relevant_lines": [
+            {
+                "49": "if (z > 0)"
+            },
+            {
+                "48": "z++;"
+            },
+            {
+                "38": "inst.test(a, b, a);"
+            },
+            {
+                "35": "int a = arg % 3;"
+            },
+            {
+                "33": "if (arg < 0) return;"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExe26_true",
+        "relevant_lines": [
+            {
+                "45": "if (z > 0)"
+            },
+            {
+                "34": "inst.test(a, b, a);"
+            },
+            {
+                "31": "int a = 3;"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExe27_false",
+        "relevant_lines": [
+            {
+                "46": "if (x < y)"
+            },
+            {
+                "35": "inst.test(a, b, a);"
+            },
+            {
+                "45": "y = z + x;"
+            },
+            {
+                "44": "x = z;"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExe27_true",
+        "relevant_lines": [
+            {
+                "45": "if (x < y)"
+            },
+            {
+                "34": "inst.test(a, b, a);"
+            },
+            {
+                "44": "y = z + x;"
+            },
+            {
+                "31": "int a = 3;"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExe28_false",
+        "relevant_lines": [
+            {
+                "35": "inst.test(x, y, 9);"
+            },
+            {
+                "43": "if (z == x)"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExe28_true",
+        "relevant_lines": [
+            {
+                "34": "inst.test(x, y, 9);"
+            },
+            {
+                "42": "if (z == x)"
+            },
+            {
+                "31": "int x = 3;"
+            },
+            {
+                "32": "int y = 5;"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExe29_false",
+        "relevant_lines": [
+            {
+                "45": "if (x != r)"
+            },
+            {
+                "35": "inst.test(x, y, 9);"
+            },
+            {
+                "32": "int x = Verifier.nondetInt() % 3;"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExe29_true",
+        "relevant_lines": [
+            {
+                "44": "if (x != r)"
+            },
+            {
+                "34": "inst.test(x, y, 9);"
+            },
+            {
+                "31": "int x = 3;"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExeArrays_false",
+        "relevant_lines": [
+            {
+                "42": "if (a[0] >= 0)"
+            },
+            {
+                "37": "inst.test(x);"
+            },
+            {
+                "41": "a[0] = x;"
+            },
+            {
+                "33": "int x = -3;"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExeArrays_true",
+        "relevant_lines": [
+            {
+                "42": "if (a[0] >= 0)"
+            },
+            {
+                "37": "inst.test(x);"
+            },
+            {
+                "41": "a[0] = x;"
+            },
+            {
+                "33": "int x = -3;"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExeBool_false",
+        "relevant_lines": [
+            {
+                "43": "if (x)"
+            },
+            {
+                "32": "boolean y = true;"
+            },
+            {
+                "34": "inst.test(y, x);"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExeBool_true",
+        "relevant_lines": [
+            {
+                "43": "if (x)"
+            },
+            {
+                "32": "boolean y = true;"
+            },
+            {
+                "34": "inst.test(y, x);"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExeComplexMath_false",
+        "relevant_lines": [
+            {
+                "44": " if (Math.round(in) > 16.0)"
+            },
+            {
+                "39": "inst.test2(0.0);"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExeComplexMath_true",
+        "relevant_lines": [
+            {
+                "44": "if (Math.round(in) > 16.0)"
+            },
+            {
+                "39": "inst.test2(0.0);"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExeD2I_false",
+        "relevant_lines": [
+            {
+                "40": "if (res > 0)"
+            },
+            {
+                "39": "int res = (int) ++x;"
+            },
+            {
+                "31": "double x = 3.0;"
+            },
+            {
+                "34": "inst.test(x);"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExeD2I_true",
+        "relevant_lines": [
+            {
+                "42": "if (res > 0)"
+            },
+            {
+                "41": "int res = (int) ++x;"
+            },
+            {
+                "33": "if (x >= 0.0 && x <= Integer.MAX_VALUE / 2)"
+            },
+            {
+                "35": "inst.test(x);"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExeD2L_false",
+        "relevant_lines": [
+            {
+                "41": "if (res > 0)"
+            },
+            {
+                "40": "long res = (long) ++x;"
+            },
+            {
+                "35": "inst.test(x);"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExeD2L_true",
+        "relevant_lines": [
+            {
+                "42": "if (res > 0)"
+            },
+            {
+                "41": "long res = (long) ++x;"
+            },
+            {
+                "33": " if (x >= 0.0 && x <= Long.MAX_VALUE / 2)"
+            },
+            {
+                "35": "inst.test(x);"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExeF2I_false",
+        "relevant_lines": [
+            {
+                "40": "if (res > 0)"
+            },
+            {
+                "39": "int res = (int) ++x;"
+            },
+            {
+                "31": "float x = 3;"
+            },
+            {
+                "34": "inst.test(x);"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExeF2I_true",
+        "relevant_lines": [
+            {
+                "42": "if (res > 0)"
+            },
+            {
+                "41": "int res = (int) ++x;"
+            },
+            {
+                "33": "if (x >= 0.0f "
+            },
+            {
+                "35": "inst.test(x);"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExeF2L_false",
+        "relevant_lines": [
+            {
+                "42": "if (res > 0)"
+            },
+            {
+                "41": "long res = (long) ++x;"
+            },
+            {
+                "33": "if (x >= 0.0f) "
+            },
+            {
+                "35": "inst.test(x);"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExeF2L_true",
+        "relevant_lines": [
+            {
+                "42": "if (res > 0)"
+            },
+            {
+                "41": "long res = (long) ++x;"
+            },
+            {
+                "33": "if (x >= 0.0f &&"
+            },
+            {
+                "35": "inst.test(x);"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExeFNEG_false",
+        "relevant_lines": [
+            {
+                "40": "if (y > 0)"
+            },
+            {
+                "39": "float y = -x;"
+            },
+            {
+                "34": "inst.test(x);"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExeFNEG_true",
+        "relevant_lines": [
+            {
+                "40": "if (y > 0)"
+            },
+            {
+                "39": "float y = -x;"
+            },
+            {
+                "34": "if (x >= 0)"
+            },
+            {
+                "34": "if (x >= 0) inst.test(x);"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExeGetStatic_false",
+        "relevant_lines": [
+            {
+                "42": "if (head != null)"
+            },
+            {
+                "39": "static SNode head;"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExeGetStatic_true",
+        "relevant_lines": [
+            {
+                "42": "if (head != null)"
+            },
+            {
+                "39": "static SNode head;"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExeI2D_false",
+        "relevant_lines": [
+            {
+                "41": "if (res > 0)"
+            },
+            {
+                "40": "double res = (double) ++x;"
+            },
+            {
+                "33": "if (x < 0) return;"
+            },
+            {
+                "36": "inst.test(x);"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExeI2D_true",
+        "relevant_lines": [
+            {
+                "41": "if (res > 0)"
+            },
+            {
+                "40": "double res = (double) ++x;"
+            },
+            {
+                "33": "x = x > 0 ? x % 10 : -(x % 10);"
+            },
+            {
+                "36": "inst.test(x);"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExeI2F_false",
+        "relevant_lines": [
+            {
+                "39": "if (res > 0)"
+            },
+            {
+                "38": "float res = (float) ++x;"
+            },
+            {
+                "31": "int x = 3;"
+            },
+            {
+                "34": "inst.test(x);"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExeI2F_true",
+        "relevant_lines": [
+            {
+                "40": "if (res > 0)"
+            },
+            {
+                "39": "float res = (float) ++x;"
+            },
+            {
+                "32": "int x = Verifier.nondetBoolean() ? 3 : 0;"
+            },
+            {
+                "35": "inst.test(x);"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExeLCMP_false",
+        "relevant_lines": [
+            {
+                "41": "if (res + 1 > res + 2)"
+            },
+            {
+                "40": "long res = x;"
+            },
+            {
+                "35": "inst.test(x, 5);"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExeLCMP_true",
+        "relevant_lines": [
+            {
+                "41": "if (res + 1 > res + 2)"
+            },
+            {
+                "40": "long res = x;"
+            },
+            {
+                "35": "inst.test(x, 5);"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExeLongBytecodes_false",
+        "relevant_lines": [
+            {
+                "65": "if (diff > c)"
+            },
+            {
+                "57": "long diff = a - b;"
+            },
+            {
+                "48": "long b = z;"
+            },
+            {
+                "47": "long a = x;"
+            },
+            {
+                "49": "long c = 34565;"
+            },
+            {
+                "35": "inst.test(x, y);"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExeLongBytecodes_true",
+        "relevant_lines": [
+            {
+                "66": "if (diff > c)"
+            },
+            {
+                "58": "long diff = a - b;"
+            },
+            {
+                "49": "long b = z;"
+            },
+            {
+                "48": "long a = x;"
+            },
+            {
+                "50": "long c = 34565;"
+            },
+            {
+                "34": "long y = 5;"
+            },
+            {
+                "33": "x = x > 0 ? -x : x;"
+            },
+            {
+                "36": "inst.test(x, y);"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExeResearch_false",
+        "relevant_lines": [
+            {
+                "36": "assert inst.test(x, y) == 2;"
+            },
+            {
+                "42": "a < 100"
+            },
+            {
+                "44": "int diff = a - b;"
+            },
+            {
+                "50": "else result = diff;"
+            },
+            {
+                "34": "int y = 5;"
+            },
+            {
+                "33": "if (x < 0) return;"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExeResearch_true",
+        "relevant_lines": [
+            {
+                "36": "assert inst.test(x, y) != x + y;"
+            },
+            {
+                "42": "a < 100"
+            },
+            {
+                "44": "int diff = a - b;"
+            },
+            {
+                "50": "else result = diff;"
+            },
+            {
+                "34": "int y = 5;"
+            },
+            {
+                "33": "int x = arg > 0 ? arg : -arg;"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExeSimple_false",
+        "relevant_lines": [
+            {
+                "35": "else if (a == b)"
+            },
+            {
+                "46": " n.test(arg, arg);"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExeSimple_true",
+        "relevant_lines": [
+            {
+                "34": "if (a > b) {"
+            },
+            {
+                "47": " n.test(arg, arg + 1);"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExeSuzette_false",
+        "relevant_lines": [
+            {
+                "40": "if (tmp == x)"
+            },
+            {
+                "38": "int tmp = method_b(x);"
+            },
+            {
+                "57": "return z++"
+            },
+            {
+                "58": "return z--"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExeSuzette_true",
+        "relevant_lines": [
+            {
+                "34": "if (v > 0)"
+            },
+            {
+                "32": "int v = method_a(x, y);"
+            },
+            {
+                "65": "if (arg < 0 || arg > 10) return"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExeSwitch_false",
+        "relevant_lines": [
+            {
+                "47": "switch (x)"
+            },
+            {
+                "54": "default:"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExeSwitch_true",
+        "relevant_lines": [
+            {
+                "47": "switch (x)"
+            },
+            {
+                "48": "case 2:"
+            },
+            {
+                "33": "if (x > 0) return;"
+            },
+            {
+                "39": "x = x + 1;"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExeTestAssignments_false",
+        "relevant_lines": [
+            {
+                "38": "if (x > 0)"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExeTestAssignments_true",
+        "relevant_lines": [
+            {
+                "40": "if (x > 0)"
+            },
+            {
+                "39": "x = 3;"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExeTestClassFields_false",
+        "relevant_lines": [
+            {
+                "39": "arg == 3"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/ExSymExeTestClassFields_true",
+        "relevant_lines": [
+            {
+                "39": " if (field == 0 && field2 == 0)"
+            },
+            {
+                "32": " int field2;"
+            },
+            {
+                "31": " static int field;"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/TestLazy_false",
+        "relevant_lines": [
+            {
+                "36": "if (a < 5) {"
+            }
+        ]
+    },
+    {
+        "name": "jpf-regression/TestLazy_true",
+        "relevant_lines": [
+            {
+                "32": "f(0, arg);"
+            },
+            {
+                "37": "if (a < 5)"
+            }
+        ]
+    },
+    {
+        "name": "jdart-regression/startswith",
+        "relevant_lines": [
+            {
+                "19": "if (param.equals(\"\") && argsEnv[0].equals(\"GOTCHA\"))"
+            },
+            {
+                "17": "String[] argsEnv = {param};"
+            },
+            {
+                "27": "b.doPost(request);"
+            }
+        ]
+    },
+    {
+        "name": "jdart-regression/addition01",
+        "relevant_lines": [
+            {
+                "25": "if (c >= 150)"
+            },
+            {
+                "30": "return addition(m + 1, n - 1, ++c)"
+            },
+            {
+                "32": "return addition(m - 1, n + 1, ++c);"
+            },
+            {
+                "46": "addition(m, n, c);"
+            },
+            {
+                "47": "assert (result == m + n);"
+            }
+        ]
+    },
+    {
+        "name": "jdart-regression/array-iteration01",
+        "relevant_lines": [
+            {
+                "22": "ia[index] = Verifier.nondetInt();"
+            },
+            {
+                "23": "for (int i = 0; i < ia.length; i++) {"
+            },
+            {
+                "24": "assert ia[i] != 0;"
+            }
+        ]
+    },
+    {
+        "name": "jdart-regression/boundcheck30",
+        "relevant_lines": [
+            {
+                "25": "if (x < 30 || x > 30)"
+            }
+        ]
+    },
+    {
+        "name": "jdart-regression/boundcheck100",
+        "relevant_lines": [
+            {
+                "25": "if (x < 100 || x > 100)"
+            }
+        ]
+    },
+    {
+        "name": "jdart-regression/boundcheck200",
+        "relevant_lines": [
+            {
+                "25": "if (x < 200 || x > 200)"
+            }
+        ]
+    },
+    {
+        "name": "jdart-regression/double2long",
+        "relevant_lines": [
+            {
+                "32": "assert l < 100L && l > -100L"
+            },
+            {
+                "49": "foo(x);"
+            },
+            {
+                "36-44": ""
+            }
+        ]
+    },
+    {
+        "name": "jdart-regression/float",
+        "relevant_lines": [
+            {
+                "14": "assert (a + b != a || b == 0.0)"
+            }
+        ]
+    },
+    {
+        "name": "jdart-regression/list2",
+        "relevant_lines": [
+            {
+                "107": "assert (lhs_result == rhs_result);"
+            },
+            {
+                "105": "int rhs_result = stream(rhs);"
+            },
+            {
+                "102": "if (lhs_result < it.Value) lhs_result = it.Value;"
+            },
+            {
+                "101": "for (LinkedListEntry it = lhs.Head; it != null; it = it.Next)"
+            },
+            {
+                "84": "for (LinkedListEntry it = list.Head; it != null; it = it.Next)"
+            },
+            {
+                "85": "aggregated = Utils_synthesis.accumulator(aggregated, it.Value);"
+            },
+            {
+                "65": "if (aggregated < e) return e;"
+            },
+            {
+                "66": "return aggregated;"
+            }
+        ]
+    },
+    {
+        "name": "jdart-regression/OverapproximationString01",
+        "relevant_lines": [
+            {
+                "12": "if (complete.equals(\"not possible\"))"
+            },
+            {
+                "11": "String complete = prefix + s;"
+            },
+            {
+                "22": "c.foo(input);"
+            },
+            {
+                "10": "String prefix = \"abc\";"
+            }
+        ]
+    },
+    {
+        "name": "jdart-regression/radians",
+        "relevant_lines": [
+            {
+                "35": "if (rad >= 0)"
+            },
+            {
+                "34": "double rad = java.lang.Math.toRadians(deg);"
+            }
+        ]
+    },
+    {
+        "name": "jdart-regression/shifting",
+        "relevant_lines": [
+            {
+                "19": "if ((1L << i) > Integer.MAX_VALUE)"
+            },
+            {
+                "15": "if (i < 0 || i > 100)"
+            }
+        ]
+    },
+    {
+        "name": "jdart-regression/shifting2",
+        "relevant_lines": [
+            {
+                "19": " assert ((1 << i) != 1);"
+            },
+            {
+                "15": " if (i < 1 || i > 100)"
+            }
+        ]
+    },
+    {
+        "name": "jdart-regression/shifting3",
+        "relevant_lines": [
+            {
+                "19": " assert ((1L << i) != 1L);"
+            },
+            {
+                "15": " if (i < 1 || i > 100)"
+            }
+        ]
+    },
+    {
+        "name": "jdart-regression/URLDecoder01",
+        "relevant_lines": [
+            {
+                "17": " if (!s2.startsWith(\"some\"))"
+            },
+            {
+                "16": "String s2 = java.net.URLDecoder.decode(s1, \"UTF-8\");"
+            },
+            {
+                "13": "String s1 = \"some-url+\" + Verifier.nondetString();"
+            }
+        ]
+    },
+    {
+        "name": "jdart-regression/URLDecoder02",
+        "relevant_lines": [
+            {
+                "17": " if (!s2.startsWith(\"some\"))"
+            },
+            {
+                "16": "String s2 = java.net.URLDecoder.decode(s1, \"UTF-8\");"
+            },
+            {
+                "13": "String s1 = Verifier.nondetString() + \"some-url\";"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/StringConcatenation01",
+        "relevant_lines": [
+            {
+                "17": "String s1 = args[0];"
+            },
+            {
+                "18": "String s2 = args[1];"
+            },
+            {
+                "23": "String tmp = s1.concat(s2);"
+            },
+            {
+                "26": "tmp = s1;"
+            },
+            {
+                "20": "assert s1.equals(args[0]);"
+            },
+            {
+                "21": "assert s2.equals(args[1]);"
+            },
+            {
+                "24": "assert tmp.equals(args[0] + args[1]);"
+            },
+            {
+                "27": "assert tmp.equals(args[0]);"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/aastore_aaload1",
+        "relevant_lines": [
+            {
+                "25": "assert array[i] != null;"
+            },
+            {
+                "24": "for (int i = 0; i < size; i++)"
+            },
+            {
+                "22": "array[i] = new A();"
+            },
+            {
+                "21": "for (int i = 0; i < size; i++)"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/ArithmeticException1",
+        "relevant_lines": [
+            {
+                "16": "catch (ArithmeticException exc)"
+            },
+            {
+                "14": "int i = Verifier.nondetInt();"
+            },
+            {
+                "15": "int j = 10 / i;"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/ArithmeticException5",
+        "relevant_lines": [
+            {
+                "14": "catch (ArithmeticException exc)"
+            },
+            {
+                "13": "double j = 10 / i;"
+            },
+            {
+                "12": "double i = 0;"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/ArithmeticException6",
+        "relevant_lines": [
+            {
+                "13": "int denom = Verifier.nondetInt();"
+            },
+            {
+                "15": "int j = 10 / denom;"
+            },
+            {
+                "16": "catch (ArithmeticException exc)"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/array1",
+        "relevant_lines": [
+            {
+                "24": "assert what_not_array.length == size;"
+            },
+            {
+                "22": "what_not what_not_array[] = new what_not[size];"
+            },
+            {
+                "20": "assert int_array[7] == 7;"
+            },
+            {
+                "18": "for (int i = 0; i < size; i++) int_array[i] = i;"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/array2",
+        "relevant_lines": [
+            {
+                "21": "assert arr.length == 1 && arr[0] == 1;"
+            },
+            {
+                "22": "assert arr.length == 0;"
+            },
+            {
+                "17": "arr = new int[0];"
+            },
+            {
+                "16": "if (unknown > 0)"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/ArrayIndexOutOfBoundsException1",
+        "relevant_lines": [
+            {
+                "18": "catch (ArrayIndexOutOfBoundsException exc)"
+            },
+            {
+                "17": "a[size] = 0;"
+            },
+            {
+                "13": "int size = Verifier.nondetInt();"
+            },
+            {
+                "16": "int[] a = new int[4];"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/ArrayIndexOutOfBoundsException2",
+        "relevant_lines": [
+            {
+                "18": "catch (ArrayIndexOutOfBoundsException exc)"
+            },
+            {
+                "17": "int i = a[size];"
+            },
+            {
+                "13": "int size = Verifier.nondetInt();"
+            },
+            {
+                "16": "int[] a = new int[4];"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/ArrayIndexOutOfBoundsException3",
+        "relevant_lines": [
+            {
+                "16": "catch (Exception exc)"
+            },
+            {
+                "15": "a[Verifier.nondetInt()] = 0;"
+            },
+            {
+                "14": "int[] a = new int[4];"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/arraylength1",
+        "relevant_lines": [
+            {
+                "15": "int_array[] = new int[size];"
+            },
+            {
+                "17": "assert int_array.length == size"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/arrayread1",
+        "relevant_lines": [
+            {
+                "20": "assert (readback == null);"
+            },
+            {
+                "19": "readback = a[0];"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/assert1",
+        "relevant_lines": [
+            {
+                "13": "int i = Verifier.nondetInt();"
+            },
+            {
+                "15": "if (i >= 10) assert i >= 10 : \"my super assertion\";"
+            },
+            {
+                "17": "if (i >= 20) assert i >= 10 : \"my super assertion\";"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/assert2",
+        "relevant_lines": [
+            {
+                "13": "int i = Verifier.nondetInt();"
+            },
+            {
+                "15": "if (i >= 1000) assert i > 1000 : \"i is greater 1000\";"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/assert3",
+        "relevant_lines": [
+            {
+                "13": "int i = Verifier.nondetInt();"
+            },
+            {
+                "15": "if (i >= 1000) if (!(i > 1000)) assert false;"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/assert4",
+        "relevant_lines": [
+            {
+                "13": "int i = Verifier.nondetInt();"
+            },
+            {
+                "15": "if (i >= 10) assert i >= 20 : \"my super assertion\";"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/assert5",
+        "relevant_lines": [
+            {
+                "13": "int i = Verifier.nondetInt();"
+            },
+            {
+                "15": "if (i > 1000) assert i > 1000 : \"i is greater 1000\";"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/assert6",
+        "relevant_lines": [
+            {
+                "13": "int i = Verifier.nondetInt();"
+            },
+            {
+                "15": "if (i >= 1000) if (!(i >= 1000)) assert false;"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/astore_aload1",
+        "relevant_lines": [
+            {
+                "11-112": ""
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/athrow1",
+        "relevant_lines": [
+            {
+                "16": "catch (Exception e)"
+            },
+            {
+                "15": "throw a;"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/basic1",
+        "relevant_lines": [
+            {
+                "15": "assert (System.out != null);"
+            },
+            {
+                "17": "assert (System.err != null);"
+            },
+            {
+                "19": "assert (System.in != null);"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/bitwise1",
+        "relevant_lines": [
+            {
+                "17": "assert (i & 3) == 3;"
+            },
+            {
+                "16": "int i = (c | 2);"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/boolean1",
+        "relevant_lines": [
+            {
+                "17": "if (my_boolean == false) return;"
+            },
+            {
+                "16": "if (my_boolean == true) return;"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/boolean2",
+        "relevant_lines": [
+            {
+                "15": "assert result == !b;"
+            },
+            {
+                "19": "return !b;"
+            },
+            {
+                "14": "boolean result = f(b);"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/BufferedReaderReadLine",
+        "relevant_lines": [
+            {
+                "36": "assert numLines > 0;"
+            },
+            {
+                "27": "String line = check(br);"
+            },
+            {
+                "28": "while ((thisLine = check(br)) != null)"
+            },
+            {
+                "16": "String s = br.readLine();"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/bug-test-gen-095",
+        "relevant_lines": [
+            {
+                "16": "assert (s.equals(\"fg\"));"
+            },
+            {
+                "14": "sb.append(\"Z\");"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/bug-test-gen-119",
+        "relevant_lines": [
+            {
+                "16": "if (booleanValue)"
+            },
+            {
+                "16": "assert tmp.equals(\"true\")"
+            },
+            {
+                "17": "assert tmp.equals(\"false\");"
+            },
+            {
+                "15": "String tmp = String.valueOf(booleanValue);"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/bug-test-gen-119-2",
+        "relevant_lines": [
+            {
+                "13": "assert tmp.equals(\"10000000000\");"
+            },
+            {
+                "12": "String tmp = String.valueOf(longValue);"
+            },
+            {
+                "11": "long longValue = 10000000000L;"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/calc",
+        "relevant_lines": [
+            {
+                "16": "Integer.parseInt(a) != Integer.parseInt(b)"
+            },
+            {
+                "16": "x == y"
+            },
+            {
+                "17": "catch (java.lang.NumberFormatException e)"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/cast1",
+        "relevant_lines": [
+            {
+                "14-32": ""
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/catch1",
+        "relevant_lines": [
+            {
+                "20": "assert e instanceof some_exception2;"
+            },
+            {
+                "19": "catch (some_exception1 e)"
+            },
+            {
+                "18": "throw new some_exception2();"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/char1",
+        "relevant_lines": [
+            {
+                "22": "assert my_char == 0;"
+            },
+            {
+                "21": "my_char++;"
+            },
+            {
+                "20": "my_char = '\\uffff';"
+            },
+            {
+                "18": "assert x >= 0 && x <= '\\uffff';"
+            },
+            {
+                "17": "int x = my_char;"
+            },
+            {
+                "16": "char my_char = arg.charAt(0);"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/charArray",
+        "relevant_lines": [
+            {
+                "24": "assert s.charAt(5) == 's';"
+            },
+            {
+                "23": "String s = new String(\"HELLO\")"
+            },
+            {
+                "22": "char[] c = f(arg.toCharArray())"
+            },
+            {
+                "14": "c[0] = 's';"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/CharSequenceBug",
+        "relevant_lines": [
+            {
+                "17": "assert replaced.indexOf('b') != -1;"
+            },
+            {
+                "16": "replaced = s.replace('b', 'c')"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/CharSequenceToString",
+        "relevant_lines": [
+            {
+                "18": "assert i == -1 || i == 5;"
+            },
+            {
+                "17": "s.equals(\"case1\")"
+            },
+            {
+                "17": "i = cs.length();"
+            },
+            {
+                "16": "int i = -1;"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/Class_method1",
+        "relevant_lines": [
+            {
+                "11": "f(String.class, true)"
+            },
+            {
+                "14": "public static boolean f(Class c, boolean b)"
+            },
+            {
+                "15": "return b;"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/ClassCastException1",
+        "relevant_lines": [
+            {
+                "14": "catch (ClassCastException exc)"
+            },
+            {
+                "13": "String y = (String) x;"
+            },
+            {
+                "12": "Object x = new Integer(0);"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/ClassCastException2",
+        "relevant_lines": [
+            {
+                "20": "catch (ClassCastException exc)"
+            },
+            {
+                "19": "B b = (B) c;"
+            },
+            {
+                "18": "A c = new C();"
+            },
+            {
+                "11": "class B extends A {}"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/ClassCastException3",
+        "relevant_lines": [
+            {
+                "18": "catch (Exception exc)"
+            },
+            {
+                "17": "(B) a;"
+            },
+            {
+                "16": "Object a"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/classtest1",
+        "relevant_lines": [
+            {
+                "11": "g(Main.class);"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/const1",
+        "relevant_lines": [
+            {
+                "11-31": ""
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/constructor1",
+        "relevant_lines": [
+            {
+                "13-23": ""
+            },
+            {
+                "29-35": ""
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/enum1",
+        "relevant_lines": [
+            {
+                "26": "assert (e == enum1.VAL5);"
+            },
+            {
+                "25": "enum1 e = enum1.VAL5;"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/exceptions1",
+        "relevant_lines": [
+            {"24": "A e = a;"},
+            {"32": "catch (A exc)"},
+            {"23": "A a = new A();"}
+        ]
+    },
+    {
+        "name": "jbmc-regression/exceptions2",
+        "relevant_lines": [
+            {"22": "catch (B exc) "},
+            {"18": "B b = new B();"},
+            {"19": "throw b;"}
+        ]
+    },
+    {
+        "name": "jbmc-regression/exceptions3",
+        "relevant_lines": [
+            {"21": "catch (B exc) "},
+            {"18": "throw new B();"}
+        ]
+    },
+    {
+        "name": "jbmc-regression/exceptions4",
+        "relevant_lines": [
+            {"23": "catch (B exc) "},
+            {"19": "throw b;"},
+            {"18": "B b = new B();"}
+        ]
+    },
+    {
+        "name": "jbmc-regression/exceptions5",
+        "relevant_lines": [
+            {"35": "catch (A exc) "},
+            {"25": "throw e;"},
+            {"24": "A e = a;"},
+            {"23": "A a = new A();"}
+        ]
+    },
+    {
+        "name": "jbmc-regression/exceptions6",
+        "relevant_lines": [
+            {"28": "assert exc.i == 2;"},
+            {"27": "catch (A exc)"},
+            {"26": "throw new A();"},
+            {"13": "i = 1;"}
+        ]
+    },
+    {
+        "name": "jbmc-regression/exceptions7",
+        "relevant_lines": [
+            {"27": "catch (A exc)"},
+            {"21": "throw a;"},
+            {"20": "A a = new A();"}
+        ]
+    },
+    {
+        "name": "jbmc-regression/exceptions8",
+        "relevant_lines": [
+            {"30": "catch (B exc)"},
+            {"28": "foo();"},
+            {"18": "B b = new B();"},
+            {"19": "throw b;"}
+        ]
+    },
+    {
+        "name": "jbmc-regression/exceptions9",
+        "relevant_lines": [
+            {"37": "foo(6);"},
+            {"20": "if (k == 0)"},
+            {"24": "A b = new A();"},
+            {"25": "throw b;"},
+            {"28": "catch (B exc)"},
+            {"29": "assert exc.i == 1;"}
+        ]
+    },
+    {
+        "name": "jbmc-regression/exceptions10",
+        "relevant_lines": [
+            {"28": "foo();"},
+            {"18": "A b = new A();"},
+            {"19": "throw b;"},
+            {"20": "catch (A exc) "}
+        ]
+    },
+    {
+        "name": "jbmc-regression/exceptions11",
+        "relevant_lines": [
+            {"38": "catch (A exc)"},
+            {"37": "foo(6)"},
+            {"20": "if (k == 0)"},
+            {"24": "A b = new A();"},
+            {"25": "throw b;"}
+        ]
+    },
+    {
+        "name": "jbmc-regression/exceptions12",
+        "relevant_lines": [
+            {"20": "catch (B exc)"},
+            {"19": "throw b;"},
+            {"18": "B b = new B();"},
+            {"30": "f.foo();"}
+        ]
+    },
+    {
+        "name": "jbmc-regression/exceptions13",
+        "relevant_lines": [
+            {"31": "f.foo();"},
+            {"32": "catch (B exc)"},
+            {"18": "B b = new B();"},
+            {"19": "throw b;"},
+            {"20": "catch (B exc)"},
+            {"21": "throw exc;"}
+        ]
+    },
+    {
+        "name": "jbmc-regression/exceptions14",
+        "relevant_lines": [
+        ]
+    },
+    {
+        "name": "jbmc-regression/exceptions15",
+        "relevant_lines": [
+        ]
+    },
+    {
+        "name": "jbmc-regression/exceptions16",
+        "relevant_lines": [
+            {"28": "catch (B exc)"},
+            {"27": "throw new B();"}
+        ]
+    },
+    {
+        "name": "jbmc-regression/exceptions18",
+        "relevant_lines": [
+            {"25": "catch (A e)"},
+            {"16": "throw a;"},
+            {"15": "A a = new A();"}
+        ]
+    },
+    {
+        "name": "jbmc-regression/fcmpx_dcmpx1",
+        "relevant_lines": [
+            {
+                "11-18": ""
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/iarith1",
+        "relevant_lines": [
+            {
+                "11-34": ""
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/iarith2",
+        "relevant_lines": [
+            {
+                "35": "short lhs = 127;"
+            },
+            {
+                "36": "short rhs = 32767;"
+            },
+            {
+                "37": "if (lhs < rhs)"
+            },
+            {
+                "45": "assert l() == 9223372036854775807L;"
+            },
+            {
+                "44": "assert i() == 2147483647;"
+            },
+            {
+                "11-31": ""
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/if_acmp1",
+        "relevant_lines": [
+            {
+                "20-39": ""
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/if_expr1",
+        "relevant_lines": [
+            {
+                "16": "else assert y == 9;"
+            },
+            {
+                "15": "if (x == 10) assert y == 11;"
+            },
+            {
+                "14": "int y = x == 10 ? 11 : 9;"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/if_icmp1",
+        "relevant_lines": [
+            {
+                "19": "if (j > i)"
+            },
+            {
+                "37": "f(i, i + 1);"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/ifxx1",
+        "relevant_lines": [
+            {
+                "11-32": ""
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/Inheritance1",
+        "relevant_lines": [
+            {
+                "39": "assert a3.some_member == 1;"
+            },
+            {
+                "40": "assert a3.some_other_member == 2;"
+            },
+            {
+                "41": "assert a3.yet_another_member == 3;"
+            },
+            {
+                "13": "some_member = 1;"
+            },
+            {
+                "22": "some_other_member = 2;"
+            },
+            {
+                "31": "yet_another_member = 3;"
+            },
+            {
+                "18": "class A2 extends A1"
+            },
+            {
+                "27": "class A3 extends A2"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/instanceof1",
+        "relevant_lines": [
+            {
+                "11": "assert args instanceof Object;"
+            },
+            {
+                "10": "String[] args"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/instanceof2",
+        "relevant_lines": [
+            {
+                "11": "assert int.class instanceof Object;"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/instanceof3",
+        "relevant_lines": [
+            {
+                "11": "assert args instanceof Object[];"
+            },
+            {
+                "10": "String[] args"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/instanceof4",
+        "relevant_lines": [
+            {
+                "11": "assert \"\" instanceof String;"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/instanceof5",
+        "relevant_lines": [
+            {
+                "12": "assert !(o instanceof String);"
+            },
+            {
+                "11": "Object o = new Object();"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/instanceof6",
+        "relevant_lines": [
+            {
+                "12": "assert (as[0] instanceof A);"
+            },
+            {
+                "13": "assert (as[1] instanceof A);"
+            },
+            {
+                "11": "A[] as = {new A(), new B()};"
+            },
+            {
+                "20": "class B extends A {}"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/instanceof7",
+        "relevant_lines": [
+            {
+                "12": "assert (!(as[0] instanceof B))"
+            },
+            {
+                "13": "assert (as[1] instanceof B);"
+            },
+            {
+                "11": "A[] as = {new A(), new B()};"
+            },
+            {
+                "20": "class B extends A {}"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/instanceof8",
+        "relevant_lines": [
+            {
+                "19": "assert (!test(null));"
+            },
+            {
+                "20": "assert (test(new Integer(1)));"
+            },
+            {
+                "11": "if (i instanceof Integer)"
+            },
+            {
+                "12": "return true;"
+            },
+            {
+                "14": "return false;"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/interface1",
+        "relevant_lines": [
+            {
+                "27": "b.f();"
+            },
+            {
+                "26": "A c = new C();"
+            },
+            {
+                "25": "A b = new B();"
+            },
+            {
+                "14": "public void f()"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/java_append_char",
+        "relevant_lines": [
+            {
+                "23": "if (b) assert (tmp.equals(\"diffblue\"));"
+            },
+            {
+                "24": "assert (!tmp.equals(\"diffblue\")"
+            },
+            {
+                "19": "buffer.append(diff).append(blue);"
+            },
+            {
+                "15": "char[] blue = {'b', 'l', 'u', 'e'};"
+            },
+            {
+                "14": "char[] diff = {'d', 'i', 'f', 'f'};"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/lazyloading4",
+        "relevant_lines": [
+            {
+                "18": "assert data != null;"
+            },
+            {
+                "14": "this.data = DEFAULT;"
+            },
+            {
+                "10": "final Object[] DEFAULT = {};"
+            },
+            {
+                "24": "new Problem().checkInvariant();"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/list1",
+        "relevant_lines": [
+            {
+                "99": "if (it.Value % 2 == 0) if (lhs_result < it.Value) lhs_result = it.Value;"
+            },
+            {
+                "104": "assert (lhs_result == rhs_result);"
+            },
+            {
+                "102": "int rhs_result = stream(rhs);"
+            },
+            {
+                "82": "aggregated = Utils_synthesis.accumulator(aggregated, it.Value);"
+            },
+            {
+                "62": "if (e % 2 == 0) if (aggregated < e) return e;"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/long1",
+        "relevant_lines": [
+            {
+                "12": "long l = 4620693217682128896L;"
+            },
+            {
+                "15": "int i = (int) l;"
+            },
+            {
+                "16": "char c = (char) l;"
+            },
+            {
+                "19": "short s = (short) l;"
+            },
+            {
+                "21": "(long) i == (l & 0x7fffffff)"
+            },
+            {
+                "23": "(long) c == (l & 0x7fff)"
+            },
+            {
+                "25": "(long) s == (l & 0x7fff);"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/lookupswitch1",
+        "relevant_lines": [
+            {
+                "41": "assert j == -1;"
+            },
+            {
+                "40": "if (i == 1 || i == 10 || i == 100 || i == 1000 || i == 10000 || i == 100000) assert j == i + 1;"
+            },
+            {
+                "17-37": ""
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/multinewarray",
+        "relevant_lines": [
+            {
+                "11": "int[][][] some_a = new int[4][3][2];"
+            },
+            {
+                "13": "assert some_a.length == 4;"
+            },
+            {
+                "14": " assert some_a[0].length == 3;"
+            },
+            {
+                "15": "assert some_a[0][0].length == 2;"
+            },
+            {
+                "21": "int_array[i][j] = i + j"
+            },
+            {
+                "23": "assert int_array[2][4] == 6;"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/NegativeArraySizeException1",
+        "relevant_lines": [
+            {
+                "12": "new int[-1];"
+            },
+            {
+                "13": "catch (NegativeArraySizeException exc) {"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/NegativeArraySizeException2",
+        "relevant_lines": [
+            {
+                "12": "new int[-1];"
+            },
+            {
+                "13": "catch (Exception exc)"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/NullPointerException1",
+        "relevant_lines": [
+            {
+                "13": "o.hashCode();"
+            },
+            {
+                "11": "Object o = null;"
+            },
+            {
+                "16": "catch (Exception e) {"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/NullPointerException2",
+        "relevant_lines": [
+            {
+                "15": "A a = null;"
+            },
+            {
+                "17": " a.i = 0;"
+            },
+            {
+                "18": "catch (NullPointerException exc)"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/NullPointerException3",
+        "relevant_lines": [
+            {
+                "15": "A a = null;"
+            },
+            {
+                "17": "int i = a.i;"
+            },
+            {
+                "18": "catch (NullPointerException exc)"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/NullPointerException4",
+        "relevant_lines": [
+            {
+                "15": "A a = null;"
+            },
+            {
+                "17": "a.i = 0;"
+            },
+            {
+                "18": "catch (Exception exc) {"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/overloading1",
+        "relevant_lines": [
+            {
+                "14": "assert (f(1) == 1);"
+            },
+            {
+                "15": "assert (f(1.0d) == 2);"
+            },
+            {
+                "16": "assert (f(new other_class()) == 3);"
+            },
+            {
+                "19": "f(int i)"
+            },
+            {
+                "23": "f(double d)"
+            },
+            {
+                "27": "f(other_class o)"
+            },
+            {
+                "20": "return 1;"
+            },
+            {
+                "24": "return 2;"
+            },
+            {
+                "28": "return 3;"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/package1",
+        "relevant_lines": [
+            {
+                "13": "int result = classB.some_method();"
+            },
+            {
+                "14": "assert result == 123;"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/putfield_getfield1",
+        "relevant_lines": [
+            {
+                "17": "a.i = 999;"
+            },
+            {
+                "18": "assert 999 == a.i;"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/putstatic_getstatic1",
+        "relevant_lines": [
+            {
+                "16": "assert A.i == 1;"
+            },
+            {
+                "10": "public static int i = 1;"
+            },
+            {
+                "17": "A.i = 999;"
+            },
+            {
+                "18": "assert A.i == 999;"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/recursion2",
+        "relevant_lines": [
+            {
+                "11": "assert recursion_test(0) == 10;"
+            },
+            {
+                "15": "if (depth < 10) return recursion_test(depth + 1) + 1;"
+            },
+            {
+                "16": "else return 0;"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/RegexMatches01",
+        "relevant_lines": [
+            {
+                "14": "Pattern expression = Pattern.compile(\"W.*"
+            },
+            {
+                "27": "assert tmp.equals(\"WWWW's Birthday is 12-17-77\");"
+            },
+            {
+                "16": "String string1 = "
+            },
+            {
+                "22": "expression.matcher(string1);"
+            },
+            {
+                "26": "String tmp = matcher.group();"
+            },
+            {
+                "20": "+ \"WWWW's Birthday is 12-17-77\";"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/RegexMatches02",
+        "relevant_lines": [
+            {
+                "15": "Pattern expression = Pattern.compile(\"W.*"
+            },
+            {
+                "24": "assert tmp.equals(\"WWWWW's Birthday is 12-17-77\");"
+            },
+            {
+                "19": "expression.matcher(string1);"
+            },
+            {
+                "23": "String tmp = matcher.group();"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/RegexSubstitution01",
+        "relevant_lines": [
+            {
+                "13": "String firstString = \"DiffBlue ***\";"
+            },
+            {
+                "16": "firstString = firstString.replaceAll(\"\\*\", \"^\");"
+            },
+            {
+                "18": "assert firstString.equals(\"DiffBlue ^^^\");"
+            },
+            {
+                "20-41": ""
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/RegexSubstitution02",
+        "relevant_lines": [
+            {
+                "35": "assert results[0].equals(\"automatedautomatedautomatedaAutomated\");"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/RegexSubstitution03",
+        "relevant_lines": [
+            {
+                "13": "String firstString = \"DiffBlue ***\";"
+            },
+            {
+                "16": "firstString = firstString.replaceAll(\"\\\\*\", \"^\");"
+            },
+            {
+                "18": "assert firstString.equals(\"DiffBlue ^^^\");"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/return1",
+        "relevant_lines": [
+            {
+                "27": "if (s == 1) if (bool_value()) if (long_value() == 0x10000ffffl) assert false;"
+            },
+            {
+                "11": "short s = 1;"
+            },
+            {
+                "16": "boolean b = true;"
+            },
+            {
+                "21": "long l = 0x10000ffffl;"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/return2",
+        "relevant_lines": [
+            {
+                "13": "int v1 = Verifier.nondetInt();"
+            },
+            {
+                "14": "int v2 = Verifier.nondetInt();"
+            },
+            {
+                "15": "assert v1 == v2;"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/StaticCharMethods01",
+        "relevant_lines": [
+            {
+                "11-20": ""
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/StaticCharMethods02",
+        "relevant_lines": [
+            {
+                "16": "assert Character.toUpperCase(c) != Character.toLowerCase(c);"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/StaticCharMethods03",
+        "relevant_lines": [
+            {
+                "17": "assert Character.isDefined(c) == false;"
+            },
+            {
+                "16": "char c = arg.charAt(0);"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/StaticCharMethods04",
+        "relevant_lines": [
+            {
+                "14": "assert Character.isLetter(c);"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/StaticCharMethods05",
+        "relevant_lines": [
+            {
+                "27": "assert tmp == 't';"
+            },
+            {
+                "26": "char tmp = Character.forDigit(digit, radix);"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/StaticCharMethods06",
+        "relevant_lines": [
+            {
+                "20": "if (c1.equals(c2))"
+            },
+            {
+                "18": "Character c2 = c;"
+            },
+            {
+                "17": "Character c1 = c;"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/store_load1",
+        "relevant_lines": [
+            {
+                "11-57": ""
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/StringBuilderAppend01",
+        "relevant_lines": [
+            {
+                "11-52": ""
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/StringBuilderAppend02",
+        "relevant_lines": [
+            {
+                "13": "Object objectRef = Verifier.nondetString();"
+            },
+            {
+                "30": ".append(objectRef)"
+            },
+            {
+                "53": "assert tmp.equals("
+            },
+            {
+                "54": "\"diffblue"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/StringBuilderCapLen01",
+        "relevant_lines": [
+            {
+                "11-23": ""
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/StringBuilderCapLen02",
+        "relevant_lines": [
+            {
+                "14": "assert buffer.toString().equals(\"Diffblue  is leader in automatic test case generation\");"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/StringBuilderCapLen03",
+        "relevant_lines": [
+            {
+                "14": "assert buffer.length() == 51;"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/StringBuilderCapLen04",
+        "relevant_lines": [
+            {
+                "14": "assert buffer.capacity() == 69;"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/StringBuilderChars01",
+        "relevant_lines": [
+            {
+                "11-31": ""
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/StringBuilderChars02",
+        "relevant_lines": [
+            {
+                "14": " assert buffer.toString().equals(\"DiffBlue Limitted\");"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/StringBuilderChars03",
+        "relevant_lines": [
+            {
+                "14": "assert buffer.charAt(0) == buffer.charAt(4);"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/StringBuilderChars04",
+        "relevant_lines": [
+            {
+                "21": "assert character != buffer.charAt(i);"
+            },
+            {
+                "19": "for (char character : charArray)"
+            },
+            {
+                "16": "buffer.getChars(0, buffer.length(), charArray, 0);"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/StringBuilderChars05",
+        "relevant_lines": [
+            {
+                "18": "assert buffer.toString().equals(\"HiffBllTe Limited\");"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/StringBuilderChars06",
+        "relevant_lines": [
+            {
+                "15": "assert buffer.toString().equals(\"detimiL eTlBffiiH\");"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/StringBuilderConstructors01",
+        "relevant_lines": [
+            {
+                "16": "StringBuilder buffer1 = new StringBuilder();"
+            },
+            {
+                "17": "StringBuilder buffer2 = new StringBuilder(10);"
+            },
+            {
+                "18": "StringBuilder buffer3 = new StringBuilder(arg);"
+            },
+            {
+                "20": "assert buffer1.length() == 0;"
+            },
+            {
+                "21": "assert buffer2.length() == 0;"
+            },
+            {
+                "22": "assert buffer3.length() > 0;"
+            },
+            {
+                "14": "if (arg.length() < 1) return;"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/StringBuilderConstructors02",
+        "relevant_lines": [
+            {
+                "15": "assert buffer3.equals(arg);"
+            },
+            {
+                "14": "StringBuilder buffer3 = new StringBuilder(arg);"
+            },
+            {
+                "13": "String arg"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/StringBuilderInsertDelete01",
+        "relevant_lines": [
+            {
+                "11-54": ""
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/StringBuilderInsertDelete02",
+        "relevant_lines": [
+            {
+                "11-54": ""
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/StringBuilderInsertDelete03",
+        "relevant_lines": [
+            {
+                "11-54": ""
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/StringCompare01",
+        "relevant_lines": [
+            {
+                "11-46": ""
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/StringCompare02",
+        "relevant_lines": [
+            {
+                "17": "if (s3.regionMatches(0, s4, 0, 5))"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/StringCompare03",
+        "relevant_lines": [
+            {
+                "17": "if (!s3.regionMatches(true, 0, s4, 0, 5))"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/StringCompare04",
+        "relevant_lines": [
+            {
+                "15": "assert s2.compareTo(s1) == 13;"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/StringCompare05",
+        "relevant_lines": [
+            {
+                "16": "if (s1 == string)"
+            },
+            {
+                "15": "String s1 = new String(string);"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/StringConcatenation02",
+        "relevant_lines": [
+            {
+                "17": "String s1 = args[0];"
+            },
+            {
+                "19": "assert s1.equals(args[0] + \" \");"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/StringConcatenation03",
+        "relevant_lines": [
+            {
+                "18": "assert tmp.equals(\"Happy at DiffBllue\");"
+            },
+            {
+                "17": "String tmp = s1.concat(s2);"
+            },
+            {
+                "20": "tmp = s1;"
+            },
+            {
+                "22": "assert tmp.equals(\"Happy at\");"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/StringConcatenation04",
+        "relevant_lines": [
+            {
+                "16": "assert tmp.equals(\"Happy  at\");"
+            },
+            {
+                "14": "String tmp = s1;"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/StringConstructors01",
+        "relevant_lines": [
+            {
+                "11-22": ""
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/StringConstructors02",
+        "relevant_lines": [
+            {
+                "14": "assert s1.equals(Verifier.nondetString());"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/StringConstructors03",
+        "relevant_lines": [
+            {
+                "17": "String s = new String(args[0]);"
+            },
+            {
+                "18": "String s2 = new String(s);"
+            },
+            {
+                "19": "assert s2.equals(args[1]);"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/StringConstructors04",
+        "relevant_lines": [
+            {
+                "16": "String s4 = new String(charArray, 4, 4);"
+            },
+            {
+                "17": "assert s4.equals(arg);"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/StringConstructors05",
+        "relevant_lines": [
+            {
+                "15": "assert s3.equals(Verifier.nondetString());"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/StringContains01",
+        "relevant_lines": [
+            {
+                "15": "assert (ab.contains(s));"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/StringContains02",
+        "relevant_lines": [
+            {
+                "14": "assert (arg.contains(\"Hello\"));"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/StringIndexMethods01",
+        "relevant_lines": [
+            {
+                "11-24": ""
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/StringIndexMethods02",
+        "relevant_lines": [
+            {
+                "14": "assert letters.indexOf('a', 1) == 6;"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/StringIndexMethods03",
+        "relevant_lines": [
+            {
+                "14": "assert letters.lastIndexOf('$') == 1;"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/StringIndexMethods04",
+        "relevant_lines": [
+            {
+                "14": "assert letters.indexOf(\"diffblue\") == 28;"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/StringIndexMethods05",
+        "relevant_lines": [
+            {
+                "14": "assert letters.lastIndexOf(\"diffblue\", 25) == 1;"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/StringMiscellaneous01",
+        "relevant_lines": [
+            {
+                "11-31": ""
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/StringMiscellaneous02",
+        "relevant_lines": [
+            {
+                "14": "assert s1.length() == 24;"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/StringMiscellaneous03",
+        "relevant_lines": [
+            {
+                "18": "assert s1.charAt(count) != s2.charAt(i);"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/StringMiscellaneous04",
+        "relevant_lines": [
+            {
+                "21-50": ""
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/StringStartEnd02",
+        "relevant_lines": [
+            {
+                "19": "int i = 0;"
+            },
+            {
+                "20": "for (String string : strings) {"
+            },
+            {
+                "21": "if (string.startsWith(\"te\")) ++i;"
+            },
+            {
+                "23": "assert i == 1;"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/StringStartEnd03",
+        "relevant_lines": [
+            {
+                "19": "int i = 0;"
+            },
+            {
+                "20": "for (String string : strings) {"
+            },
+            {
+                "21": "if (string.endsWith(\"ed\")) ++i;"
+            },
+            {
+                "23": "assert i == 3;"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/StringValueOf01",
+        "relevant_lines": [
+            {
+                "11-45": ""
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/StringValueOf02",
+        "relevant_lines": [
+            {
+                "20": "assert tmp.equals(\"difffblue\");"
+            },
+            {
+                "19": "String tmp = String.valueOf(charArray);"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/StringValueOf03",
+        "relevant_lines": [
+            {
+                "21": "assert tmp.equals(\"fbbl\");"
+            },
+            {
+                "20": "String tmp = String.valueOf(charArray, 3, 3);"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/StringValueOf04",
+        "relevant_lines": [
+            {
+                "15": "assert tmp.equals(\"true\");"
+            },
+            {
+                "14": "String tmp = String.valueOf(booleanValue);"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/StringValueOf05",
+        "relevant_lines": [
+            {
+                "19": "assert tmp.equals(\"A\");"
+            },
+            {
+                "18": "String tmp = String.valueOf(characterValue);"
+            },
+            {
+                "17": "char characterValue = args[0].charAt(0);"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/StringValueOf06",
+        "relevant_lines": [
+            {
+                "15": "assert tmp.equals(\"77\");"
+            },
+            {
+                "14": "String tmp = String.valueOf(integerValue);"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/StringValueOf07",
+        "relevant_lines": [
+            {
+                "16": "assert tmp.equals(\"100000000000\");"
+            },
+            {
+                "15": "String tmp = String.valueOf(longValue);"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/StringValueOf08",
+        "relevant_lines": [
+            {
+                "16": "assert tmp.equals(\"2.50\");"
+            },
+            {
+                "15": "String tmp = String.valueOf(floatValue);"
+            },
+            {
+                "14": "float floatValue = Float.parseFloat(arg);"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/StringValueOf09",
+        "relevant_lines": [
+            {
+                "17": "assert tmp.equals(\"33.3333\");"
+            },
+            {
+                "16": "String tmp = String.valueOf(doubleValue);"
+            },
+            {
+                "15": "double doubleValue = Double.parseDouble(arg);"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/StringValueOf10",
+        "relevant_lines": [
+            {
+                "16": "assert tmp.equals(arg + \"s\");"
+            },
+            {
+                "15": "String tmp = String.valueOf(objectRef);"
+            },
+            {
+                "14": "Object objectRef = arg;"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/SubString01",
+        "relevant_lines": [
+            {
+                "11-16": ""
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/SubString02",
+        "relevant_lines": [
+            {
+                "15": "assert tmp.equals(\"erationatdifffblue\");"
+            },
+            {
+                "14": "String tmp = letters.substring(20);"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/SubString03",
+        "relevant_lines": [
+            {
+                "15": "assert tmp.equals(\"teest\");"
+            },
+            {
+                "14": "String tmp = letters.substring(9, 13);"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/swap1",
+        "relevant_lines": [
+            {
+                "13": "assert result == -3;"
+            },
+            {
+                "12": "byte result = (byte) (x + 248);"
+            },
+            {
+                "11": " byte x = 5;"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/synchronized",
+        "relevant_lines": [
+            {
+                "16": "catch (NullPointerException e)"
+            },
+            {
+                "13": "synchronized (o)"
+            },
+            {
+                "11": "final Object o = null;"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/tableswitch1",
+        "relevant_lines": [
+            {
+                "61": "if (i >= -1 && i <= 11) assert j == i + 1;"
+            },
+            {
+                "62": "else assert j == 1000;"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/TokenTest01",
+        "relevant_lines": [
+            {
+                "12-24": ""
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/TokenTest02",
+        "relevant_lines": [
+            {
+                "18": "if (i == 3) assert token.equals(\"genneration\");"
+            },
+            {
+                "17": "for (String token : tokens)"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/uninitialised1",
+        "relevant_lines": [
+            {
+                "12": "assert i[3] == 0;"
+            },
+            {
+                "11": "int i[] = new int[10]"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/Validate01",
+        "relevant_lines": [
+            {
+                "11-26": ""
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/Validate02",
+        "relevant_lines": [
+            {
+                "19": "if (!ValidateInput02.validateAddress(address)"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/virtual_function_unwinding",
+        "relevant_lines": [
+            {
+                "33": "assert new Outer(new Inner()).b();"
+            },
+            {
+                "27": "return !inner.b();"
+            },
+            {
+                "15": "return false;"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/virtual1",
+        "relevant_lines": [
+            {
+                "25": "a.f();"
+            },
+            {
+                "23": "A a = new A();"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/virtual2",
+        "relevant_lines": [
+            {
+                "24": " b.f();"
+            },
+            {
+                "23": "A b = new B();"
+            },
+            {
+                "15": "public void f()"
+            }
+        ]
+    },
+    {
+        "name": "jbmc-regression/virtual4",
+        "relevant_lines": [
+            {
+                "30": "c.f();"
+            },
+            {
+                "29": "A c = new C();"
+            },
+            {
+                "22": "public void f()"
+            }
+        ]
+    },
+    {
+        "name": "jayhorn-recursive/UnsatEvenOdd01",
+        "relevant_lines": [
+            {
+                "38": "int result = isEven(n);"
+            },
+            {
+                "40": "result == mod"
+            },
+            {
+                "39": "int mod = n % 2;"
+            },
+            {
+                "24": "if (n == 0)"
+            },
+            {
+                "25": "return 1;"
+            },
+            {
+                "26": "else if (n == 1)"
+            },
+            {
+                "27": "return 0;"
+            },
+            {
+                "29": "return isOdd(n - 1);"
+            },
+            {
+                "14": "if (n == 0)"
+            },
+            {
+                "15": "return 0;"
+            },
+            {
+                "16": "else if (n == 1)"
+            },
+            {
+                "17": "return 1;"
+            },
+            {
+                "19": "return isEven(n - 1);"
+            },
+            {
+                "34": "int n = Verifier.nondetInt();"
+            }
+        ]
+    },
+    {
+        "name": "jayhorn-recursive/Ackermann01",
+        "relevant_lines": [
+            {
+                "33": "result >= 0"
+            },
+            {
+                "32": "int result = ack(m, n);"
+            },
+            {
+                "14": "if (m == 0)"
+            },
+            {
+                "15": " return n + 1;"
+            },
+            {
+                "17": "if (n == 0)"
+            },
+            {
+                "18": "return ack(m - 1, 1);"
+            }
+        ]
+    },
+    {
+        "name": "jayhorn-recursive/Addition",
+        "relevant_lines": [
+            {
+                "34": "assert (result == m + n);"
+            },
+            {
+                "33": "int result = addition(m, n)"
+            },
+            {
+                "14": "if (n == 0)"
+            },
+            {
+                "15": "return m;"
+            },
+            {
+                "17": "if (n > 0)"
+            },
+            {
+                "18": "addition(m + 1, n - 1);"
+            },
+            {
+                "20": "addition(m - 1, n + 1);"
+            }
+        ]
+    },
+    {
+        "name": "jayhorn-recursive/InfiniteLoop",
+        "relevant_lines": [
+            {
+                "16": "while (true)"
+            },
+            {
+                "18": "assert (b)"
+            }
+        ]
+    },
+    {
+        "name": "jayhorn-recursive/SatAckermann01",
+        "relevant_lines": [
+            {
+                "33": "result >= 0"
+            },
+            {
+                "32": "int result = ackermann(m, n);"
+            },
+            {
+                "14": "if (m == 0)"
+            },
+            {
+                "15": "return n + 1;"
+            },
+            {
+                "18": "return ackermann(m - 1, 1);"
+            }
+        ]
+    },
+    {
+        "name": "jayhorn-recursive/SatAckermann02",
+        "relevant_lines": [
+            {
+                "33": "if (m != 2 || n != 2 || result == 7)"
+            },
+            {
+                "32": "int result = ackermann(m, n);"
+            },
+            {
+                "14": "if (m == 0)"
+            },
+            {
+                "15": "return n + 1;"
+            },
+            {
+                "17": "if (n == 0)"
+            },
+            {
+                "18": "return ackermann(m - 1, 1);"
+            },
+            {
+                "20": "return ackermann(m - 1, ackermann(m, n - 1));"
+            },
+            {
+                "24": "int m = Verifier.nondetInt();"
+            },
+            {
+                "28": "int n = Verifier.nondetInt();"
+            }
+        ]
+    },
+    {
+        "name": "jayhorn-recursive/SatAckermann03",
+        "relevant_lines": [
+            {
+                "33": "if (m < 2 || n < 2 || result >= 7)"
+            },
+            {
+                "32": "int result = ackermann(m, n);"
+            },
+            {
+                "14": "if (m == 0)"
+            },
+            {
+                "15": "return n + 1;"
+            },
+            {
+                "17": "if (n == 0)"
+            },
+            {
+                "18": "return ackermann(m - 1, 1);"
+            },
+            {
+                "20": "return ackermann(m - 1, ackermann(m, n - 1));"
+            },
+            {
+                "24": "int m = Verifier.nondetInt();"
+            },
+            {
+                "28": "int n = Verifier.nondetInt();"
+            }
+        ]
+    },
+    {
+        "name": "jayhorn-recursive/SatAddition01",
+        "relevant_lines": [
+            {
+                "33": "if (result == m + n)"
+            },
+            {
+                "32": "int result = addition(m, n);"
+            },
+            {
+                "14": "if (n == 0)"
+            },
+            {
+                "15": "return m;"
+            },
+            {
+                "16": "else if (n > 0)"
+            },
+            {
+                "17": "return addition(m + 1, n - 1);"
+            },
+            {
+                "19": "return addition(m - 1, n + 1);"
+            }
+        ]
+    },
+    {
+        "name": "jayhorn-recursive/SatEvenOdd01",
+        "relevant_lines": [
+            {
+                "40": " result == mod"
+            },
+            {
+                "39": "int mod = n % 2;"
+            },
+            {
+                "38": "int result = isOdd(n);"
+            },
+            {
+                "14-29": ""
+            }
+        ]
+    },
+    {
+        "name": "jayhorn-recursive/SatFibonacci01",
+        "relevant_lines": [
+            {
+                "28": "int result = fibonacci(x);"
+            },
+            {
+                "29": "result >= x - 1"
+            },
+            {
+                "16": "else if (n == 1)"
+            },
+            {
+                "14": "if (n < 1)"
+            },
+            {
+                "15": "return 0;"
+            },
+            {
+                "17": "return 1;"
+            },
+            {
+                "19": "return fibonacci(n - 1) + fibonacci(n - 2);"
+            }
+        ]
+    },
+    {
+        "name": "jayhorn-recursive/SatFibonacci02",
+        "relevant_lines": [
+            {
+                "24": "if (result == 34)"
+            },
+            {
+                "23": "int result = fibonacci(x)"
+            },
+            {
+                "22": "int x = 9;"
+            },
+            {
+                "13": "return 0;"
+            },
+            {
+                "15": "return 1;"
+            },
+            {
+                "17": "return fibonacci(n - 1) + fibonacci(n - 2);"
+            },
+            {
+                "14": "else if (n == 1)"
+            },
+            {
+                "12": "if (n < 1)"
+            }
+        ]
+    },
+    {
+        "name": "jayhorn-recursive/SatFibonacci03",
+        "relevant_lines": [
+            {
+                "24": "int x = Verifier.nondetInt();"
+            },
+            {
+                "29": "if (x < 9 || result >= 34)"
+            },
+            {
+                "28": "int result = fibonacci(x);"
+            },
+            {
+                "15": "return 0;"
+            },
+            {
+                "17": "return 1;"
+            },
+            {
+                "19": "return fibonacci(n - 1) + fibonacci(n - 2);"
+            },
+            {
+                "16": "else if (n == 1)"
+            },
+            {
+                "14": "if (n < 1)"
+            }
+        ]
+    },
+    {
+        "name": "jayhorn-recursive/SatGcd",
+        "relevant_lines": [
+            {
+                "36": "int z = gcd(m, n);"
+            },
+            {
+                "37": "if (z < 1 && m > 0 && n > 0)"
+            },
+            {
+                "15": "if (y1 <= 0 || y2 <= 0)"
+            },
+            {
+                "19": "return y1;"
+            },
+            {
+                "28": "int m = Verifier.nondetInt();"
+            },
+            {
+                "32": "int n = Verifier.nondetInt();"
+            }
+        ]
+    },
+    {
+        "name": "jayhorn-recursive/SatHanoi01",
+        "relevant_lines": [
+            {
+                "23": "return 2 * (hanoi(n - 1)) + 1;"
+            },
+            {
+                "36": "applyHanoi(n - 1, from, via, to);"
+            },
+            {
+                "37": "applyHanoi(n - 1, via, to, from);"
+            },
+            {
+                "50": "if (result == counter)"
+            },
+            {
+                "48": "int result = hanoi(n);"
+            },
+            {
+                "47": "applyHanoi(n, 1, 3, 2);"
+            }
+        ]
+    },
+    {
+        "name": "jayhorn-recursive/SatMccarthy91",
+        "relevant_lines": [
+            {
+                "20": "assert (x > 101 || y == 91)"
+            },
+            {
+                "19": "int y = f(x);"
+            },
+            {
+                "13": "if (n > 100) return n - 10;"
+            },
+            {
+                "14": "return f(f(n + 11));"
+            },
+            {
+                "18": "int x = Verifier.nondetInt();"
+            }
+        ]
+    },
+    {
+        "name": "jayhorn-recursive/SatMultCommutative01",
+        "relevant_lines": [
+            {
+                "33": "res1 != res2"
+            },
+            {
+                "32": "int res2 = mult(n, m);"
+            },
+            {
+                "31": "int res1 = mult(m, n);"
+            },
+            {
+                "19": "return n + mult(n, m - 1);"
+            },
+            {
+                "16": "if (m == 0) "
+            },
+            {
+                "17": "return 0;"
+            },
+            {
+                "23": "int m = Verifier.nondetInt();"
+            },
+            {
+                "27": "int n = Verifier.nondetInt();"
+            }
+        ]
+    },
+    {
+        "name": "jayhorn-recursive/SatPrimes01",
+        "relevant_lines": [
+            {
+                "81": "if (result == 1 && mult(f1, f2) == n"
+            },
+            {
+                "71": "int result = is_prime(n);"
+            },
+            {
+                "14-61": ""
+            }
+        ]
+    },
+    {
+        "name": "jayhorn-recursive/UnsatAckermann01",
+        "relevant_lines": [
+            {
+                "27": "m < 2 || result >= 4"
+            },
+            {
+                "24": "int m = Verifier.nondetInt();"
+            },
+            {
+                "26": "int result = ackermann(m, n);"
+            },
+            {
+                "14": "if (m == 0)"
+            },
+            {
+                "15": "return n + 1;"
+            },
+            {
+                "17": "if (n == 0) "
+            },
+            {
+                "18": "return ackermann(m - 1, 1);"
+            },
+            {
+                "20": "return ackermann(m - 1, ackermann(m, n - 1));"
+            }
+        ]
+    },
+    {
+        "name": "jayhorn-recursive/UnsatAddition01",
+        "relevant_lines": [
+            {
+                "25": "int result = addition(m, n);"
+            },
+            {
+                "26": "if (result == m - n)"
+            },
+            {
+                "13": "if (n == 0)"
+            },
+            {
+                "14": "return m;"
+            },
+            {
+                "15": "if (n > 0)"
+            },
+            {
+                "16": "return addition(m + 1, n - 1);"
+            },
+            {
+                "18": "return addition(m - 1, n + 1);"
+            }
+        ]
+    },
+    {
+        "name": "jayhorn-recursive/UnsatAddition02",
+        "relevant_lines": [
+            {
+                "25": "int result = addition(m, n);"
+            },
+            {
+                "26": "if (m < 100 || n < 100 || result >= 200)"
+            },
+            {
+                "13": "if (n == 0)"
+            },
+            {
+                "14": "return m;"
+            },
+            {
+                "15": "if (n > 0)"
+            },
+            {
+                "16": "return addition(m + 1, n - 1);"
+            },
+            {
+                "18": "return addition(m - 1, n + 1);"
+            },
+            {
+                "23": "int m = Verifier.nondetInt();"
+            },
+            {
+                "24": "int n = Verifier.nondetInt();"
+            }
+        ]
+    },
+    {
+        "name": "jayhorn-recursive/UnsatFibonacci01",
+        "relevant_lines": [
+            {
+                "26": "if (x != 5 || result == 3)"
+            },
+            {
+                "25": "int result = fibonacci(x);"
+            },
+            {
+                "14": "if (n < 1)"
+            },
+            {
+                "15": "return 0;"
+            },
+            {
+                "16": "else if (n == 1) "
+            },
+            {
+                "17": "return 1;"
+            },
+            {
+                "19": "return fibonacci(n - 1) + fibonacci(n - 2);"
+            },
+            {
+                "24": "int x = Verifier.nondetInt();"
+            }
+        ]
+    },
+    {
+        "name": "jayhorn-recursive/UnsatFibonacci02",
+        "relevant_lines": [
+            {
+                "26": "if (x < 8 || result >= 34)"
+            },
+            {
+                "25": "int result = fibonacci(x);"
+            },
+            {
+                "14": "if (n < 1)"
+            },
+            {
+                "15": "return 0;"
+            },
+            {
+                "16": "else if (n == 1) "
+            },
+            {
+                "17": "return 1;"
+            },
+            {
+                "19": "return fibonacci(n - 1) + fibonacci(n - 2);"
+            },
+            {
+                "24": "int x = Verifier.nondetInt();"
+            }
+        ]
+    },
+    {
+        "name": "jayhorn-recursive/UnsatMccarthy91",
+        "relevant_lines": [
+            {
+                "20": "assert (x > 101 || y < 90)"
+            },
+            {
+                "19": "int y = f(x);"
+            },
+            {
+                "13": "if (n > 100)"
+            },
+            {
+                "13": "return n - 10;"
+            },
+            {
+                "14": "return f(f(n + 11));"
+            },
+            {
+                "18": "int x = Verifier.nondetInt();"
+            }
+        ]
+    },
+    {
+        "name": "algorithms/BinaryTreeSearch-MemSat01",
+        "relevant_lines": [
+            {
+                "43-87": ""
+            }
+        ]
+    },
+    {
+        "name": "algorithms/BinaryTreeSearch-MemUnsat01",
+        "relevant_lines": [ 
+            {"43-87": ""}    
+        ]
+    },   
+    {
+        "name": "algorithms/BinaryTreeSearch-MemUnsat02",
+        "relevant_lines": [ 
+            {"43-87": ""}    
+        ]
+    },   
+    {
+        "name": "algorithms/BinaryTreeSearch-FunUnsat01",
+        "relevant_lines": [ 
+            {"43-87": ""}    
+        ]
+    },   
+    {
+        "name": "algorithms/BinaryTreeSearch-FunSat01",
+        "relevant_lines": [ 
+            {"43-87": ""}    
+        ]
+    },   
+
+
+
+
+
+
+    {
+        "name": "algorithms/BellmanFord-FunUnsat02",
+        "relevant_lines": [
+            {
+                "107": "(d > V);"
+            },
+            {
+                "104": "for (int d : dist) {"
+            },
+            {
+                "103": "int dist[] = runBellmanFord(V, D, 0);"
+            },
+            {
+                "45-85": ""
+            }
+        ]
+    },
+    {
+        "name": "algorithms/BellmanFord-FunSat01",
+        "relevant_lines": [
+            {
+                "107": "(d == INFINITY || d <= V);"
+            },
+            {
+                "104": "for (int d : dist) {"
+            },
+            {
+                "103": "int dist[] = runBellmanFord(V, D, 0);"
+            },
+            {
+                "45-85": ""
+            }
+        ]
+    },
+    {
+        "name": "algorithms/BellmanFord-FunSat02",
+        "relevant_lines": [
+            {
+                "107": "(d == INFINITY || d <= V);"
+            },
+            {
+                "104": "for (int d : dist) {"
+            },
+            {
+                "103": "int dist[] = runBellmanFord(V, D, 0);"
+            },
+            {
+                "45-85": ""
+            }
+        ]
+    },
+    {
+        "name": "algorithms/BellmanFord-FunUnsat01",
+        "relevant_lines": [
+            {
+                "107": "(d > V);"
+            },
+            {
+                "104": "for (int d : dist) {"
+            },
+            {
+                "103": "int dist[] = runBellmanFord(V, D, 0);"
+            },
+            {
+                "45-85": ""
+            }
+        ]
+    },
+    {
+        "name": "algorithms/BellmanFord-MemSat01",
+        "relevant_lines": [
+            {
+                "103": "int dist[] = runBellmanFord(V, D, 0);"
+            },
+            {
+                "44-84": ""
+            }
+        ]
+    },
+    {
+        "name": "algorithms/BellmanFord-MemSat02",
+        "relevant_lines": [
+            {
+                "103": "int dist[] = runBellmanFord(V, D, 0);"
+            },
+            {
+                "45-85": ""
+            }
+        ]
+    },
+    {
+        "name": "algorithms/BellmanFord-MemUnsat01",
+        "relevant_lines": [
+            {
+                "103": "int dist[] = runBellmanFord(V, D, 0);"
+            },
+            {
+                "45-85": ""
+            }
+        ]
+    },
+    {
+        "name": "algorithms/BellmanFord-MemUnsat02",
+        "relevant_lines": [
+            {
+                "103": "int dist[] = runBellmanFord(V, D, 0);"
+            },
+            {
+                "45-85": ""
+            }
+        ]
+    },
+    {
+        "name": "algorithms/SortedListInsert-FunSat02",
+        "relevant_lines": [
+            {
+                "78": "(l.x <= l.next.x)"
+            },
+            {
+                "77": "for (List l = list; l.next != null; l = l.next"
+            },
+            {
+                "74": "list.insert(Verifier.nondetInt())"
+            },
+            {
+                "58-63": ""
+            }
+        ]
+    },
+    {
+        "name": "algorithms/SortedListInsert-FunSat01",
+        "relevant_lines": [
+            {
+                "72": "(list.x <= list.next.x);"
+            },
+            {
+                "70": "for (int i = 0; i < N; i++) list.insert(Verifier.nondetInt());"
+            },
+            {
+                "55-60": ""
+            }
+        ]
+    },
+    {
+        "name": "algorithms/SortedListInsert-FunUnsat01",
+        "relevant_lines": [
+            {
+                "72": "(list.x < list.next.x);"
+            },
+            {
+                "70": "for (int i = 0; i < N; i++) list.insert(Verifier.nondetInt());"
+            },
+            {
+                "55-60": ""
+            }
+        ]
+    },
+    {
+        "name": "algorithms/SortedListInsert-MemSat01",
+        "relevant_lines": [
+            {
+                "70": "for (int i = 0; i < N; i++) list.insert(Verifier.nondetInt());"
+            },
+            {
+                "55-60": ""
+            }
+        ]
+    },
+    {
+        "name": "algorithms/SortedListInsert-MemUnsat01",
+        "relevant_lines": [
+            {
+                "72": "(list.x < list.next.x);"
+            },
+            {
+                "70": "for (int i = 0; i < N; i++) list.insert(Verifier.nondetInt());"
+            },
+            {
+                "55-60": ""
+            }
+        ]
+    },
+    {
+        "name": "algorithms/Trie-FunUnsat01",
+        "relevant_lines": [
+            {
+                "290": "(st.get(test) != val)"
+            },
+            {
+                "289": "st.put(test, val);"
+            },
+            {
+                "168": "put2(root, key, val, 0)"
+            },
+            {
+                "171-181": ""
+            }
+        ]
+    },
+    {
+        "name": "algorithms/Trie-FunSat01",
+        "relevant_lines": [
+            {
+                "290": "(st.get(test) == val)"
+            },
+            {
+                "289": "st.put(test, val);"
+            },
+            {
+                "168": "put2(root, key, val, 0)"
+            },
+            {
+                "172-181": ""
+            }
+        ]
+    },
+    {
+        "name": "algorithms/Trie-MemSat01",
+        "relevant_lines": [
+            {
+                "290": "st.get(test);"
+            },
+            {
+                "289": "st.put(test, Verifier.nondetInt());"
+            },
+            {
+                "168": "put2(root, key, val, 0)"
+            },
+            {
+                "172-181": ""
+            }
+        ]
+    },
+    {
+        "name": "algorithms/Tsp-MemSat01",
+        "relevant_lines": [
+            {
+                "110": "catch (Exception e)"
+            },
+            {
+                "109": "tspSolver.solve();"
+            },
+            {
+                "73-91": ""
+            },
+            {
+                "63": "visited[0] = true;"
+            },
+            {
+                "64": "search(0, 0, N - 1);"
+            }
+        ]
+    },
+    {
+        "name": "algorithms/Tsp-MemUnsat01",
+        "relevant_lines": [
+            {
+                "110": "catch (Exception e)"
+            },
+            {
+                "109": "tspSolver.solve();"
+            },
+            {
+                "73-91": ""
+            },
+            {
+                "63": "visited[0] = true;"
+            },
+            {
+                "64": "search(0, 0, N - 1);"
+            }
+        ]
+    },
+    {
+        "name": "algorithms/Tsp-FunSat01",
+        "relevant_lines": [
+            {
+                "109": "(sln >= 0);"
+            },
+            {
+                "108": "tspSolver.solve();"
+            },
+            {
+                "73-91": ""
+            },
+            {
+                "63": "visited[0] = true;"
+            },
+            {
+                "64": "search(0, 0, N - 1);"
+            }
+        ]
+    },
+    {
+        "name": "algorithms/Tsp-FunUnsat01",
+        "relevant_lines": [
+            {
+                "109": "(sln == 42);"
+            },
+            {
+                "108": "tspSolver.solve();"
+            },
+            {
+                "73-91": ""
+            },
+            {
+                "63": "visited[0] = true;"
+            },
+            {
+                "64": "search(0, 0, N - 1);"
+            }
+        ]
+    }
+
+
+]

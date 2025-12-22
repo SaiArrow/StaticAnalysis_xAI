@@ -1,0 +1,27 @@
+36 NORMAL main:3 = new <Application,LA>@0 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+36 NORMAL main:invokespecial < Application, LA, <init>()V > 3 @4 exception:4 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+37 NORMAL main:7 = invokestatic < Application, LMain, foo(I)I > 5 @10 exception:6 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+39 NORMAL main:9 = getstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+39 NORMAL main:conditional branch(ne, to iindex=20) 9,10 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+39 NORMAL main:11 = getfield < Application, LA, i, <Primordial,I> > 8 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+39 NORMAL main:conditional branch(eq, to iindex=20) 11,12 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+20 NORMAL foo:conditional branch(ne, to iindex=9) 1,3 Node: < Application, LMain, foo(I)I > Context: Everywhere
+21 NORMAL foo:6 = new <Application,LA>@4 Node: < Application, LMain, foo(I)I > Context: Everywhere
+21 NORMAL foo:invokespecial < Application, LA, <init>()V > 6 @8 exception:7 Node: < Application, LMain, foo(I)I > Context: Everywhere
+22 NORMAL foo:throw 6 Node: < Application, LMain, foo(I)I > Context: Everywhere
+24 NORMAL foo:4 = new <Application,LA>@14 Node: < Application, LMain, foo(I)I > Context: Everywhere
+24 NORMAL foo:invokespecial < Application, LA, <init>()V > 4 @18 exception:5 Node: < Application, LMain, foo(I)I > Context: Everywhere
+25 NORMAL foo:throw 4 Node: < Application, LMain, foo(I)I > Context: Everywhere
+29 NORMAL foo:9 = getstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > Node: < Application, LMain, foo(I)I > Context: Everywhere
+29 NORMAL foo:conditional branch(ne, to iindex=27) 9,3 Node: < Application, LMain, foo(I)I > Context: Everywhere
+29 NORMAL foo:10 = getfield < Application, LB, i, <Primordial,I> > 8 Node: < Application, LMain, foo(I)I > Context: Everywhere
+29 NORMAL foo:conditional branch(eq, to iindex=27) 10,11 Node: < Application, LMain, foo(I)I > Context: Everywhere
+9 NORMAL <init>:invokespecial < Application, Ljava/lang/RuntimeException, <init>()V > 1 @1 exception:3 Node: < Application, LA, <init>()V > Context: Everywhere
+10 NORMAL <init>:putfield 1.< Application, LA, i, <Primordial,I> > = 4 Node: < Application, LA, <init>()V > Context: Everywhere
+17 NORMAL <clinit>:2 = load_metadata: <Application,LMain>, <Primordial,Ljava/lang/Class> Node: < Application, LMain, <clinit>()V > Context: Everywhere
+17 NORMAL <clinit>:4 = invokevirtual < Application, Ljava/lang/Class, desiredAssertionStatus()Z > 2 @2 exception:3 Node: < Application, LMain, <clinit>()V > Context: Everywhere
+17 NORMAL <clinit>:conditional branch(ne, to iindex=6) 4,5 Node: < Application, LMain, <clinit>()V > Context: Everywhere
+17 NORMAL <clinit>:putstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > = 7 Node: < Application, LMain, <clinit>()V > Context: Everywhere
+29 NORMAL foo:12 = new <Application,Ljava/lang/AssertionError>@39 Node: < Application, LMain, foo(I)I > Context: Everywhere
+29 NORMAL foo:invokespecial < Application, Ljava/lang/AssertionError, <init>()V > 12 @43 exception:13 Node: < Application, LMain, foo(I)I > Context: Everywhere
+29 NORMAL foo:throw 12 Node: < Application, LMain, foo(I)I > Context: Everywhere

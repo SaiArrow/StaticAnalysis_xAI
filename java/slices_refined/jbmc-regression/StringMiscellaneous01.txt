@@ -1,0 +1,37 @@
+14 NORMAL main:7 = new <Primordial,[C>@106  Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+16 NORMAL main:8 = getstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+16 NORMAL main:conditional branch(ne, to iindex=20) 8,9 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+16 NORMAL main:11 = invokevirtual < Application, Ljava/lang/String, length()I > 3 @21 exception:10 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+16 NORMAL main:conditional branch(eq, to iindex=20) 11,12 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+19 NORMAL main:14 = invokevirtual < Application, Ljava/lang/String, length()I > 3 @41 exception:13 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+19 NORMAL main:16 = binaryop(sub) 14 , 15 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+19 NORMAL main:conditional branch(lt, to iindex=66) 35,9 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+20 NORMAL main:17 = getstatic < Application, Ljava/lang/System, out, <Application,Ljava/io/PrintStream> > Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+20 NORMAL main:19 = new <Application,[Ljava/lang/Object>@5915  Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+20 NORMAL main:21 = invokevirtual < Application, Ljava/lang/String, charAt(I)C > 3,35 @67 exception:20 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+20 NORMAL main:23 = invokestatic < Application, Ljava/lang/Character, valueOf(C)Ljava/lang/Character; > 21 @70 exception:22 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+20 NORMAL main:arraystore 19[9] = 23 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+20 NORMAL main:25 = invokevirtual < Application, Ljava/io/PrintStream, printf(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream; > 17,18,19 @74 exception:24 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+21 NORMAL main:26 = getstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+21 NORMAL main:conditional branch(ne, to iindex=57) 26,9 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+21 NORMAL main:28 = invokevirtual < Application, Ljava/lang/String, charAt(I)C > 3,35 @87 exception:27 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+21 NORMAL main:30 = invokevirtual < Application, Ljava/lang/String, charAt(I)C > 4,34 @93 exception:29 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+21 NORMAL main:conditional branch(eq, to iindex=57) 28,30 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+22 NORMAL main:31 = binaryop(add) 34 , 15 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+19 NORMAL main:33 = binaryop(add) 35 , 32 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+26 NORMAL main:invokevirtual < Application, Ljava/lang/String, getChars(II[CI)V > 3,9,6,7,9 @122 exception:36 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+28 NORMAL main:37 = arraylength 7 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+28 NORMAL main:conditional branch(ge, to iindex=112) 47,37 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+28 NORMAL main:38 = arrayload 7[47] Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+29 NORMAL main:39 = getstatic < Application, Ljava/lang/System, out, <Application,Ljava/io/PrintStream> > Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+29 NORMAL main:invokevirtual < Application, Ljava/io/PrintStream, print(C)V > 39,38 @159 exception:40 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+30 NORMAL main:41 = getstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+30 NORMAL main:conditional branch(ne, to iindex=103) 41,9 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+30 NORMAL main:43 = invokevirtual < Application, Ljava/lang/String, charAt(I)C > 5,46 @171 exception:42 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+30 NORMAL main:conditional branch(eq, to iindex=103) 43,38 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+31 NORMAL main:44 = binaryop(add) 46 , 15 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+28 NORMAL main:45 = binaryop(add) 47 , 15 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+9 NORMAL <clinit>:2 = load_metadata: <Application,LMain>, <Primordial,Ljava/lang/Class> Node: < Application, LMain, <clinit>()V > Context: Everywhere
+9 NORMAL <clinit>:4 = invokevirtual < Application, Ljava/lang/Class, desiredAssertionStatus()Z > 2 @2 exception:3 Node: < Application, LMain, <clinit>()V > Context: Everywhere
+9 NORMAL <clinit>:conditional branch(ne, to iindex=6) 4,5 Node: < Application, LMain, <clinit>()V > Context: Everywhere
+9 NORMAL <clinit>:putstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > = 7 Node: < Application, LMain, <clinit>()V > Context: Everywhere

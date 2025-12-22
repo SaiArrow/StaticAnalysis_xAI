@@ -1,0 +1,79 @@
+17 NORMAL main:8 = getstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+17 NORMAL main:conditional branch(ne, to iindex=20) 8,3 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+17 NORMAL main:conditional branch(eq, to iindex=20) 3,3 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+18 NORMAL main:9 = getstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+18 NORMAL main:conditional branch(ne, to iindex=30) 9,3 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+18 NORMAL main:conditional branch(eq, to iindex=30) 4,4 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+19 NORMAL main:10 = getstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+19 NORMAL main:conditional branch(ne, to iindex=40) 10,3 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+19 NORMAL main:conditional branch(eq, to iindex=40) 5,5 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+20 NORMAL main:11 = getstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+20 NORMAL main:conditional branch(ne, to iindex=50) 11,3 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+20 NORMAL main:conditional branch(eq, to iindex=50) 6,6 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+21 NORMAL main:12 = getstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+21 NORMAL main:conditional branch(ne, to iindex=60) 12,3 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+21 NORMAL main:conditional branch(eq, to iindex=60) 7,7 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+29 NORMAL main:18 = getstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+29 NORMAL main:conditional branch(ne, to iindex=82) 18,3 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+29 NORMAL main:19 = compare 13,13 opcode=cmp Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+29 NORMAL main:conditional branch(eq, to iindex=82) 19,3 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+30 NORMAL main:20 = getstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+30 NORMAL main:conditional branch(ne, to iindex=94) 20,3 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+30 NORMAL main:21 = compare 14,14 opcode=cmp Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+30 NORMAL main:conditional branch(eq, to iindex=94) 21,3 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+31 NORMAL main:22 = getstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+31 NORMAL main:conditional branch(ne, to iindex=106) 22,3 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+31 NORMAL main:23 = compare 15,15 opcode=cmp Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+31 NORMAL main:conditional branch(eq, to iindex=106) 23,3 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+32 NORMAL main:24 = getstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+32 NORMAL main:conditional branch(ne, to iindex=118) 24,3 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+32 NORMAL main:25 = compare 16,16 opcode=cmp Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+32 NORMAL main:conditional branch(eq, to iindex=118) 25,3 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+33 NORMAL main:26 = getstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+33 NORMAL main:conditional branch(ne, to iindex=130) 26,3 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+33 NORMAL main:27 = compare 17,17 opcode=cmp Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+33 NORMAL main:conditional branch(eq, to iindex=130) 27,3 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+41 NORMAL main:33 = getstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+41 NORMAL main:conditional branch(ne, to iindex=152) 33,3 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+41 NORMAL main:34 = compare 28,28 opcode=cmpl Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+41 NORMAL main:conditional branch(eq, to iindex=152) 34,3 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+42 NORMAL main:35 = getstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+42 NORMAL main:conditional branch(ne, to iindex=164) 35,3 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+42 NORMAL main:36 = compare 29,29 opcode=cmpl Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+42 NORMAL main:conditional branch(eq, to iindex=164) 36,3 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+43 NORMAL main:37 = getstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+43 NORMAL main:conditional branch(ne, to iindex=176) 37,3 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+43 NORMAL main:38 = compare 30,30 opcode=cmpl Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+43 NORMAL main:conditional branch(eq, to iindex=176) 38,3 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+44 NORMAL main:39 = getstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+44 NORMAL main:conditional branch(ne, to iindex=188) 39,3 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+44 NORMAL main:40 = compare 31,31 opcode=cmpl Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+44 NORMAL main:conditional branch(eq, to iindex=188) 40,3 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+45 NORMAL main:41 = getstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+45 NORMAL main:conditional branch(ne, to iindex=200) 41,3 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+45 NORMAL main:42 = compare 32,32 opcode=cmpl Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+45 NORMAL main:conditional branch(eq, to iindex=200) 42,3 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+53 NORMAL main:48 = getstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+53 NORMAL main:conditional branch(ne, to iindex=222) 48,3 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+53 NORMAL main:49 = compare 43,43 opcode=cmpl Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+53 NORMAL main:conditional branch(eq, to iindex=222) 49,3 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+54 NORMAL main:50 = getstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+54 NORMAL main:conditional branch(ne, to iindex=234) 50,3 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+54 NORMAL main:51 = compare 44,44 opcode=cmpl Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+54 NORMAL main:conditional branch(eq, to iindex=234) 51,3 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+55 NORMAL main:52 = getstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+55 NORMAL main:conditional branch(ne, to iindex=246) 52,3 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+55 NORMAL main:53 = compare 45,45 opcode=cmpl Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+55 NORMAL main:conditional branch(eq, to iindex=246) 53,3 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+56 NORMAL main:54 = getstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+56 NORMAL main:conditional branch(ne, to iindex=258) 54,3 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+56 NORMAL main:55 = compare 46,46 opcode=cmpl Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+56 NORMAL main:conditional branch(eq, to iindex=258) 55,3 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+57 NORMAL main:56 = getstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+57 NORMAL main:conditional branch(ne, to iindex=270) 56,3 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+57 NORMAL main:57 = compare 47,47 opcode=cmpl Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+57 NORMAL main:conditional branch(eq, to iindex=270) 57,3 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+9 NORMAL <clinit>:2 = load_metadata: <Application,LMain>, <Primordial,Ljava/lang/Class> Node: < Application, LMain, <clinit>()V > Context: Everywhere
+9 NORMAL <clinit>:4 = invokevirtual < Application, Ljava/lang/Class, desiredAssertionStatus()Z > 2 @2 exception:3 Node: < Application, LMain, <clinit>()V > Context: Everywhere
+9 NORMAL <clinit>:conditional branch(ne, to iindex=6) 4,5 Node: < Application, LMain, <clinit>()V > Context: Everywhere
+9 NORMAL <clinit>:putstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > = 7 Node: < Application, LMain, <clinit>()V > Context: Everywhere

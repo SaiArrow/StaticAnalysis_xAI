@@ -1,0 +1,20 @@
+21 NORMAL main:4 = invokestatic < Application, Lorg/sosy_lab/sv_benchmarks/Verifier, nondetString()Ljava/lang/String; > @0 exception:3 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+26 NORMAL main:7 = new <Application,Ljava/io/BufferedReader>@8 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+26 NORMAL main:8 = new <Application,Ljava/io/StringReader>@12 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+26 NORMAL main:invokespecial < Application, Ljava/io/StringReader, <init>(Ljava/lang/String;)V > 8,4 @17 exception:9 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+26 NORMAL main:invokespecial < Application, Ljava/io/BufferedReader, <init>(Ljava/io/Reader;)V > 7,8 @20 exception:10 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+27 NORMAL main:12 = invokestatic < Application, LMain, check(Ljava/io/BufferedReader;)Ljava/lang/String; > 7 @27 exception:11 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+28 NORMAL main:14 = invokestatic < Application, LMain, check(Ljava/io/BufferedReader;)Ljava/lang/String; > 7 @34 exception:13 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+28 NORMAL main:conditional branch(eq, to iindex=31) 14,5 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+29 NORMAL main:15 = getstatic < Application, Ljava/lang/System, out, <Application,Ljava/io/PrintStream> > Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+29 NORMAL main:invokevirtual < Application, Ljava/io/PrintStream, println(Ljava/lang/String;)V > 15,14 @46 exception:16 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+30 NORMAL main:18 = binaryop(add) 20 , 17 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+36 NORMAL main:21 = getstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+36 NORMAL main:conditional branch(ne, to iindex=46) 21,6 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+36 NORMAL main:conditional branch(gt, to iindex=46) 20,6 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+16 NORMAL check:4 = invokevirtual < Application, Ljava/io/BufferedReader, readLine()Ljava/lang/String; > 1 @1 exception:3 Node: < Application, LMain, check(Ljava/io/BufferedReader;)Ljava/lang/String; > Context: Everywhere
+17 NORMAL check:return 4 Node: < Application, LMain, check(Ljava/io/BufferedReader;)Ljava/lang/String; > Context: Everywhere
+13 NORMAL <clinit>:2 = load_metadata: <Application,LMain>, <Primordial,Ljava/lang/Class> Node: < Application, LMain, <clinit>()V > Context: Everywhere
+13 NORMAL <clinit>:4 = invokevirtual < Application, Ljava/lang/Class, desiredAssertionStatus()Z > 2 @2 exception:3 Node: < Application, LMain, <clinit>()V > Context: Everywhere
+13 NORMAL <clinit>:conditional branch(ne, to iindex=6) 4,5 Node: < Application, LMain, <clinit>()V > Context: Everywhere
+13 NORMAL <clinit>:putstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > = 7 Node: < Application, LMain, <clinit>()V > Context: Everywhere

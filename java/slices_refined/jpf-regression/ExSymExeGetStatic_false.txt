@@ -1,0 +1,11 @@
+42 NORMAL swap:3 = getstatic < Application, LSNode, head, <Application,LSNode> > Node: < Application, LSNode, swap()LSNode; > Context: Everywhere
+42 NORMAL swap:conditional branch(eq, to iindex=7) 3,4 Node: < Application, LSNode, swap()LSNode; > Context: Everywhere
+44 NORMAL swap:5 = getstatic < Application, LSNode, $assertionsDisabled, <Primordial,Z> > Node: < Application, LSNode, swap()LSNode; > Context: Everywhere
+44 NORMAL swap:conditional branch(ne, to iindex=14) 5,6 Node: < Application, LSNode, swap()LSNode; > Context: Everywhere
+31 NORMAL main:3 = new <Application,LSNode>@0 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+31 NORMAL main:invokespecial < Application, LSNode, <init>()V > 3 @4 exception:4 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+32 NORMAL main:6 = invokevirtual < Application, LSNode, swap()LSNode; > 3 @9 exception:5 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+36 NORMAL <clinit>:2 = load_metadata: <Application,LSNode>, <Primordial,Ljava/lang/Class> Node: < Application, LSNode, <clinit>()V > Context: Everywhere
+36 NORMAL <clinit>:4 = invokevirtual < Application, Ljava/lang/Class, desiredAssertionStatus()Z > 2 @2 exception:3 Node: < Application, LSNode, <clinit>()V > Context: Everywhere
+36 NORMAL <clinit>:conditional branch(ne, to iindex=6) 4,5 Node: < Application, LSNode, <clinit>()V > Context: Everywhere
+36 NORMAL <clinit>:putstatic < Application, LSNode, $assertionsDisabled, <Primordial,Z> > = 7 Node: < Application, LSNode, <clinit>()V > Context: Everywhere

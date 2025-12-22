@@ -1,0 +1,28 @@
+20 NORMAL main:4 = invokestatic < Application, Lorg/sosy_lab/sv_benchmarks/Verifier, nondetString()Ljava/lang/String; > @0 exception:3 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+21 NORMAL main:6 = invokevirtual < Application, Ljava/lang/String, length()I > 4 @5 exception:5 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+21 NORMAL main:conditional branch(eq, to iindex=7) 6,7 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+22 NORMAL main:9 = invokevirtual < Application, Ljava/lang/String, toCharArray()[C > 4 @14 exception:8 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+22 NORMAL main:11 = invokestatic < Application, LMain, f([C)[C > 9 @17 exception:10 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+23 NORMAL main:12 = new <Application,Ljava/lang/StringBuilder>@21 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+23 NORMAL main:invokespecial < Application, Ljava/lang/StringBuilder, <init>()V > 12 @25 exception:13 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+23 NORMAL main:14 = new <Application,Ljava/lang/String>@28 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+23 NORMAL main:invokespecial < Application, Ljava/lang/String, <init>(Ljava/lang/String;)V > 14,15 @34 exception:16 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+23 NORMAL main:18 = invokevirtual < Application, Ljava/lang/StringBuilder, append(Ljava/lang/String;)Ljava/lang/StringBuilder; > 12,14 @37 exception:17 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+23 NORMAL main:19 = new <Application,Ljava/lang/String>@40 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+23 NORMAL main:21 = arraylength 11 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+23 NORMAL main:invokespecial < Application, Ljava/lang/String, <init>([CII)V > 19,11,20,21 @48 exception:22 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+23 NORMAL main:24 = invokevirtual < Application, Ljava/lang/StringBuilder, append(Ljava/lang/String;)Ljava/lang/StringBuilder; > 18,19 @51 exception:23 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+23 NORMAL main:26 = invokevirtual < Application, Ljava/lang/StringBuilder, toString()Ljava/lang/String; > 24 @54 exception:25 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+24 NORMAL main:27 = getstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+24 NORMAL main:conditional branch(ne, to iindex=41) 27,20 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+24 NORMAL main:29 = invokevirtual < Application, Ljava/lang/String, charAt(I)C > 26,7 @66 exception:28 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+24 NORMAL main:conditional branch(eq, to iindex=41) 29,30 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+13 NORMAL f:conditional branch(eq, to iindex=11) 1,3 Node: < Application, LMain, f([C)[C > Context: Everywhere
+13 NORMAL f:4 = arraylength 1 Node: < Application, LMain, f([C)[C > Context: Everywhere
+13 NORMAL f:conditional branch(le, to iindex=11) 4,5 Node: < Application, LMain, f([C)[C > Context: Everywhere
+14 NORMAL f:arraystore 1[5] = 6 Node: < Application, LMain, f([C)[C > Context: Everywhere
+16 NORMAL f:return 1 Node: < Application, LMain, f([C)[C > Context: Everywhere
+11 NORMAL <clinit>:2 = load_metadata: <Application,LMain>, <Primordial,Ljava/lang/Class> Node: < Application, LMain, <clinit>()V > Context: Everywhere
+11 NORMAL <clinit>:4 = invokevirtual < Application, Ljava/lang/Class, desiredAssertionStatus()Z > 2 @2 exception:3 Node: < Application, LMain, <clinit>()V > Context: Everywhere
+11 NORMAL <clinit>:conditional branch(ne, to iindex=6) 4,5 Node: < Application, LMain, <clinit>()V > Context: Everywhere
+11 NORMAL <clinit>:putstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > = 7 Node: < Application, LMain, <clinit>()V > Context: Everywhere

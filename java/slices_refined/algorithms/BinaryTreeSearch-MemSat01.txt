@@ -1,0 +1,15 @@
+106 NORMAL main:4 = invokestatic < Application, Lorg/sosy_lab/sv_benchmarks/Verifier, nondetInt()I > @0 exception:3 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+109 NORMAL main:5 = new <Application,LMain$BinaryTree>@4 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+109 NORMAL main:invokespecial < Application, LMain$BinaryTree, <init>(LMain$1;)V > 5,6 @9 exception:7 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+110 NORMAL main:conditional branch(ge, to iindex=20) 13,4 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+110 NORMAL main:10 = invokestatic < Application, Lorg/sosy_lab/sv_benchmarks/Verifier, nondetInt()I > @21 exception:9 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+110 NORMAL main:invokevirtual < Application, LMain$BinaryTree, insert(I)V > 5,10 @24 exception:11 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+110 NORMAL main:12 = binaryop(add) 13 , 8 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+117 NORMAL main:15 = invokestatic < Application, Lorg/sosy_lab/sv_benchmarks/Verifier, nondetInt()I > @34 exception:14 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+117 NORMAL main:17 = invokevirtual < Application, LMain$BinaryTree, search(I)Z > 5,15 @37 exception:16 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+119 NORMAL main:19 = getstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+119 NORMAL main:conditional branch(ne, to iindex=33) 19,20 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+41 NORMAL <clinit>:2 = load_metadata: <Application,LMain>, <Primordial,Ljava/lang/Class> Node: < Application, LMain, <clinit>()V > Context: Everywhere
+41 NORMAL <clinit>:4 = invokevirtual < Application, Ljava/lang/Class, desiredAssertionStatus()Z > 2 @2 exception:3 Node: < Application, LMain, <clinit>()V > Context: Everywhere
+41 NORMAL <clinit>:conditional branch(ne, to iindex=6) 4,5 Node: < Application, LMain, <clinit>()V > Context: Everywhere
+41 NORMAL <clinit>:putstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > = 7 Node: < Application, LMain, <clinit>()V > Context: Everywhere

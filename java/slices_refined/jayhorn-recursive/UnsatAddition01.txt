@@ -1,0 +1,22 @@
+23 NORMAL main:4 = invokestatic < Application, Lorg/sosy_lab/sv_benchmarks/Verifier, nondetInt()I > @0 exception:3 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+24 NORMAL main:6 = invokestatic < Application, Lorg/sosy_lab/sv_benchmarks/Verifier, nondetInt()I > @4 exception:5 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+25 NORMAL main:8 = invokestatic < Application, LMain, addition(II)I > 4,6 @10 exception:7 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+26 NORMAL main:9 = binaryop(sub) 4 , 6 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+26 NORMAL main:conditional branch(ne, to iindex=14) 8,9 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+29 NORMAL main:10 = getstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+29 NORMAL main:conditional branch(ne, to iindex=21) 10,11 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+11 NORMAL <clinit>:2 = load_metadata: <Application,LMain>, <Primordial,Ljava/lang/Class> Node: < Application, LMain, <clinit>()V > Context: Everywhere
+11 NORMAL <clinit>:4 = invokevirtual < Application, Ljava/lang/Class, desiredAssertionStatus()Z > 2 @2 exception:3 Node: < Application, LMain, <clinit>()V > Context: Everywhere
+11 NORMAL <clinit>:conditional branch(ne, to iindex=6) 4,5 Node: < Application, LMain, <clinit>()V > Context: Everywhere
+11 NORMAL <clinit>:putstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > = 7 Node: < Application, LMain, <clinit>()V > Context: Everywhere
+13 NORMAL addition:conditional branch(ne, to iindex=5) 2,4 Node: < Application, LMain, addition(II)I > Context: Everywhere
+14 NORMAL addition:return 1 Node: < Application, LMain, addition(II)I > Context: Everywhere
+15 NORMAL addition:conditional branch(le, to iindex=16) 2,4 Node: < Application, LMain, addition(II)I > Context: Everywhere
+16 NORMAL addition:10 = binaryop(add) 1 , 5 Node: < Application, LMain, addition(II)I > Context: Everywhere
+16 NORMAL addition:11 = binaryop(sub) 2 , 5 Node: < Application, LMain, addition(II)I > Context: Everywhere
+16 NORMAL addition:13 = invokestatic < Application, LMain, addition(II)I > 10,11 @16 exception:12 Node: < Application, LMain, addition(II)I > Context: Everywhere
+16 NORMAL addition:return 13 Node: < Application, LMain, addition(II)I > Context: Everywhere
+18 NORMAL addition:6 = binaryop(sub) 1 , 5 Node: < Application, LMain, addition(II)I > Context: Everywhere
+18 NORMAL addition:7 = binaryop(add) 2 , 5 Node: < Application, LMain, addition(II)I > Context: Everywhere
+18 NORMAL addition:9 = invokestatic < Application, LMain, addition(II)I > 6,7 @26 exception:8 Node: < Application, LMain, addition(II)I > Context: Everywhere
+18 NORMAL addition:return 9 Node: < Application, LMain, addition(II)I > Context: Everywhere

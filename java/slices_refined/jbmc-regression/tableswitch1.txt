@@ -1,0 +1,15 @@
+15 NORMAL main:4 = invokestatic < Application, Lorg/sosy_lab/sv_benchmarks/Verifier, nondetInt()I > @0 exception:3 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+17 NORMAL main:3: switch 4 [-1->4,0->7,1->10,2->13,3->16,4->19,5->22,6->25,7->28,8->31,9->34,10->37,11->40] default: 43 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+61 NORMAL main:conditional branch(lt, to iindex=63) 4,20 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+61 NORMAL main:conditional branch(gt, to iindex=63) 4,7 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+61 NORMAL main:24 = getstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+61 NORMAL main:conditional branch(ne, to iindex=73) 24,18 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+61 NORMAL main:25 = binaryop(add) 4 , 17 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+61 NORMAL main:conditional branch(eq, to iindex=73) 19,25 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+62 NORMAL main:21 = getstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+62 NORMAL main:conditional branch(ne, to iindex=73) 21,18 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+62 NORMAL main:conditional branch(eq, to iindex=73) 19,5 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+11 NORMAL <clinit>:2 = load_metadata: <Application,LMain>, <Primordial,Ljava/lang/Class> Node: < Application, LMain, <clinit>()V > Context: Everywhere
+11 NORMAL <clinit>:4 = invokevirtual < Application, Ljava/lang/Class, desiredAssertionStatus()Z > 2 @2 exception:3 Node: < Application, LMain, <clinit>()V > Context: Everywhere
+11 NORMAL <clinit>:conditional branch(ne, to iindex=6) 4,5 Node: < Application, LMain, <clinit>()V > Context: Everywhere
+11 NORMAL <clinit>:putstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > = 7 Node: < Application, LMain, <clinit>()V > Context: Everywhere

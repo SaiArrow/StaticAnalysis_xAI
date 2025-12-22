@@ -1,0 +1,38 @@
+49 NORMAL swapNode:3 = new <Application,LMain$Node>@0 Node: < Application, LMain$Node, swapNode()LMain$Node; > Context: Everywhere
+49 NORMAL swapNode:invokespecial < Application, LMain$Node, <init>()V > 3 @4 exception:4 Node: < Application, LMain$Node, swapNode()LMain$Node; > Context: Everywhere
+49 NORMAL swapNode:putstatic < Application, LMain$Node, static_next, <Application,LMain$Node> > = 3 Node: < Application, LMain$Node, swapNode()LMain$Node; > Context: Everywhere
+50 NORMAL swapNode:5 = getstatic < Application, LMain$Node, static_next, <Application,LMain$Node> > Node: < Application, LMain$Node, swapNode()LMain$Node; > Context: Everywhere
+50 NORMAL swapNode:6 = new <Application,LMain$Node>@13 Node: < Application, LMain$Node, swapNode()LMain$Node; > Context: Everywhere
+50 NORMAL swapNode:invokespecial < Application, LMain$Node, <init>()V > 6 @17 exception:7 Node: < Application, LMain$Node, swapNode()LMain$Node; > Context: Everywhere
+50 NORMAL swapNode:putfield 5.< Application, LMain$Node, next, <Application,LMain$Node> > = 6 Node: < Application, LMain$Node, swapNode()LMain$Node; > Context: Everywhere
+51 NORMAL swapNode:8 = getstatic < Application, LMain$Node, static_next, <Application,LMain$Node> > Node: < Application, LMain$Node, swapNode()LMain$Node; > Context: Everywhere
+51 NORMAL swapNode:9 = getfield < Application, LMain$Node, next, <Application,LMain$Node> > 8 Node: < Application, LMain$Node, swapNode()LMain$Node; > Context: Everywhere
+51 NORMAL swapNode:10 = new <Application,LMain$Node>@29 Node: < Application, LMain$Node, swapNode()LMain$Node; > Context: Everywhere
+51 NORMAL swapNode:invokespecial < Application, LMain$Node, <init>()V > 10 @33 exception:11 Node: < Application, LMain$Node, swapNode()LMain$Node; > Context: Everywhere
+51 NORMAL swapNode:putfield 9.< Application, LMain$Node, next, <Application,LMain$Node> > = 10 Node: < Application, LMain$Node, swapNode()LMain$Node; > Context: Everywhere
+55 NORMAL swapNode:12 = getfield < Application, LMain$Node, next, <Application,LMain$Node> > 1 Node: < Application, LMain$Node, swapNode()LMain$Node; > Context: Everywhere
+55 NORMAL swapNode:conditional branch(eq, to iindex=48) 12,13 Node: < Application, LMain$Node, swapNode()LMain$Node; > Context: Everywhere
+56 NORMAL swapNode:14 = getfield < Application, LMain$Node, elem, <Primordial,I> > 1 Node: < Application, LMain$Node, swapNode()LMain$Node; > Context: Everywhere
+56 NORMAL swapNode:15 = getfield < Application, LMain$Node, next, <Application,LMain$Node> > 1 Node: < Application, LMain$Node, swapNode()LMain$Node; > Context: Everywhere
+56 NORMAL swapNode:16 = getfield < Application, LMain$Node, elem, <Primordial,I> > 15 Node: < Application, LMain$Node, swapNode()LMain$Node; > Context: Everywhere
+56 NORMAL swapNode:conditional branch(le, to iindex=48) 14,16 Node: < Application, LMain$Node, swapNode()LMain$Node; > Context: Everywhere
+57 NORMAL swapNode:22 = getstatic < Application, LMain$Node, $assertionsDisabled, <Primordial,Z> > Node: < Application, LMain$Node, swapNode()LMain$Node; > Context: Everywhere
+57 NORMAL swapNode:conditional branch(ne, to iindex=36) 22,18 Node: < Application, LMain$Node, swapNode()LMain$Node; > Context: Everywhere
+57 NORMAL swapNode:23 = getfield < Application, LMain$Node, next, <Application,LMain$Node> > 1 Node: < Application, LMain$Node, swapNode()LMain$Node; > Context: Everywhere
+57 NORMAL swapNode:conditional branch(ne, to iindex=36) 23,13 Node: < Application, LMain$Node, swapNode()LMain$Node; > Context: Everywhere
+64 NORMAL swapNode:17 = getfield < Application, LMain$Node, elem, <Primordial,I> > 1 Node: < Application, LMain$Node, swapNode()LMain$Node; > Context: Everywhere
+64 NORMAL swapNode:conditional branch(ne, to iindex=59) 17,18 Node: < Application, LMain$Node, swapNode()LMain$Node; > Context: Everywhere
+64 NORMAL swapNode:19 = getstatic < Application, LMain$Node, $assertionsDisabled, <Primordial,Z> > Node: < Application, LMain$Node, swapNode()LMain$Node; > Context: Everywhere
+64 NORMAL swapNode:conditional branch(ne, to iindex=59) 19,18 Node: < Application, LMain$Node, swapNode()LMain$Node; > Context: Everywhere
+32 NORMAL main:3 = new <Application,LMain$Node>@0 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+32 NORMAL main:invokespecial < Application, LMain$Node, <init>()V > 3 @4 exception:4 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+33 NORMAL main:5 = new <Application,LMain$Node>@8 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+33 NORMAL main:invokespecial < Application, LMain$Node, <init>()V > 5 @12 exception:6 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+34 NORMAL main:putfield 3.< Application, LMain$Node, next, <Application,LMain$Node> > = 5 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+35 NORMAL main:7 = getfield < Application, LMain$Node, next, <Application,LMain$Node> > 3 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+35 NORMAL main:putfield 7.< Application, LMain$Node, next, <Application,LMain$Node> > = 3 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+36 NORMAL main:9 = invokevirtual < Application, LMain$Node, swapNode()LMain$Node; > 3 @30 exception:8 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+43 NORMAL <clinit>:2 = load_metadata: <Application,LMain>, <Primordial,Ljava/lang/Class> Node: < Application, LMain$Node, <clinit>()V > Context: Everywhere
+43 NORMAL <clinit>:4 = invokevirtual < Application, Ljava/lang/Class, desiredAssertionStatus()Z > 2 @2 exception:3 Node: < Application, LMain$Node, <clinit>()V > Context: Everywhere
+43 NORMAL <clinit>:conditional branch(ne, to iindex=6) 4,5 Node: < Application, LMain$Node, <clinit>()V > Context: Everywhere
+43 NORMAL <clinit>:putstatic < Application, LMain$Node, $assertionsDisabled, <Primordial,Z> > = 7 Node: < Application, LMain$Node, <clinit>()V > Context: Everywhere

@@ -1,0 +1,21 @@
+276 NORMAL main:3 = new <Application,LMain>@0 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+276 NORMAL main:invokespecial < Application, LMain, <init>()V > 3 @4 exception:4 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+277 NORMAL main:5 = new <Application,LMain$CharArray>@8 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+277 NORMAL main:invokespecial < Application, LMain$CharArray, <init>(I)V > 5,6 @14 exception:7 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+280 NORMAL main:invokevirtual < Application, LMain$CharArray, set(IC)V > 5,8,9 @22 exception:10 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+281 NORMAL main:invokevirtual < Application, LMain$CharArray, set(IC)V > 5,11,12 @29 exception:13 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+282 NORMAL main:invokevirtual < Application, LMain$CharArray, set(IC)V > 5,14,15 @36 exception:16 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+283 NORMAL main:invokevirtual < Application, LMain$CharArray, set(IC)V > 5,17,18 @43 exception:19 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+284 NORMAL main:invokevirtual < Application, LMain$CharArray, set(IC)V > 5,20,21 @50 exception:22 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+285 NORMAL main:invokevirtual < Application, LMain$CharArray, set(IC)V > 5,23,24 @57 exception:25 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+286 NORMAL main:invokevirtual < Application, LMain$CharArray, set(IC)V > 5,26,27 @65 exception:28 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+287 NORMAL main:invokevirtual < Application, LMain$CharArray, set(IC)V > 5,29,30 @73 exception:31 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+289 NORMAL main:33 = invokestatic < Application, Lorg/sosy_lab/sv_benchmarks/Verifier, nondetInt()I > @78 exception:32 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+289 NORMAL main:invokevirtual < Application, LMain, put(LMain$CharArray;I)V > 3,5,33 @81 exception:34 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+290 NORMAL main:36 = invokevirtual < Application, LMain, get(LMain$CharArray;)I > 3,5 @86 exception:35 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+292 NORMAL main:38 = getstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+292 NORMAL main:conditional branch(ne, to iindex=58) 38,8 Node: < Application, LMain, main([Ljava/lang/String;)V > Context: Everywhere
+74 NORMAL <clinit>:2 = load_metadata: <Application,LMain>, <Primordial,Ljava/lang/Class> Node: < Application, LMain, <clinit>()V > Context: Everywhere
+74 NORMAL <clinit>:4 = invokevirtual < Application, Ljava/lang/Class, desiredAssertionStatus()Z > 2 @2 exception:3 Node: < Application, LMain, <clinit>()V > Context: Everywhere
+74 NORMAL <clinit>:conditional branch(ne, to iindex=6) 4,5 Node: < Application, LMain, <clinit>()V > Context: Everywhere
+74 NORMAL <clinit>:putstatic < Application, LMain, $assertionsDisabled, <Primordial,Z> > = 7 Node: < Application, LMain, <clinit>()V > Context: Everywhere
