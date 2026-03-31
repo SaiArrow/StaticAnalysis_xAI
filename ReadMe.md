@@ -36,3 +36,11 @@ For example for the code file "ExSymExe15_true.java", since it exists in both JB
 
 Label is 0 because both tools think there is a Bug (analysis_label is False in both csv file) but there isn't a bug so the analysis is incorrect. Lines 53, 51, 40, 39 and 34 are the most relevant lines in the code hence they are ranked early.`
 
+## Tool Configs
+JBMC Configuration: `--drop-unused-functions --full-slice --java-threading --no-pretty-names --refine --string-printable --depth 5000 --unwind 5 --max-nondet-array-length 10 --max-nondet-string-length 100 --max-nondet-tree-depth 2000 --java-max-vla-length 100 --arrays-uf-always --reachability-slice-fb`
+
+Jayhorn Configuration: `-rta -specs -bounded-heap-size 10 -heap-limit 1 -heap-mode bounded -initial-heap-size 1 -inline-count -1 -inline-size 100 -mem-prec 1 -solver eldarica -step-heap-size 1 -solver-options debug -solution`
+
+CBMC-A Configuration: `--no-assumptions --no-pretty-names --refine --refine-strings --depth 100 --unwind 10 --max-nondet-tree-depth 100 --min-null-tree-depth 100 --paths fifo --mm sc --arrays-uf-never --reachability-slice-fb --round-to-plus-inf --cprover-smt2`
+
+CBMC-B Configuration: `--drop-unused-functions --full-slice --refine --slice-formula --unwind 1 --max-nondet-tree-depth 2000 --min-null-tree-depth 10 --mm pso --reachability-slice --round-to-plus-inf --cprover-smt2`
