@@ -1,6 +1,6 @@
 ### Additional Experiments: Conversational LLM Generalization
 
-**Table X: LLM triage with/without relevance cues for Claude and Gemini. Metrics (except IFA) in %. Interpretability shown as with no relevance cues $\rightarrow$ with relevance cues.**
+**Table 1: LLM triage with/without relevance cues for Claude and Gemini. Metrics (except IFA) in %. Interpretability shown as with no relevance cues $\rightarrow$ with relevance cues.**
 
 | Dataset | Acc | F1 (F/T) | T@1/3/5 | IFA | R@T20 |
 | :--- | :--- | :--- | :--- | :--- | :--- |
