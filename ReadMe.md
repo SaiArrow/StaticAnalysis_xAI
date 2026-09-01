@@ -1,4 +1,4 @@
-# # Understanding and Improving ML-based Static Analysis Result Classification via Explainable AI
+# Understanding and Improving ML-based Static Analysis Result Classification via Explainable AI
 
 ## Datasets
 Static Analysis Result Dataset (per tool)
