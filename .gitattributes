@@ -1,0 +1,4 @@
+c/c_files/**            linguist-vendored
+java/slices_refined/**  linguist-vendored
+*.csv                   linguist-generated
+*.json                  linguist-generated
